@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/3r3amanm5d-q4.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen flex items-center justify-center bg-[var(--background)]","children":["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-sm text-gray-500 mb-4","children":["正在跳转到 ","xAI","..."]}],["$","a",null,{"href":"https://openrouter.ai/xai","target":"_blank","rel":"noopener noreferrer","className":"inline-block px-6 py-3 bg-[var(--primary)] text-white rounded-full text-sm font-semibold hover:bg-[var(--primary-hover)] transition-colors no-underline","children":"点击前往"}]]}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"OdaweE0kOVMZhOE_aQXOT"}
+4:null

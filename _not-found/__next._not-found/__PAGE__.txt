@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/3r3amanm5d-q4.js","/_next/static/chunks/14mrh2-p_w84d.js"],""]
+3:I[97367,["/_next/static/chunks/3r3amanm5d-q4.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen flex items-center justify-center px-4 bg-[var(--primary-light)]","children":["$","div",null,{"className":"text-center max-w-md","children":[["$","div",null,{"className":"text-6xl mb-4","children":"🔍"}],["$","h1",null,{"className":"text-2xl font-extrabold text-[var(--foreground)] mb-2","children":"服务商不存在"}],["$","p",null,{"className":"text-gray-500 mb-6","children":"抱歉，您访问的服务商页面未找到。可能是 URL 拼写错误，或该服务商已被移除。"}],["$","$L2",null,{"href":"/providers","className":"inline-block px-6 py-2.5 bg-[var(--primary)] text-white rounded-full text-sm font-semibold hover:bg-[var(--primary-hover)] transition-colors no-underline","children":"浏览全部服务商"}]]}]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"OdaweE0kOVMZhOE_aQXOT"}
+5:null
