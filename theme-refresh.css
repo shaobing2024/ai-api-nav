@@ -1,0 +1,39 @@
+/* 小马品牌视觉刷新（覆盖层）— 2026-10-22
+   ai-api-nav 仓库只有 Next.js 编译成品，本文件通过重定义 CSS 变量换肤，
+   并做少量全局质感优化。若日后从源码重新导出，请把这些变量并入源码主题。 */
+:root{
+  --background:#faf8f6;
+  --foreground:#221a14;
+  --card:#ffffff;
+  --border:#ece5db;
+  --primary:#c2410c;
+  --primary-hover:#9a3412;
+  --primary-light:#fff3ea;
+  --success:#16a34a;
+  --warning:#f59e0b;
+  --danger:#ef4444;
+  --star-filled:#f59e0b;
+  --star-empty:#e9e2d8;
+}
+.dark{
+  --background:#14100d;
+  --foreground:#f5efe9;
+  --card:#1f1813;
+  --border:#372a1f;
+  --primary:#fb923c;
+  --primary-hover:#f97316;
+  --primary-light:#3a1c07;
+  --success:#4ade80;
+  --warning:#fbbf24;
+  --danger:#f87171;
+  --star-filled:#fbbf24;
+  --star-empty:#4a3a2c;
+}
+::selection{background:#ffedd5;color:#7c2d12;}
+html{scroll-behavior:smooth;}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+:focus-visible{outline:2px solid #c2410c;outline-offset:2px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-thumb{background:#d8cec2;border-radius:8px;border:2px solid #faf8f6;}
+::-webkit-scrollbar-track{background:transparent;}
+.dark ::-webkit-scrollbar-thumb{background:#4a3a2c;border-color:#14100d;}
