@@ -169,6 +169,7 @@
       .badge.ended { background: var(--red); border-color: var(--red); color: #fff; }
       .badge.risk-high { background: var(--red-soft); border-color: var(--red); color: var(--red); }
       .badge.verified { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+      .badge.unverified { background: var(--amber-soft); border-color: var(--amber); color: var(--amber); }
 
       /* ---------- 卡片 ---------- */
       .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr)); gap: 16px; }
@@ -234,7 +235,7 @@
         <p style="margin:6px 0 0;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--ink-3)">GLOBAL DEAL HUNTER</p>
         <p class="hero-sub">只收录经人工核实的免费额度、试用赠金与限时活动。每条情报保留来源链接与官方领取入口，额度、条件、风险、到期时间逐项写明。</p>
         <div class="stats" aria-label="看板概览">
-          <span class="stat"><b>3</b> 条已核实情报</span>
+          <span class="stat"><b>19</b> 条已核实情报</span>
           <span class="stat"><b>2026-11-12</b> 本版核实日期</span>
           <span class="stat warn"><b>1</b> 条即将到期</span>
           <span class="stat bad"><b>1</b> 条状态异常</span>
@@ -262,7 +263,7 @@
           <button class="chip" type="button" data-cat="开发工具" aria-pressed="false">开发工具</button>
           <button class="chip" type="button" data-cat="免费算力" aria-pressed="false">免费算力</button>
         </div>
-        <p class="result-line" id="resultLine">显示全部 3 条情报</p>
+        <p class="result-line" id="resultLine">显示全部 19 条情报</p>
       </div>
 
       <!-- ============ 今日新上 ============ -->
@@ -408,15 +409,362 @@
               <span class="verified-on">最后核实 2026-11-12</span>
             </div>
           </article>
+
+          <article class="card" id="deal-siliconflow" data-deal="siliconflow" data-cat="大模型 API"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="硅基流动 siliconflow 开源模型 免费 api qwen glm yi 新用户 14元 大模型 api 聚合">
+            <div class="badges"><span class="badge cat">大模型 API</span><span class="badge unverified">子项未核实</span><span class="badge verified">已核实</span></div>
+            <h3>硅基流动 SiliconFlow（9B 及以下开源模型免费 + 新用户 14 元额度)</h3>
+            <p class="intro">国产大模型 API 聚合平台，一批 9B 及以下开源模型免费调用，另有新用户赠送额度，国内直连、OpenAI 兼容接口。</p>
+            <div class="quota"><span class="q-label">免费额度</span>免费模型列表（Qwen2-7B、GLM-4-9B-Chat、Yi-1.5-9B 等，官方表述「在不超过平台限速的条件下可免费使用」）；新用户注册即得 <b>14 元免费额度</b>（官方口径约合 2,000 万 Qwen1.5-14B Tokens）。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>国内手机号注册；赠送额度优先抵扣付费模型。</dd></div>
+              <div><dt>适用地区</dt><dd>国内直连</dd></div>
+              <div><dt>成本</dt><dd>¥0（免费模型与赠送额度内）；额度用完后按量计费，免费模型不占额度可继续用</dd></div>
+              <div><dt>风险</dt><dd class="risk">官方保留免费模型解释权、清单随资源调整；赠金为代金券形式、不可提现；「实名再领 16 元代金券」未核实（仅见于白嫖计转述，未能在官网公开页直核）。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/siliconflow/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://cloud.siliconflow.cn" target="_blank" rel="noopener">cloud.siliconflow.cn</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://cloud.siliconflow.cn" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-bigmodel" data-deal="bigmodel" data-cat="大模型 API"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="智谱 bigmodel glm-4.7-flash flash 免费 2000万 tokens 大模型 api 开放平台">
+            <div class="badges"><span class="badge cat">大模型 API</span><span class="badge verified">已核实</span></div>
+            <h3>智谱开放平台 BigModel（Flash 系列免费 + 新用户 2,000 万 Tokens)</h3>
+            <p class="intro">智谱 GLM 系列官方开放平台，Flash 系列模型在官方定价表标价为免费，新用户另有注册赠送。</p>
+            <div class="quota"><span class="q-label">免费额度</span>GLM-4.7-Flash（200K 上下文）输入/输出/缓存命中均<b>免费</b>，GLM-4-Flash-250414、GLM-Z1-Flash、GLM-4.6V-Flash 等同为免费；新用户注册得 <b>2,000 万 Tokens</b>。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>国内手机号注册；实名认证（领取赠送资源包以控制台为准）。</dd></div>
+              <div><dt>适用地区</dt><dd>国内直连</dd></div>
+              <div><dt>成本</dt><dd>¥0（免费模型与赠送额度内）</dd></div>
+              <div><dt>风险</dt><dd class="risk">官方定价表标「免费」、未承诺永久，以当期定价页为准；免费型号会迭代替换（如 GLM-4.5-Flash 已下线自动路由至 GLM-4.7-Flash）；赠送 Tokens 有效期官方公开页未写明，以控制台资源包为准。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/bigmodel-glm/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://bigmodel.cn" target="_blank" rel="noopener">bigmodel.cn</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://bigmodel.cn" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-tokenhub" data-deal="tokenhub" data-cat="大模型 API"
+            data-expiry="2026-12-31T23:59:59+08:00" data-verified="2026-11-12"
+            data-search="腾讯云 tokenhub 新人体验包 deepseek glm kimi minimax qwen 混元 每模型 100万 tokens 大模型 api">
+            <div class="badges"><span class="badge cat">大模型 API</span><span class="badge verified">已核实</span></div>
+            <h3>腾讯云 TokenHub 新人体验包（每模型 100 万 Tokens)</h3>
+            <p class="intro">腾讯云大模型服务平台 TokenHub 的新人免费体验包，一个账号可试用 DeepSeek、GLM、Kimi、MiniMax、Qwen、混元等多厂商模型。</p>
+            <div class="quota"><span class="q-label">免费额度</span>每个主账号一次，所有语言模型与多模态理解模型<b>每个模型 100 万 Tokens</b>；另含混元生 3D 各模型 100 积分、生视频 50 积分。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>腾讯云账号（通常需实名）并开通 TokenHub；模型广场领取或首次调用自动领取；每账号每模型仅一次。</dd></div>
+              <div><dt>适用地区</dt><dd>国内直连</dd></div>
+              <div><dt>成本</dt><dd>¥0；额度优先消耗，用尽后未开启后付费则自动停止、不自动扣费</dd></div>
+              <div><dt>风险</dt><dd class="risk">有效期官方口径有出入——文档总述写 1 年、多款模型标注 90 天，以领取弹窗与控制台为准；本期领取活动截至 2026-12-31。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">额度有效期见风险栏；领取活动截止 2026-12-31</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/tencent-tokenhub-free-pack/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://www.tencentcloud.com/zh/document/product/1300/80423" target="_blank" rel="noopener">腾讯云 TokenHub 文档</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://www.tencentcloud.com/zh/document/product/1300/80423" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-inception" data-deal="inception" data-cat="大模型 API"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="inception mercury 扩散语言模型 1亿 100m 免费 tokens api 高速生成">
+            <div class="badges"><span class="badge cat">大模型 API</span><span class="badge verified">已核实</span></div>
+            <h3>Inception Mercury 新账号 1 亿免费 Tokens（免填付款信息)</h3>
+            <p class="intro">Inception Labs 自研扩散式语言模型 Mercury 系列官方 API 平台，主打高速生成，OpenAI 兼容接口。</p>
+            <div class="quota"><span class="q-label">免费额度</span>每个新账号一次性 <b>100M（1 亿）免费 tokens</b>，全模型共享，无需填写付款信息；免费档限速 1,000 请求/分钟、100 万输入 tokens/分钟、10 万输出 tokens/分钟。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>邮箱/Google 注册 Inception Platform 账号，创建 API Key 即用；仅限其自家平台，第三方渠道不含此赠送。</dd></div>
+              <div><dt>适用地区</dt><dd>海外（需海外网络）</dd></div>
+              <div><dt>成本</dt><dd>¥0（额度内）；用完须补付款信息转按量付费</dd></div>
+              <div><dt>风险</dt><dd class="risk">一次性额度、不续发；仅支持文本输入；Mercury 2/2.5 已对新用户退役，现行主力 Mercury 3；额度有效期官方未写。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/inception-mercury-100m-free-tokens/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://docs.inceptionlabs.ai/get-started" target="_blank" rel="noopener">docs.inceptionlabs.ai/get-started</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://docs.inceptionlabs.ai/get-started" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-workers-ai" data-deal="workers-ai" data-cat="云服务"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="cloudflare workers ai neurons 10000 每天 免费 推理 云服务 边缘">
+            <div class="badges"><span class="badge cat">云服务</span><span class="badge verified">已核实</span></div>
+            <h3>Cloudflare Workers AI 每日 10,000 Neurons 免费推理</h3>
+            <p class="intro">Cloudflare 边缘 AI 推理服务，Workers 免费/付费计划内均含每日免费推理额度，Neurons 为统一算力计费单位。</p>
+            <div class="quota"><span class="q-label">免费额度</span>每账号<b>每天 10,000 Neurons 免费</b>，全模型共享，每日 00:00 UTC 重置；超出后 Free 计划直接报错，Paid 计划按 $0.011/1,000 Neurons 计费。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>注册 Cloudflare 账号即可，无需信用卡。</dd></div>
+              <div><dt>适用地区</dt><dd>海外（需海外网络）</dd></div>
+              <div><dt>成本</dt><dd>¥0（每日免费额度内）</dd></div>
+              <div><dt>风险</dt><dd class="risk">10,000 Neurons 是算力池而非 token 数，大模型消耗极快、实际可用量远小于直觉；额度不结转。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/cloudflare-workers-ai-free-neurons/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://developers.cloudflare.com/workers-ai/platform/pricing/" target="_blank" rel="noopener">Cloudflare Workers AI 定价文档</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://developers.cloudflare.com/workers-ai/platform/pricing/" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-azure-students" data-deal="azure-students" data-cat="云服务"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="azure for students 微软 学生 100美元 额度 免信用卡 云服务 microsoft">
+            <div class="badges"><span class="badge cat">云服务</span><span class="badge verified">已核实</span></div>
+            <h3>Azure for Students（$100 额度 + 常驻免费服务，免信用卡)</h3>
+            <p class="intro">微软面向在校学生的 Azure 免费计划，免信用卡，给一笔云额度加一批常驻免费服务。</p>
+            <div class="quota"><span class="q-label">免费额度</span><b>$100 Azure 额度</b>（12 个月内使用）+ 20 多项热门服务 12 个月免费月度量 + 65 项以上常驻免费服务的每月免费用量；学生身份保持期间可逐年续订。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>年满 18 岁、全日制在校大学生，学校邮箱验证学术身份；每人限一份；仅限新 Azure 客户享免费月度量。</dd></div>
+              <div><dt>适用地区</dt><dd>海外（国家/地区与学校资格以注册页为准）</dd></div>
+              <div><dt>成本</dt><dd>¥0、无需信用卡；$100 不能用于 Azure Marketplace 商品</dd></div>
+              <div><dt>风险</dt><dd class="risk">激活名额有限、官方可随时终止该 offer；非学生不可用；国内访问可能需稳定海外网络。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">$100 额度为开通后 12 个月（offer 结束日未公布）</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/azure-for-students-100-credit/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://azure.microsoft.com/en-in/free/students" target="_blank" rel="noopener">azure.microsoft.com/en-in/free/students</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://azure.microsoft.com/en-in/free/students" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-tingwu" data-deal="tingwu" data-cat="AI 应用试用"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="通义听悟 阿里云 音视频 转写 实时记录 90天 免费试用 ai 应用">
+            <div class="badges"><span class="badge cat">AI 应用试用</span><span class="badge verified">已核实</span></div>
+            <h3>通义听悟免费试用 90 天（实时记录每天 48 小时 + 文件转写每天 2 小时)</h3>
+            <p class="intro">阿里云音视频内容理解助手，实时记录、文件转写、说话人分离与摘要纪要；本条为阿里云服务侧免费试用口径。</p>
+            <div class="quota"><span class="q-label">免费额度</span>新开通用户<b>免费试用 90 天</b>：实时记录每天 48 小时（并发 2 路）、音视频文件转写每天 2 小时（并发 1 路），当日用完等 24 小时恢复。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>阿里云账号（国内手机号），控制台开通服务时选择「试用」。</dd></div>
+              <div><dt>适用地区</dt><dd>国内直连</dd></div>
+              <div><dt>成本</dt><dd>¥0（试用期内）；期后转后付费按时长计费</dd></div>
+              <div><dt>风险</dt><dd class="risk">此为服务开通试用口径，与网页版/App 个人免费额度是两回事（网页版月度额度官方未公布明文数字）；90 天后个人版长期政策官方未明确。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">开通后 90 天（试用期）</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/tongyi-tingwu/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://help.aliyun.com/zh/tingwu/pricing-and-billing-rules" target="_blank" rel="noopener">阿里云听悟计费文档</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://help.aliyun.com/zh/tingwu/pricing-and-billing-rules" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-coze" data-deal="coze" data-cat="AI 应用试用"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="扣子 coze 字节跳动 智能体 每日 1500 积分 免费版 ai 应用 国内版">
+            <div class="badges"><span class="badge cat">AI 应用试用</span><span class="badge verified">已核实</span></div>
+            <h3>扣子 Coze（国内版）免费版每日 1,500 积分</h3>
+            <p class="intro">字节跳动 AI 智能体/应用搭建平台国内版（coze.cn），免费版靠每日登录积分体验；与海外版账号体系不互通。</p>
+            <div class="quota"><span class="q-label">免费额度</span>个人免费版每日登录发放 <b>1,500 积分</b>（有效期 1 天）；新用户注册一次性 60 积分（30 天有效）——已按官方现行《积分》页口径，来源站所称 5,000 积分是旧口径、不采用。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>国内手机号注册 coze.cn，个人免费版每日登录领取。</dd></div>
+              <div><dt>适用地区</dt><dd>国内直连（仅国内版）</dd></div>
+              <div><dt>成本</dt><dd>¥0（免费版）；积分为 0 后服务停止，付费版 39.9 元/月起</dd></div>
+              <div><dt>风险</dt><dd class="risk">官方已公告 2026-11-13 起个人版付费档价格/积分调整，免费档每日 1,500 以当期文档为准。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">每日积分当日有效；新用户一次性积分 30 天</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/coze-cn/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://docs.coze.cn/coze_pro_credits" target="_blank" rel="noopener">扣子官方积分文档</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://docs.coze.cn/coze_pro_credits" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-kaggle" data-deal="kaggle" data-cat="免费算力"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="kaggle gpu 免费 每周 30小时 t4 tpu 笔记本 训练 算力">
+            <div class="badges"><span class="badge cat">免费算力</span><span class="badge unverified">部分未核实</span><span class="badge verified">已核实</span></div>
+            <h3>Kaggle 免费 GPU（每周 30 小时双 T4，不用绑卡)</h3>
+            <p class="intro">Kaggle 笔记本环境免费提供 GPU/TPU 加速器，按周发放配额，适合学习与中小规模训练。</p>
+            <div class="quota"><span class="q-label">免费额度</span>GPU <b>每周 30 小时</b>（官方口径「30 小时或更高」，含双 T4 等，单会话最长 12 小时），配额每周重置；免费 TPU v3-8 可用（单会话最长 9 小时），TPU 周配额数字未核实。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>注册 Kaggle 账号，启用 GPU 前完成手机号验证；免绑卡。</dd></div>
+              <div><dt>适用地区</dt><dd>全球（需可接收验证短信的手机号）</dd></div>
+              <div><dt>成本</dt><dd>免费，无需绑卡</dd></div>
+              <div><dt>风险</dt><dd class="risk">高峰期要排队；配额为浮动口径，以账号设置页显示为准；TPU「每周 20 小时」未核实（官方 TPU 文档页抓取失败，仅第三方转述）。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://jidan.si/c/credit" target="_blank" rel="noopener">赛博鸡蛋 · 免费额度列表</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://www.kaggle.com/docs/efficient-gpu-usage" target="_blank" rel="noopener">Kaggle GPU 使用文档</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://www.kaggle.com/docs/efficient-gpu-usage" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-aistudio" data-deal="aistudio" data-cat="免费算力"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="百度 飞桨 aistudio paddlepaddle gpu v100 每日 算力卡 免费算力">
+            <div class="badges"><span class="badge cat">免费算力</span><span class="badge verified">已核实</span></div>
+            <h3>百度飞桨 AI Studio 每日免费 GPU（8 点算力卡 / 天，V100)</h3>
+            <p class="intro">Notebook 形态云端 GPU，每日运行项目自动发放算力卡，主力卡型 V100。</p>
+            <div class="quota"><span class="q-label">免费额度</span>每日送 <b>8 点算力卡</b>（1 点 = V100 16GB×2 小时或 V100 32GB×1 小时，即每天约 16 小时 V100 16GB）；新手任务另送 100 点（一次性）。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>注册百度账号（国内手机号）；每日启动/运行项目自动发放。</dd></div>
+              <div><dt>适用地区</dt><dd>中国大陆</dd></div>
+              <div><dt>成本</dt><dd>免费</dd></div>
+              <div><dt>风险</dt><dd class="risk">官方帮助文档未标更新日期，卡型近年有变动，实际可选规格以环境启动页为准；每日算力点有效时长官方未写明，以个人中心显示为准。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/baidu-aistudio-daily-gpu/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://aistudio.baidu.com/" target="_blank" rel="noopener">aistudio.baidu.com</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://aistudio.baidu.com/" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-daytona" data-deal="daytona" data-cat="免费算力"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="daytona 沙箱 sandbox 200美元 算力额度 agent 云端 免费算力">
+            <div class="badges"><span class="badge cat">免费算力</span><span class="badge verified">已核实</span></div>
+            <h3>Daytona 新用户 $200 算力额度（AI 沙箱，免绑卡)</h3>
+            <p class="intro">面向 AI Agent 的云端代码沙箱平台，按秒计费，新账号赠送一次性算力额度。</p>
+            <div class="quota"><span class="q-label">免费额度</span>新用户 <b>$200 一次性免费算力额度</b>（官方定价页原文，免信用卡）；邮箱验证后 Tier 1 上限 10 vCPU / 10GiB 内存 / 30GiB 磁盘。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>注册账号、邮箱验证解锁 Tier 1；免绑卡。</dd></div>
+              <div><dt>适用地区</dt><dd>全球</dd></div>
+              <div><dt>成本</dt><dd>免费额度内 0 元；按预留资源秒计费，额度用完转付费</dd></div>
+              <div><dt>风险</dt><dd class="risk">免费额度不能用于 GPU 沙箱（官方 Billing 文档原文）；按预留而非实际用量计费，闲置沙箱也持续消耗额度。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布（以账户 Wallet 显示为准）</dd></div>
+              <div><dt>来源</dt><dd><a href="https://jidan.si/c/credit" target="_blank" rel="noopener">赛博鸡蛋 · 免费额度列表</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://www.daytona.com/pricing" target="_blank" rel="noopener">daytona.com/pricing</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://www.daytona.com/pricing" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-copilot" data-deal="copilot" data-cat="开发工具"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="github copilot free 代码补全 2000次 对话 agent 开发工具 vscode">
+            <div class="badges"><span class="badge cat">开发工具</span><span class="badge unverified">部分未核实</span><span class="badge verified">已核实</span></div>
+            <h3>GitHub Copilot Free（每月 2,000 次补全，对话次数未核实)</h3>
+            <p class="intro">GitHub 官方 AI 编程助手免费层，VS Code 等编辑器内代码补全与有限的对话/Agent 用量。</p>
+            <div class="quota"><span class="q-label">免费额度</span>代码补全<b>每月 2,000 次</b>（官方套餐页已核实）；对话/Agent 用量官方现行页面仅写「有限（Limited）」、按 AI Credits 计量——来源站「50 次/月」是旧口径、现行官方页已无此数字，卡面对话次数写「未核实」。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>GitHub 个人账号即可开通；免绑卡。</dd></div>
+              <div><dt>适用地区</dt><dd>全球</dd></div>
+              <div><dt>成本</dt><dd>免费</dd></div>
+              <div><dt>风险</dt><dd class="risk">对话额度无公开固定数字，实际可用量以产品内显示为准，不要按旧口径理解。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://baipiaoji.com/limits.json" target="_blank" rel="noopener">白嫖计 limits.json</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener">github.com/features/copilot/plans</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://github.com/features/copilot/plans" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-gemini-cli" data-deal="gemini-cli" data-cat="开发工具"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="gemini cli google 终端 编程 agent 1000次 每天 免费 开发工具">
+            <div class="badges"><span class="badge cat">开发工具</span><span class="badge verified">已核实</span></div>
+            <h3>Gemini CLI 个人账号每天 1,000 次免费请求</h3>
+            <p class="intro">Google 开源终端 AI 编程 Agent，个人 Google 账号登录即享高额免费请求配额。</p>
+            <div class="quota"><span class="q-label">免费额度</span>个人 Google 账号 <b>60 次请求/分钟、1,000 次请求/天</b>（官方 Code Assist 配额页口径）；未付费 API Key 方式仅 250 次/天且限 Flash 模型。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>安装 Gemini CLI 后用个人 Google 账号登录；免绑卡。</dd></div>
+              <div><dt>适用地区</dt><dd>Code Assist 个人版支持的国家/地区（中国大陆不在官方支持区，直连不可用）</dd></div>
+              <div><dt>成本</dt><dd>免费</dd></div>
+              <div><dt>风险</dt><dd class="risk">按「模型请求」计次，一次 Agent 任务可消耗多次请求；免费层可用模型范围有过收紧记录，以官方公告为准。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/offers.md" target="_blank" rel="noopener">懒猫 AI · 免费额度全量表</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://developers.google.com/gemini-code-assist/resources/quotas" target="_blank" rel="noopener">Gemini Code Assist 配额文档</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://developers.google.com/gemini-code-assist/resources/quotas" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-upstash-box" data-deal="upstash-box" data-cat="云服务"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="upstash box 沙箱 agent 免费层 并发 cpu 云服务">
+            <div class="badges"><span class="badge cat">云服务</span><span class="badge verified">已核实</span></div>
+            <h3>Upstash Box 免费层（每月 5 小时活跃 CPU，10 个并发沙箱)</h3>
+            <p class="intro">Upstash 的 Agent 沙箱云服务（跑在 AWS 美东），模型用量走用户自己的服务商 Key。</p>
+            <div class="quota"><span class="q-label">免费额度</span>Free 层 $0：最多 <b>10 个并发 Box、每月 5 小时活跃 CPU 时间</b>、单 Box 2 vCPU / 4GB 内存、10GB 存储；闲置 Box 自动冻结省额度。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>注册 Upstash 账号即可；免绑卡。</dd></div>
+              <div><dt>适用地区</dt><dd>全球（运行于 AWS us-east-1）</dd></div>
+              <div><dt>成本</dt><dd>免费；大模型费用由自己的模型 Key 承担，Upstash 不含模型额度</dd></div>
+              <div><dt>风险</dt><dd class="risk">5 小时/月活跃 CPU 很少，适合轻量试用；超出需升付费层。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://jidan.si/c/credit" target="_blank" rel="noopener">赛博鸡蛋 · 免费额度列表</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://upstash.com/pricing/box" target="_blank" rel="noopener">upstash.com/pricing/box</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://upstash.com/pricing/box" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-openrouter-free" data-deal="openrouter-free" data-cat="大模型 API"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="openrouter free 免费模型 限速 50次 1000次 大模型 api">
+            <div class="badges"><span class="badge cat">大模型 API</span><span class="badge verified">已核实</span></div>
+            <h3>OpenRouter :free 免费模型（按充值历史分档限速)</h3>
+            <p class="intro">OpenRouter 上模型 ID 以 :free 结尾的免费变体集合，价格 $0，通用免费模型入口。与 Crouton Alpha 是两条，不要混为一条。</p>
+            <div class="quota"><span class="q-label">免费额度</span>限速按账号历史充值分档：充值 &lt;10 美元 → 20 次/分钟、<b>50 次/天</b>；≥10 美元 → 20 次/分钟、<b>1,000 次/天</b>。:free 模型数量随上下架浮动，不写固定个数。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>注册账号、建 API Key 即可用最低档，免绑卡；升到 1,000 次/天需一次性购满约 10 美元额度（非订阅）。</dd></div>
+              <div><dt>适用地区</dt><dd>全球</dd></div>
+              <div><dt>成本</dt><dd>免费档 0 元；可选一次性小额充值提档</dd></div>
+              <div><dt>风险</dt><dd class="risk">账号余额为负会停用免费模型；免费模型数据政策不一，敏感内容慎入；高峰期易触发上游限流 429。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/offers.md" target="_blank" rel="noopener">懒猫 AI · 免费额度全量表</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://openrouter.ai/docs/api/reference/limits" target="_blank" rel="noopener">OpenRouter 限速文档</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://openrouter.ai/docs/api/reference/limits" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
+
+          <article class="card" id="deal-mistral" data-deal="mistral" data-cat="大模型 API"
+            data-expiry="" data-verified="2026-11-12"
+            data-search="mistral free mode 免费层 experiment api 额度未核实 大模型">
+            <div class="badges"><span class="badge cat">大模型 API</span><span class="badge unverified">额度未核实</span><span class="badge verified">已核实</span></div>
+            <h3>Mistral 免费层 Free mode（额度未核实)</h3>
+            <p class="intro">Mistral 官方 API 平台免费使用模式（原 Experiment 计划，现称 Free mode），注册即可调用 Mistral 模型。</p>
+            <div class="quota"><span class="q-label">免费额度</span><b>未核实：官方未公布，仅账号内可见</b>——免费层存在且免绑卡、默认开启已由官方确认，但具体限速与月度总量官方已不公开数字，仅在各账号 Admin Limits 页内显示；来源站旧数字（约 1 请求/秒、约 10 亿 tokens/月）无现行官方依据。</div>
+            <dl class="fields">
+              <div><dt>领取条件</dt><dd>注册 Mistral 账号即可，Free mode 默认开启；免绑卡。</dd></div>
+              <div><dt>适用地区</dt><dd>全球</dd></div>
+              <div><dt>成本</dt><dd>免费；免费模式数据使用政策与付费层不同，敏感数据慎入</dd></div>
+              <div><dt>风险</dt><dd class="risk">额度数字以登录后 Admin Limits 页实际显示为准；政策近年改名调整过（Experiment → Free mode），随时可能再变。</dd></div>
+              <div><dt>到期时间</dt><dd class="expiry">未公布</dd></div>
+              <div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/offers.md" target="_blank" rel="noopener">懒猫 AI · 免费额度全量表</a></dd></div>
+              <div><dt>官方入口</dt><dd><a href="https://mistral.ai/pricing" target="_blank" rel="noopener">mistral.ai/pricing</a></dd></div>
+            </dl>
+            <div class="card-foot">
+              <a class="btn" href="https://mistral.ai/pricing" target="_blank" rel="noopener">去官方领取</a>
+              <span class="verified-on">最后核实 2026-11-12</span>
+            </div>
+          </article>
         </div>
 
-        <div class="no-result" id="noResult">当前筛选下没有已核实的情报。换个关键词，或看看下方待收录的分类。</div>
+        <div class="no-result" id="noResult">当前筛选下没有已核实的情报。换个关键词试试。</div>
 
-        <div class="empty-grid" id="emptyGrid" aria-label="待收录分类">
-          <div class="empty-box" data-empty-cat="AI 应用试用"><b>AI 应用试用</b>待按四站顺序收录——第一版暂无经核实条目，不编造填充。</div>
-          <div class="empty-box" data-empty-cat="云服务"><b>云服务</b>待按四站顺序收录——第一版暂无经核实条目，不编造填充。</div>
-          <div class="empty-box" data-empty-cat="免费算力"><b>免费算力</b>待按四站顺序收录——第一版暂无经核实条目，不编造填充。</div>
-        </div>
       </section>
 
       <!-- ============ 评分规划与自动复查 ============ -->
@@ -436,7 +784,7 @@
           <div class="panel" style="margin-top:0">
             <h2>每日自动复查（已开启）</h2>
             <ul class="tight">
-              <li><b>每天约 09:12（北京时间）自动复查一次</b>，首次运行 2026-11-13。每次按指定顺序回查四个来源站（懒猫 AI、AIHot、赛博鸡蛋、白嫖计）与三条已收录条目对应的厂商官方页，比对额度、领取条件、到期时间、在架状态与官方口径；<b>有冲突时以厂商官方页为准</b>。</li>
+              <li><b>每天约 09:12（北京时间）自动复查一次</b>，首次运行 2026-11-13。每次按指定顺序回查四个来源站（懒猫 AI、AIHot、赛博鸡蛋、白嫖计）与全部已收录条目对应的厂商官方页，比对额度、领取条件、到期时间、在架状态与官方口径；<b>有冲突时以厂商官方页为准</b>。</li>
               <li><b>有变化才动看板</b>：发现额度、条件、到期或状态变化，会自动更新对应卡片并刷新该条「最后核实日期」，同时在聊天里发通知——写清旧值 → 新值并附依据链接。</li>
               <li><b>新线索不自动上架</b>：复查时顺带扫描四站的新条目，经厂商官方页核实通过的作为「新候选」在聊天里通知你，等你点头才收录；找不到官方依据的标「未核实」，不收录。</li>
               <li><b>到期提醒两次</b>：条目进入到期前 7 天、到期前 1 天各提醒一次（七牛云 Conatus 到期 2026-11-30 23:59，7 天提醒约在 11-23 发出）。无变化时不通知、不改版。</li>
@@ -459,7 +807,6 @@
         var cardsWrap = document.getElementById('cards');
         var cards = Array.prototype.slice.call(cardsWrap.querySelectorAll('.card'));
         var spots = Array.prototype.slice.call(document.querySelectorAll('.spotlight'));
-        var emptyBoxes = Array.prototype.slice.call(document.querySelectorAll('[data-empty-cat]'));
         var noResult = document.getElementById('noResult');
         var resultLine = document.getElementById('resultLine');
         var activeCat = 'all';
@@ -500,15 +847,10 @@
           document.getElementById('sec-soon').hidden = spots.every(function (s) {
             return s.getAttribute('data-deal') !== 'conatus' || s.hidden;
           });
-          emptyBoxes.forEach(function (b) {
-            var cat = b.getAttribute('data-empty-cat');
-            b.hidden = !(activeCat === 'all' || activeCat === cat) || !!text;
-          });
-          document.getElementById('emptyGrid').hidden = emptyBoxes.every(function (b) { return b.hidden; });
           noResult.classList.toggle('show', visibleCards === 0);
           resultLine.textContent = (activeCat === 'all' && !text)
-            ? '显示全部 3 条情报'
-            : '当前筛选下显示 ' + visibleCards + ' 条情报（共 3 条）';
+            ? '显示全部 19 条情报'
+            : '当前筛选下显示 ' + visibleCards + ' 条情报（共 19 条）';
         }
 
         chips.forEach(function (chip) {
