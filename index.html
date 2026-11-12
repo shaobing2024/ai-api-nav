@@ -1,46 +1,76 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="data:," />
     <title>小马博客｜全球羊毛情报中心</title>
+    <script>
+      // 主题初始化（渲染前执行，避免闪烁）：无记录默认浅色
+      (function () {
+        var t = 'light';
+        try {
+          var saved = localStorage.getItem('gd-theme');
+          if (saved === 'dark' || saved === 'light') t = saved;
+        } catch (e) {}
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
     <style>
       button, [role="button"], select, summary, input:not([type="checkbox"], [type="radio"]) { min-height: 2.25rem; }
     </style>
     <style>
       :root {
+        color-scheme: light;
         --bg: #ffffff;
-        --ink: #1c2420;
-        --ink-2: #4c5851;
-        --ink-3: #828d86;
-        --line: #e4e8e4;
-        --accent: #0b6e4f;
-        --accent-ink: #ffffff;
-        --soft: #f6f8f6;
+        --card: #f7f8f7;
+        --card-hover: #f1f4f1;
+        --ink: #17211b;
+        --ink-2: #47554c;
+        --ink-3: #7d8a80;
+        --line: #e1e7e1;
+        --accent: #0d9d63;
+        --accent-strong: #0b7a4d;
+        --accent-soft: #e3f5ec;
+        --go-bg: #0d9d63;
+        --go-ink: #ffffff;
+        --chip-bg: #eef1ee;
+        --chip-ink: #47554c;
+        --chip-on-bg: #17211b;
+        --chip-on-ink: #ffffff;
+        --pill-bg: #eef1ee;
         --amber: #96650a;
         --amber-soft: #faf3e0;
         --red: #b3261e;
         --red-soft: #fbeae8;
+        --shadow: 0 1px 2px rgba(20, 40, 28, .05);
         --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
         --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
       }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #10140f;
-          --ink: #e8ede9;
-          --ink-2: #aebbb2;
-          --ink-3: #7e8c83;
-          --line: #27302a;
-          --accent: #2fae7d;
-          --accent-ink: #0a140e;
-          --soft: #171d18;
-          --amber: #dfa83c;
-          --amber-soft: #33290f;
-          --red: #ef8a83;
-          --red-soft: #381713;
-        }
+      [data-theme="dark"] {
+        color-scheme: dark;
+        --bg: #0b0f0e;
+        --card: #131917;
+        --card-hover: #182019;
+        --ink: #edf3ef;
+        --ink-2: #a7b5ab;
+        --ink-3: #71806f;
+        --line: #22302a;
+        --accent: #2fbf71;
+        --accent-strong: #2fbf71;
+        --accent-soft: #123626;
+        --go-bg: #f2f5f2;
+        --go-ink: #10160f;
+        --chip-bg: #182019;
+        --chip-ink: #a7b5ab;
+        --chip-on-bg: #f2f5f2;
+        --chip-on-ink: #10160f;
+        --pill-bg: #1a2420;
+        --amber: #dfa83c;
+        --amber-soft: #33290f;
+        --red: #ef8a83;
+        --red-soft: #381713;
+        --shadow: none;
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
@@ -52,96 +82,147 @@
         font-size: 15px;
         line-height: 1.65;
         -webkit-font-smoothing: antialiased;
+        transition: background-color .2s ease, color .2s ease;
       }
-      a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
-      .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px 56px; }
+      a { color: var(--accent-strong); text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+      .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px 56px; }
 
-      /* ---------- 页眉 ---------- */
-      header { padding: 40px 0 0; }
-      h1 { margin: 0; font-size: 22px; font-weight: 700; line-height: 1.35; letter-spacing: .01em; }
-      .meta-line { margin: 6px 0 0; font-size: 13px; color: var(--ink-3); }
+      /* ---------- 顶部栏 ---------- */
+      .topbar {
+        display: flex; align-items: center; gap: 14px;
+        padding: 14px 0 12px; border-bottom: 1px solid var(--line);
+      }
+      .brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; color: var(--ink); white-space: nowrap; }
+      .brand .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--accent); display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 800; flex: 0 0 auto; }
+      .topbar-note { margin-left: auto; font-size: 12.5px; color: var(--ink-3); text-align: right; }
+      .theme-btn {
+        flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px;
+        font-family: inherit; font-size: 13.5px; font-weight: 700; cursor: pointer;
+        padding: 7px 16px; border-radius: 999px; min-height: 2.25rem;
+        border: 1px solid var(--accent); background: var(--accent); color: #fff;
+      }
+      [data-theme="dark"] .theme-btn { color: #0a140e; }
+      .theme-btn:hover { opacity: .9; }
+
+      /* ---------- Hero ---------- */
+      .hero { display: flex; gap: 24px; align-items: flex-start; padding: 34px 0 6px; }
+      .hero-main { flex: 1 1 auto; min-width: 0; }
+      .eyebrow { margin: 0 0 8px; font-size: 12.5px; font-weight: 700; letter-spacing: .14em; color: var(--accent-strong); }
+      .eyebrow::before { content: "●"; margin-right: 7px; font-size: 10px; vertical-align: 1px; }
+      h1 { margin: 0; font-size: 34px; font-weight: 800; line-height: 1.25; letter-spacing: .01em; }
+      .hero-sub { margin: 12px 0 0; font-size: 14.5px; color: var(--ink-2); max-width: 620px; }
+      .hero-card {
+        flex: 0 0 268px; border: 1px solid var(--line); border-radius: 14px;
+        background: var(--card); padding: 14px 16px; font-size: 13px; color: var(--ink-2);
+      }
+      .hero-card .hc-title { font-weight: 700; color: var(--ink); font-size: 13.5px; margin: 0 0 4px; }
+      .hero-card p { margin: 0; }
+      .hero-card .mono { font-family: var(--mono); }
+
+      /* ---------- 统计条 ---------- */
+      .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 26px; }
+      .stat { border: 1px solid var(--line); border-radius: 14px; background: var(--card); padding: 16px 18px 13px; box-shadow: var(--shadow); }
+      .stat .num { font-size: 30px; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+      .stat .num.date { font-size: 23px; padding-top: 5px; font-family: var(--mono); letter-spacing: -.01em; }
+      .stat .lbl { margin-top: 5px; font-size: 12.5px; color: var(--ink-3); line-height: 1.5; }
 
       /* ---------- 控件 ---------- */
-      .controls { margin-top: 22px; }
+      .controls { margin-top: 26px; }
       .search-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-      .search-box { flex: 1 1 240px; }
+      .search-box { flex: 1 1 280px; }
       .search-box input {
-        width: 100%; padding: 8px 14px; font-size: 15px; font-family: inherit;
-        border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink);
+        width: 100%; padding: 10px 16px; font-size: 15px; font-family: inherit;
+        border: 1px solid var(--line); border-radius: 999px; background: var(--card); color: var(--ink);
       }
+      .search-box input::placeholder { color: var(--ink-3); }
       .search-box input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
       .sort-box { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink-3); }
       .sort-box select {
-        min-height: 2rem; padding: 4px 8px; font-size: 13px; font-family: inherit;
-        border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink-2);
+        min-height: 2.25rem; padding: 6px 10px; font-size: 13.5px; font-family: inherit;
+        border: 1px solid var(--line); border-radius: 999px; background: var(--card); color: var(--ink-2);
       }
-      .chips { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 14px; }
+      .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
       .chip {
-        font-family: inherit; font-size: 14px; cursor: pointer; min-height: 2rem;
-        padding: 2px 0; border: none; background: none; color: var(--ink-3);
-        border-bottom: 2px solid transparent; border-radius: 0;
+        font-family: inherit; font-size: 13.5px; cursor: pointer; min-height: 2.25rem;
+        padding: 6px 15px; border: 1px solid transparent; border-radius: 999px;
+        background: var(--chip-bg); color: var(--chip-ink); font-weight: 600;
       }
+      .chip .cnt { font-weight: 400; opacity: .75; font-size: 12.5px; }
       .chip:hover { color: var(--ink); }
-      .chip[aria-pressed="true"] { color: var(--ink); font-weight: 700; border-bottom-color: var(--accent); }
-      .result-line { font-size: 12.5px; color: var(--ink-3); margin: 10px 0 0; }
+      .chip[aria-pressed="true"] { background: var(--chip-on-bg); color: var(--chip-on-ink); }
+      .chips-scope { margin-top: 10px; }
+      .chips-scope .chip { background: transparent; border-color: var(--line); font-size: 13px; min-height: 2rem; padding: 4px 13px; }
+      .chips-scope .chip[aria-pressed="true"] { background: var(--chip-on-bg); color: var(--chip-on-ink); border-color: var(--chip-on-bg); }
+      .result-line { font-size: 12.5px; color: var(--ink-3); margin: 14px 0 0; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 
-      /* ---------- 分组 ---------- */
-      section.group, section.top-group { margin-top: 34px; }
-      .group-title {
-        margin: 0; font-size: 15px; font-weight: 700; padding-bottom: 8px;
-        border-bottom: 1px solid var(--ink); display: flex; align-items: baseline; gap: 8px;
+      /* ---------- 卡片网格 ---------- */
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 14px; }
+      .card {
+        border: 1px solid var(--line); border-radius: 16px; background: var(--card);
+        padding: 18px 18px 16px; display: flex; flex-direction: column; box-shadow: var(--shadow);
       }
-      .group-title .group-count { font-size: 12.5px; font-weight: 400; color: var(--ink-3); }
-      .group-title .group-note { font-size: 12.5px; font-weight: 400; color: var(--ink-3); margin-left: auto; }
-
-      /* ---------- 清单行 ---------- */
-      .row { border-bottom: 1px solid var(--line); }
-      .row-main { display: flex; gap: 16px; align-items: flex-start; padding: 16px 0 14px; }
-      .row-text { flex: 1 1 auto; min-width: 0; }
-      .row h3 { margin: 0; font-size: 16px; font-weight: 700; line-height: 1.45; }
-      .row-sub { margin: 3px 0 0; font-size: 13px; color: var(--ink-2); }
-      .tags { white-space: nowrap; }
-      .tag {
-        display: inline-block; vertical-align: 2px; margin-left: 6px;
-        font-size: 11.5px; font-weight: 600; line-height: 1.5; padding: 0 6px; border-radius: 4px;
-        border: 1px solid var(--line); color: var(--ink-2); background: var(--soft);
+      .card:hover { background: var(--card-hover); }
+      .card-top { display: flex; gap: 11px; align-items: flex-start; }
+      .icon {
+        flex: 0 0 auto; width: 42px; height: 42px; border-radius: 11px;
+        display: inline-flex; align-items: center; justify-content: center;
+        font-size: 19px; font-weight: 800; color: #fff; line-height: 1;
       }
-      .tag-new { color: var(--accent); border-color: var(--accent); background: transparent; }
-      .tag-soon, .tag-unv { color: var(--amber); border-color: var(--amber); background: var(--amber-soft); }
-      .tag-ended, .tag-risk { color: var(--red); border-color: var(--red); background: var(--red-soft); }
-      .toggle {
-        font-family: inherit; font-size: 13px; cursor: pointer; color: var(--ink-3);
-        background: none; border: none; padding: 2px 0; min-height: 1.75rem; margin-top: 2px;
+      .card-head { flex: 1 1 auto; min-width: 0; }
+      .card-head h3 { margin: 1px 0 0; font-size: 15px; font-weight: 700; line-height: 1.45; }
+      .card-cat { margin: 2px 0 0; font-size: 12px; color: var(--ink-3); }
+      .badges { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+      .badge {
+        font-size: 11px; font-weight: 700; line-height: 1.5; padding: 1px 8px; border-radius: 999px;
+        color: var(--accent-strong); background: var(--accent-soft); white-space: nowrap;
       }
-      .toggle:hover { color: var(--accent); }
-      .toggle .chev { display: inline-block; transition: transform .15s ease; font-size: 15px; }
-      .toggle[aria-expanded="true"] .chev { transform: rotate(90deg); }
+      .badge-amber { color: var(--amber); background: var(--amber-soft); }
+      .badge-red { color: var(--red); background: var(--red-soft); }
+      .quota-big { margin: 14px 0 0; font-size: 21px; font-weight: 800; line-height: 1.35; letter-spacing: .01em; }
+      .intro {
+        margin: 7px 0 0; font-size: 13px; color: var(--ink-2); line-height: 1.6;
+        display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+      }
+      .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+      .pill { font-size: 11.5px; padding: 2px 9px; border-radius: 6px; background: var(--pill-bg); color: var(--ink-2); white-space: nowrap; }
+      .gate { margin: 10px 0 0; font-size: 12.5px; color: var(--ink-3); line-height: 1.55; }
+      .gate b { color: var(--ink-2); font-weight: 600; }
+      .card-foot {
+        margin-top: auto; padding-top: 14px; display: flex; align-items: flex-end; gap: 10px;
+      }
+      .foot-meta { flex: 1 1 auto; min-width: 0; font-size: 12px; color: var(--ink-3); line-height: 1.55; }
+      .foot-meta .exp { display: block; font-family: var(--mono); font-size: 12px; }
+      #cd-days { color: var(--amber); font-weight: 700; }
       .go {
-        flex: 0 0 auto; margin-top: 2px; display: inline-flex; align-items: center; gap: 3px;
-        min-height: 2.25rem; padding: 6px 18px; border-radius: 999px;
-        background: var(--accent); color: var(--accent-ink);
-        font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap;
+        flex: 0 0 auto; display: inline-flex; align-items: center; gap: 3px;
+        min-height: 2.25rem; padding: 7px 17px; border-radius: 999px;
+        background: var(--go-bg); color: var(--go-ink);
+        font-size: 13.5px; font-weight: 700; text-decoration: none; white-space: nowrap;
       }
       .go:hover { opacity: .88; }
-      .row.ended .go { background: transparent; color: var(--ink-2); border: 1px solid var(--line); }
+      .card.ended .go { background: transparent; color: var(--ink-2); border: 1px solid var(--line); }
+      .toggle {
+        align-self: flex-start; font-family: inherit; font-size: 12.5px; cursor: pointer; color: var(--ink-3);
+        background: none; border: none; padding: 2px 0; min-height: 1.75rem; margin-top: 10px;
+      }
+      .toggle:hover { color: var(--accent-strong); }
+      .toggle .chev { display: inline-block; transition: transform .15s ease; font-size: 14px; }
+      .toggle[aria-expanded="true"] .chev { transform: rotate(90deg); }
 
       /* ---------- 展开详情 ---------- */
-      .detail { padding: 2px 0 18px; font-size: 13.5px; }
+      .detail { padding: 12px 0 2px; font-size: 13.5px; border-top: 1px dashed var(--line); margin-top: 10px; }
       .d-intro { margin: 0 0 10px; color: var(--ink-2); }
-      .d-quota { background: var(--soft); border-radius: 8px; padding: 10px 14px; margin-bottom: 12px; }
+      .d-quota { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 12px; }
       .d-quota .d-label { display: block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; color: var(--ink-3); margin-bottom: 2px; }
       dl.d-fields { margin: 0; display: grid; gap: 7px; }
       dl.d-fields > div { display: grid; grid-template-columns: 68px 1fr; gap: 10px; }
       dl.d-fields dt { color: var(--ink-3); font-weight: 600; white-space: nowrap; }
       dl.d-fields dd { margin: 0; overflow-wrap: anywhere; }
-      .row.ended dl.d-fields dd.risk { color: var(--red); }
+      .card.ended dl.d-fields dd.risk { color: var(--red); }
       .d-verified { margin: 10px 0 0; font-size: 12.5px; color: var(--ink-3); font-family: var(--mono); }
       .expiry { font-family: var(--mono); font-size: 13px; }
-      #cd-days { color: var(--amber); font-weight: 600; }
 
-      .no-result {
-        display: none; padding: 26px 0; text-align: center; color: var(--ink-3); font-size: 14px;
-      }
+      .no-result { display: none; padding: 34px 0; text-align: center; color: var(--ink-3); font-size: 14px; }
       .no-result.show { display: block; }
 
       footer {
@@ -150,317 +231,449 @@
       }
       footer p { margin: 0; }
       [hidden] { display: none !important; }
-      @media (max-width: 560px) {
+
+      @media (max-width: 980px) {
+        .grid { grid-template-columns: repeat(2, 1fr); }
+        .stats { grid-template-columns: repeat(2, 1fr); }
+        .hero { flex-direction: column; }
+        .hero-card { flex: none; width: 100%; }
+      }
+      @media (max-width: 620px) {
         .wrap { padding: 0 16px 48px; }
-        header { padding-top: 28px; }
-        .go { padding: 6px 14px; }
+        .grid { grid-template-columns: 1fr; }
+        h1 { font-size: 27px; }
+        .topbar-note { display: none; }
+        .stats { gap: 10px; }
+        .stat .num { font-size: 25px; }
+        .stat .num.date { font-size: 19px; }
       }
     </style>
   </head>
   <body>
     <div class="wrap">
 
-      <header>
-        <h1>小马博客｜全球羊毛情报中心</h1>
-        <p class="meta-line">共 19 条 · 每天 09:12 自动复查更新 · 本版核实日期 2026-11-12</p>
+      <div class="topbar">
+        <span class="brand"><span class="dot" aria-hidden="true">额</span>免费额度雷达</span>
+        <span class="topbar-note">只认四站 + 厂商官方页 · 每天复查一次</span>
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="切换黑白主题"><span id="themeIcon" aria-hidden="true">🌙</span><span id="themeText">深色</span></button>
+      </div>
+
+      <header class="hero">
+        <div class="hero-main">
+          <p class="eyebrow">RADAR · 每日刷新</p>
+          <h1>小马博客｜全球羊毛情报中心</h1>
+          <p class="hero-sub">只订四家来源——懒猫 AI、AIHot、赛博鸡蛋、白嫖计的线索，再逐条到厂商官方页核实后才上架。什么时候核过、今日新上、即将到期都标在卡上，点进去就能领，不用自己到处翻。</p>
+        </div>
+        <aside class="hero-card">
+          <p class="hc-title">数据 · <span class="mono">2026-11-12</span></p>
+          <p>本版核实日期 2026-11-12；每天 <span class="mono">09:12</span> 自动复查来源与官方页，有变化才更新。</p>
+        </aside>
       </header>
+
+      <div class="stats" aria-label="情报概览">
+        <div class="stat"><div class="num" id="statTotal">19</div><div class="lbl">当前在架额度<br />过期自动下架</div></div>
+        <div class="stat"><div class="num" id="statNew">1</div><div class="lbl">今日新上<br />2026-11-12 核实上架</div></div>
+        <div class="stat"><div class="num date" id="statSoon">2026-11-30</div><div class="lbl">最近截止 · 七牛云 Conatus<br />限时免费到期日</div></div>
+        <div class="stat"><div class="num" id="statStanding">14</div><div class="lbl">常驻免费（到期未公布）</div></div>
+      </div>
 
       <div class="controls" role="search">
         <div class="search-row">
           <div class="search-box">
-            <input id="q" type="search" placeholder="搜索标题、简介、分类或关键词，如：Conatus / 编程 / 实名…" aria-label="按关键词搜索情报" />
+            <input id="q" type="search" placeholder="按平台、额度、用途搜——比如 Gemini、部署、视频…" aria-label="按关键词搜索情报" />
           </div>
           <label class="sort-box">排序
             <select id="sort" aria-label="条目排序方式">
-              <option value="expiry">按到期时间（近 → 远）</option>
+              <option value="expiry">按到期：近 → 远</option>
               <option value="verified">按核实日期（新 → 旧）</option>
             </select>
           </label>
         </div>
         <div class="chips" id="chips" role="group" aria-label="按分类筛选">
           <button class="chip" type="button" data-cat="all" aria-pressed="true">全部</button>
-          <button class="chip" type="button" data-cat="大模型 API" aria-pressed="false">大模型 API</button>
-          <button class="chip" type="button" data-cat="AI 应用试用" aria-pressed="false">AI 应用试用</button>
-          <button class="chip" type="button" data-cat="云服务" aria-pressed="false">云服务</button>
-          <button class="chip" type="button" data-cat="开发工具" aria-pressed="false">开发工具</button>
-          <button class="chip" type="button" data-cat="免费算力" aria-pressed="false">免费算力</button>
+          <button class="chip" type="button" data-cat="大模型 API" aria-pressed="false">大模型 API <span class="cnt">8</span></button>
+          <button class="chip" type="button" data-cat="AI 应用试用" aria-pressed="false">AI 应用试用 <span class="cnt">2</span></button>
+          <button class="chip" type="button" data-cat="云服务" aria-pressed="false">云服务 <span class="cnt">3</span></button>
+          <button class="chip" type="button" data-cat="开发工具" aria-pressed="false">开发工具 <span class="cnt">3</span></button>
+          <button class="chip" type="button" data-cat="免费算力" aria-pressed="false">免费算力 <span class="cnt">3</span></button>
         </div>
-        <p class="result-line" id="resultLine">显示全部 19 条情报</p>
+        <div class="chips chips-scope" id="scopeChips" role="group" aria-label="按记录范围筛选">
+          <button class="chip" type="button" data-scope="all" aria-pressed="true">全部记录</button>
+          <button class="chip" type="button" data-scope="new" aria-pressed="false">今日新上</button>
+          <button class="chip" type="button" data-scope="soon" aria-pressed="false">即将到期</button>
+        </div>
+        <p class="result-line"><span id="resultLine">显示全部 19 条情报</span><span>按到期时间排序</span></p>
       </div>
 
-      <section class="top-group" id="sec-new">
-        <h2 class="group-title">今日新上 <span class="group-note">2026-11-12 核实上架</span></h2>
-        <div class="rows">
-<article class="row" id="spot-zcode" data-deal="zcode" data-cat="开发工具" data-expiry="" data-verified="2026-11-12" data-search="zcode 智谱 bigmodel glm-5.3 glm 编程客户端 开发工具 新用户 5天 免费体验 agent 代码 z.ai">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>ZCode 新用户 5 天免费体验，GLM-5.3 每天 300 万 Token <span class="tags"><span class="tag tag-new">今日新上</span></span></h3>
-      <p class="row-sub">新用户 5 天内每天 800 万 Token（GLM-5.3 每天 300 万 + Flash 500 万）· 首次使用起算</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+      <main class="grid" id="grid">
+<article class="card" id="deal-conatus" data-deal="conatus" data-cat="大模型 API" data-scope="soon" data-expiry="2026-11-30T23:59:59+08:00" data-verified="2026-11-12" data-search="七牛云 conatus qiniu 限时免费模型 实名 每日 1亿 token 程序员节 大模型 api 融合模型 qiniu/conatus-free 工具调用 深度思考 图像理解">
+  <div class="card-top">
+    <span class="icon" style="background:#e8722a" aria-hidden="true">七</span>
+    <div class="card-head">
+      <h3>七牛云 Conatus 限时免费模型（实名用户每日 1 亿 Token，至 11 月 30 日）</h3>
+      <p class="card-cat">七牛云 · 大模型 API</p>
     </div>
-    <a class="go" href="https://zcode.z.ai/cn" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+    <span class="badges"><span class="badge badge-amber">2026-11-30 到期</span></span>
   </div>
-  <div class="detail" hidden><p class="d-intro">智谱官方编程客户端 ZCode，新用户连接 BigModel 账号后自动获得体验套餐，可在真实项目里跑 Agent。</p><div class="d-quota"><span class="d-label">免费额度</span>首次使用起 <b>5 天内，每天 800 万 Token</b>（GLM-5.3 每天 300 万 + GLM-5.3-Flash 每天 500 万），每日刷新。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>新用户；下载 ZCode 并连接 BigModel 账号后自动发放，无需付费；官方文档未提绑卡 / 实名。</dd></div><div><dt>适用地区</dt><dd>国内直连（BigModel）；Z.ai 海外通道同类体验官方未单列拆分数字。</dd></div><div><dt>成本</dt><dd>¥0</dd></div><div><dt>风险</dt><dd class="risk">仅 5 天、到期失效，并非长期每日额度；仅限 ZCode 客户端内体验，5 天后需订阅 GLM Coding Plan。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布（活动整体截止官方未公布；个人试用为首次使用起 5 天）</dd></div><div><dt>来源</dt><dd><a href="https://jidan.si/c/credit" target="_blank" rel="noopener">赛博鸡蛋 · 免费额度列表</a></dd></div><div><dt>官方入口</dt><dd><a href="https://zcode.z.ai/cn" target="_blank" rel="noopener">zcode.z.ai/cn</a> · 官方依据：<a href="https://zcode.z.ai/cn/docs/configuration" target="_blank" rel="noopener">ZCode 配置文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-        </div>
-      </section>
-
-      <section class="top-group" id="sec-soon">
-        <h2 class="group-title">即将到期 <span class="group-note">有明确截止日，赶在结束前用完</span></h2>
-        <div class="rows">
-<article class="row" id="spot-conatus" data-deal="conatus" data-cat="大模型 API" data-expiry="2026-11-30T23:59:59+08:00" data-verified="2026-11-12" data-search="七牛云 conatus qiniu 限时免费模型 实名 每日 1亿 token 程序员节 大模型 api 融合模型 qiniu/conatus-free 工具调用 深度思考 图像理解">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>七牛云 Conatus 限时免费模型（实名用户每日 1 亿 Token，至 11 月 30 日） <span class="tags"><span class="tag tag-soon">2026-11-30 到期</span></span></h3>
-      <p class="row-sub">实名用户每日 1 亿 Token，每日重置 · 2026-11-30 23:59 到期 · <span id="cd-days">倒计时计算中…</span></p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://www.qiniu.com/ai/free-models/conatus-2026" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
-  </div>
+  <p class="quota-big">每天 1 亿 Token 免费</p>
+  <p class="intro">1024 程序员节限时匿名融合模型（多个顶级模型组成，构成未公布），模型 ID qiniu/conatus-free，1M 上下文、128K 最大输出，支持工具调用、深度思考、图像理解、结构化输出，兼容 Completions 与 Messages 协议。</p>
+  <div class="pills"><span class="pill">大模型 API</span><span class="pill">真实免费</span><span class="pill">国内直连</span></div>
+  <p class="gate"><b>门槛：</b>登录七牛云并完成实名认证，控制台创建 API Key 后调用</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">1024 程序员节限时匿名融合模型（多个顶级模型组成，构成未公布），模型 ID <span style="font-family:var(--mono)">qiniu/conatus-free</span>，1M 上下文、128K 最大输出，支持工具调用、深度思考、图像理解、结构化输出，兼容 Completions 与 Messages 协议。</p><div class="d-quota"><span class="d-label">免费额度</span>已实名认证用户<b>每日 1 亿 Token</b>，每日 00:00（北京时间）重置、不结转，同一账号所有 API Key 共享，按输入+输出计量、缓存输入计入。另注：单笔大于 100 元且到账的充值可升至每日 10 亿——那是付费升档，与免费档分开看。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>登录七牛云并完成实名认证，控制台创建 API Key 后调用；未登录 / 未认证不发放。</dd></div><div><dt>适用地区</dt><dd>国内直连</dd></div><div><dt>成本</dt><dd>¥0（额度内）。额度用完直接拒绝请求，不扣余额 / 资源包 / 积分，不自动切换收费模型，本期不提供按量付费。</dd></div><div><dt>风险</dt><dd class="risk">2026-11-30 23:59 活动结束即停止调用，不要把生产流量压在上面；融合模型构成未公布，效果以实测为准。</dd></div><div><dt>到期时间</dt><dd class="expiry">2026-11-30 23:59（北京时间）</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/qiniu-conatus-free-daily-100m-tokens/" target="_blank" rel="noopener">懒猫 AI 详情页</a> · <a href="https://jidan.si/free/142-qiniu-conatus-free-model-100m-tokens-daily" target="_blank" rel="noopener">赛博鸡蛋详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://www.qiniu.com/ai/free-models/conatus-2026" target="_blank" rel="noopener">qiniu.com/ai/free-models/conatus-2026</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-        </div>
-      </section>
-
-      <main id="catalog">
-<section class="group" data-group="大模型 API">
-  <h2 class="group-title">大模型 API <span class="group-count">8 条</span></h2>
-  <div class="rows">
-<article class="row" id="deal-conatus" data-deal="conatus" data-cat="大模型 API" data-expiry="2026-11-30T23:59:59+08:00" data-verified="2026-11-12" data-search="七牛云 conatus qiniu 限时免费模型 实名 每日 1亿 token 程序员节 大模型 api 融合模型 qiniu/conatus-free 工具调用 深度思考 图像理解">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>七牛云 Conatus 限时免费模型（实名用户每日 1 亿 Token，至 11 月 30 日） <span class="tags"><span class="tag tag-soon">2026-11-30 到期</span></span></h3>
-      <p class="row-sub">实名用户每日 1 亿 Token，每日重置 · 2026-11-30 23:59 到期</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://www.qiniu.com/ai/free-models/conatus-2026" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">⏳ 2026-11-30 截止 · <span id="cd-days">倒计时计算中…</span></span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://www.qiniu.com/ai/free-models/conatus-2026" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
-  <div class="detail" hidden><p class="d-intro">1024 程序员节限时匿名融合模型（多个顶级模型组成，构成未公布），模型 ID <span style="font-family:var(--mono)">qiniu/conatus-free</span>，1M 上下文、128K 最大输出，支持工具调用、深度思考、图像理解、结构化输出，兼容 Completions 与 Messages 协议。</p><div class="d-quota"><span class="d-label">免费额度</span>已实名认证用户<b>每日 1 亿 Token</b>，每日 00:00（北京时间）重置、不结转，同一账号所有 API Key 共享，按输入+输出计量、缓存输入计入。另注：单笔大于 100 元且到账的充值可升至每日 10 亿——那是付费升档，与免费档分开看。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>登录七牛云并完成实名认证，控制台创建 API Key 后调用；未登录 / 未认证不发放。</dd></div><div><dt>适用地区</dt><dd>国内直连</dd></div><div><dt>成本</dt><dd>¥0（额度内）。额度用完直接拒绝请求，不扣余额 / 资源包 / 积分，不自动切换收费模型，本期不提供按量付费。</dd></div><div><dt>风险</dt><dd class="risk">2026-11-30 23:59 活动结束即停止调用，不要把生产流量压在上面；融合模型构成未公布，效果以实测为准。</dd></div><div><dt>到期时间</dt><dd class="expiry">2026-11-30 23:59（北京时间）</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/qiniu-conatus-free-daily-100m-tokens/" target="_blank" rel="noopener">懒猫 AI 详情页</a> · <a href="https://jidan.si/free/142-qiniu-conatus-free-model-100m-tokens-daily" target="_blank" rel="noopener">赛博鸡蛋详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://www.qiniu.com/ai/free-models/conatus-2026" target="_blank" rel="noopener">qiniu.com/ai/free-models/conatus-2026</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
 </article>
-<article class="row ended" id="deal-crouton" data-deal="crouton" data-cat="大模型 API" data-expiry="" data-verified="2026-11-12" data-search="openrouter crouton alpha 免费 隐身模型 stealth 大模型 api 编码 agent 多模态 muse ember meta 欧洲">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>OpenRouter Crouton Alpha 免费隐身模型（隐身期已结束） <span class="tags"><span class="tag tag-ended">隐身期已结束</span><span class="tag tag-risk">风险：高</span></span></h3>
-      <p class="row-sub">输入 / 输出 $0（隐身期口径），1M 上下文 · 隐身期已结束</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+<article class="card ended" id="deal-crouton" data-deal="crouton" data-cat="大模型 API" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="openrouter crouton alpha 免费 隐身模型 stealth 大模型 api 编码 agent 多模态 muse ember meta 欧洲">
+  <div class="card-top">
+    <span class="icon" style="background:#7c5cd6" aria-hidden="true">O</span>
+    <div class="card-head">
+      <h3>OpenRouter Crouton Alpha 免费隐身模型（隐身期已结束）</h3>
+      <p class="card-cat">OpenRouter · 大模型 API</p>
     </div>
-    <a class="go" href="https://openrouter.ai/stealth/crouton-alpha:free" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+    <span class="badges"><span class="badge badge-red">隐身期已结束</span><span class="badge badge-red">风险：高</span></span>
   </div>
+  <p class="quota-big">免费模型调用</p>
+  <p class="intro">轻量模型，面向可扩展编码、Agent 与多模态工作流，适合 Agent 子任务、工具调用与高频文档分析；1M 上下文。状态说明：2026-11-12 核实当天，OpenRouter 官方页已改口称该模型为 Meta Muse Ember 的早期版本、隐身期已结束，并引导改用 Muse Ember——本条保留作情报记录，不再按「可领的新羊毛」对待。</p>
+  <div class="pills"><span class="pill">大模型 API</span><span class="pill">真实免费</span><span class="pill">海外</span></div>
+  <p class="gate"><b>门槛：</b>注册 OpenRouter 账号并创建 API Key 后调用</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">轻量模型，面向可扩展编码、Agent 与多模态工作流，适合 Agent 子任务、工具调用与高频文档分析；1M 上下文。<strong>状态说明：</strong>2026-11-12 核实当天，OpenRouter 官方页已改口称该模型为 Meta Muse Ember 的早期版本、隐身期已结束，并引导改用 Muse Ember——本条保留作情报记录，不再按「可领的新羊毛」对待。</p><div class="d-quota"><span class="d-label">免费额度（隐身期口径）</span>输入 / 输出 <b>$0</b>，免费端点限速；上下文 1,048,576 Token，最大输出 943,718 Token；支持文本 / 图片 / 视频 / 文件 / 音频输入，文本输出；2026-11-03 上线，模型 ID <span style="font-family:var(--mono)">stealth/crouton-alpha</span>。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>注册 OpenRouter 账号并创建 API Key 后调用。</dd></div><div><dt>适用地区</dt><dd>海外；赛博鸡蛋注：欧洲 21 国不可用。</dd></div><div><dt>成本</dt><dd>$0</dd></div><div><dt>风险</dt><dd class="risk">高——匿名第三方提供方，提示词与生成内容可能被提供方保留（声明不用于训练），切勿传敏感数据；隐身模型可随时下线。且隐身期已于核实当日被官方宣布结束。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布（上线时未公布结束日；2026-11-12 官方页已称隐身期结束）</dd></div><div><dt>来源</dt><dd><a href="https://jidan.si/free/250-openrouter-crouton-alpha-free-unlimited" target="_blank" rel="noopener">赛博鸡蛋详情页</a> · <a href="https://aihot.news/free-tokens" target="_blank" rel="noopener">AIHot · Token 羊毛</a></dd></div><div><dt>官方页</dt><dd><a href="https://openrouter.ai/stealth/crouton-alpha:free" target="_blank" rel="noopener">openrouter.ai/stealth/crouton-alpha:free</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-siliconflow" data-deal="siliconflow" data-cat="大模型 API" data-expiry="" data-verified="2026-11-12" data-search="硅基流动 siliconflow 开源模型 免费 api qwen glm yi 新用户 14元 大模型 api 聚合">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>硅基流动 SiliconFlow（9B 及以下开源模型免费 + 新用户 14 元额度) <span class="tags"><span class="tag tag-unv">子项未核实</span></span></h3>
-      <p class="row-sub">9B 及以下开源模型免费 + 新用户 14 元额度</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://cloud.siliconflow.cn" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">隐身期已结束 · 仅作情报记录</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://openrouter.ai/stealth/crouton-alpha:free" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-siliconflow" data-deal="siliconflow" data-cat="大模型 API" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="硅基流动 siliconflow 开源模型 免费 api qwen glm yi 新用户 14元 大模型 api 聚合">
+  <div class="card-top">
+    <span class="icon" style="background:#4a6fd4" aria-hidden="true">硅</span>
+    <div class="card-head">
+      <h3>硅基流动 SiliconFlow（9B 及以下开源模型免费 + 新用户 14 元额度）</h3>
+      <p class="card-cat">硅基流动 · 大模型 API</p>
+    </div>
+    <span class="badges"><span class="badge badge-amber">子项未核实</span></span>
+  </div>
+  <p class="quota-big">9B 以下模型免费 + 14 元额度</p>
+  <p class="intro">国产大模型 API 聚合平台，一批 9B 及以下开源模型免费调用，另有新用户赠送额度，国内直连、OpenAI 兼容接口。</p>
+  <div class="pills"><span class="pill">大模型 API</span><span class="pill">真实免费</span><span class="pill">国内直连</span></div>
+  <p class="gate"><b>门槛：</b>国内手机号注册；赠送额度优先抵扣付费模型</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">国产大模型 API 聚合平台，一批 9B 及以下开源模型免费调用，另有新用户赠送额度，国内直连、OpenAI 兼容接口。</p><div class="d-quota"><span class="d-label">免费额度</span>免费模型列表（Qwen2-7B、GLM-4-9B-Chat、Yi-1.5-9B 等，官方表述「在不超过平台限速的条件下可免费使用」）；新用户注册即得 <b>14 元免费额度</b>（官方口径约合 2,000 万 Qwen1.5-14B Tokens）。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>国内手机号注册；赠送额度优先抵扣付费模型。</dd></div><div><dt>适用地区</dt><dd>国内直连</dd></div><div><dt>成本</dt><dd>¥0（免费模型与赠送额度内）；额度用完后按量计费，免费模型不占额度可继续用</dd></div><div><dt>风险</dt><dd class="risk">官方保留免费模型解释权、清单随资源调整；赠金为代金券形式、不可提现；「实名再领 16 元代金券」未核实（仅见于白嫖计转述，未能在官网公开页直核）。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/siliconflow/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://cloud.siliconflow.cn" target="_blank" rel="noopener">cloud.siliconflow.cn</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-bigmodel" data-deal="bigmodel" data-cat="大模型 API" data-expiry="" data-verified="2026-11-12" data-search="智谱 bigmodel glm-4.7-flash flash 免费 2000万 tokens 大模型 api 开放平台">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>智谱开放平台 BigModel（Flash 系列免费 + 新用户 2,000 万 Tokens)</h3>
-      <p class="row-sub">Flash 系列模型免费 + 新用户 2,000 万 Tokens</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://bigmodel.cn" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://cloud.siliconflow.cn" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-bigmodel" data-deal="bigmodel" data-cat="大模型 API" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="智谱 bigmodel glm-4.7-flash flash 免费 2000万 tokens 大模型 api 开放平台">
+  <div class="card-top">
+    <span class="icon" style="background:#3850c8" aria-hidden="true">智</span>
+    <div class="card-head">
+      <h3>智谱开放平台 BigModel（Flash 系列免费 + 新用户 2,000 万 Tokens）</h3>
+      <p class="card-cat">智谱 · 大模型 API</p>
+    </div>
+  </div>
+  <p class="quota-big">Flash 免费 + 2,000 万 Tokens</p>
+  <p class="intro">智谱 GLM 系列官方开放平台，Flash 系列模型在官方定价表标价为免费，新用户另有注册赠送。</p>
+  <div class="pills"><span class="pill">大模型 API</span><span class="pill">真实免费</span><span class="pill">国内直连</span></div>
+  <p class="gate"><b>门槛：</b>国内手机号注册；实名认证（领取赠送资源包以控制台为准）</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">智谱 GLM 系列官方开放平台，Flash 系列模型在官方定价表标价为免费，新用户另有注册赠送。</p><div class="d-quota"><span class="d-label">免费额度</span>GLM-4.7-Flash（200K 上下文）输入/输出/缓存命中均<b>免费</b>，GLM-4-Flash-250414、GLM-Z1-Flash、GLM-4.6V-Flash 等同为免费；新用户注册得 <b>2,000 万 Tokens</b>。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>国内手机号注册；实名认证（领取赠送资源包以控制台为准）。</dd></div><div><dt>适用地区</dt><dd>国内直连</dd></div><div><dt>成本</dt><dd>¥0（免费模型与赠送额度内）</dd></div><div><dt>风险</dt><dd class="risk">官方定价表标「免费」、未承诺永久，以当期定价页为准；免费型号会迭代替换（如 GLM-4.5-Flash 已下线自动路由至 GLM-4.7-Flash）；赠送 Tokens 有效期官方公开页未写明，以控制台资源包为准。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/bigmodel-glm/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://bigmodel.cn" target="_blank" rel="noopener">bigmodel.cn</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-tokenhub" data-deal="tokenhub" data-cat="大模型 API" data-expiry="2026-12-31T23:59:59+08:00" data-verified="2026-11-12" data-search="腾讯云 tokenhub 新人体验包 deepseek glm kimi minimax qwen 混元 每模型 100万 tokens 大模型 api">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>腾讯云 TokenHub 新人体验包（每模型 100 万 Tokens)</h3>
-      <p class="row-sub">每个模型 100 万 Tokens 体验包 · 领取活动至 2026-12-31</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://www.tencentcloud.com/zh/document/product/1300/80423" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://bigmodel.cn" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-tokenhub" data-deal="tokenhub" data-cat="大模型 API" data-scope="" data-expiry="2026-12-31T23:59:59+08:00" data-verified="2026-11-12" data-search="腾讯云 tokenhub 新人体验包 deepseek glm kimi minimax qwen 混元 每模型 100万 tokens 大模型 api">
+  <div class="card-top">
+    <span class="icon" style="background:#2e9be6" aria-hidden="true">腾</span>
+    <div class="card-head">
+      <h3>腾讯云 TokenHub 新人体验包（每模型 100 万 Tokens）</h3>
+      <p class="card-cat">腾讯云 · 大模型 API</p>
+    </div>
+  </div>
+  <p class="quota-big">每模型 100 万 Tokens</p>
+  <p class="intro">腾讯云大模型服务平台 TokenHub 的新人免费体验包，一个账号可试用 DeepSeek、GLM、Kimi、MiniMax、Qwen、混元等多厂商模型。</p>
+  <div class="pills"><span class="pill">大模型 API</span><span class="pill">真实免费</span><span class="pill">国内直连</span></div>
+  <p class="gate"><b>门槛：</b>腾讯云账号（通常需实名）并开通 TokenHub；每账号每模型仅一次</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">腾讯云大模型服务平台 TokenHub 的新人免费体验包，一个账号可试用 DeepSeek、GLM、Kimi、MiniMax、Qwen、混元等多厂商模型。</p><div class="d-quota"><span class="d-label">免费额度</span>每个主账号一次，所有语言模型与多模态理解模型<b>每个模型 100 万 Tokens</b>；另含混元生 3D 各模型 100 积分、生视频 50 积分。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>腾讯云账号（通常需实名）并开通 TokenHub；模型广场领取或首次调用自动领取；每账号每模型仅一次。</dd></div><div><dt>适用地区</dt><dd>国内直连</dd></div><div><dt>成本</dt><dd>¥0；额度优先消耗，用尽后未开启后付费则自动停止、不自动扣费</dd></div><div><dt>风险</dt><dd class="risk">有效期官方口径有出入——文档总述写 1 年、多款模型标注 90 天，以领取弹窗与控制台为准；本期领取活动截至 2026-12-31。</dd></div><div><dt>到期时间</dt><dd class="expiry">额度有效期见风险栏；领取活动截止 2026-12-31</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/tencent-tokenhub-free-pack/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://www.tencentcloud.com/zh/document/product/1300/80423" target="_blank" rel="noopener">腾讯云 TokenHub 文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-inception" data-deal="inception" data-cat="大模型 API" data-expiry="" data-verified="2026-11-12" data-search="inception mercury 扩散语言模型 1亿 100m 免费 tokens api 高速生成">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>Inception Mercury 新账号 1 亿免费 Tokens（免填付款信息)</h3>
-      <p class="row-sub">新账号一次性 1 亿免费 Tokens，免填付款信息</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://docs.inceptionlabs.ai/get-started" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">⏳ 领取活动截止 2026-12-31</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://www.tencentcloud.com/zh/document/product/1300/80423" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-inception" data-deal="inception" data-cat="大模型 API" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="inception mercury 扩散语言模型 1亿 100m 免费 tokens api 高速生成">
+  <div class="card-top">
+    <span class="icon" style="background:#5b8def" aria-hidden="true">I</span>
+    <div class="card-head">
+      <h3>Inception Mercury 新账号 1 亿免费 Tokens（免填付款信息）</h3>
+      <p class="card-cat">Inception · 大模型 API</p>
+    </div>
+  </div>
+  <p class="quota-big">1 亿 Token 免费</p>
+  <p class="intro">Inception Labs 自研扩散式语言模型 Mercury 系列官方 API 平台，主打高速生成，OpenAI 兼容接口。</p>
+  <div class="pills"><span class="pill">大模型 API</span><span class="pill">真实免费</span><span class="pill">海外</span></div>
+  <p class="gate"><b>门槛：</b>邮箱/Google 注册账号，创建 API Key 即用；免填付款信息</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">Inception Labs 自研扩散式语言模型 Mercury 系列官方 API 平台，主打高速生成，OpenAI 兼容接口。</p><div class="d-quota"><span class="d-label">免费额度</span>每个新账号一次性 <b>100M（1 亿）免费 tokens</b>，全模型共享，无需填写付款信息；免费档限速 1,000 请求/分钟、100 万输入 tokens/分钟、10 万输出 tokens/分钟。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>邮箱/Google 注册 Inception Platform 账号，创建 API Key 即用；仅限其自家平台，第三方渠道不含此赠送。</dd></div><div><dt>适用地区</dt><dd>海外（需海外网络）</dd></div><div><dt>成本</dt><dd>¥0（额度内）；用完须补付款信息转按量付费</dd></div><div><dt>风险</dt><dd class="risk">一次性额度、不续发；仅支持文本输入；Mercury 2/2.5 已对新用户退役，现行主力 Mercury 3；额度有效期官方未写。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/inception-mercury-100m-free-tokens/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://docs.inceptionlabs.ai/get-started" target="_blank" rel="noopener">docs.inceptionlabs.ai/get-started</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-openrouter-free" data-deal="openrouter-free" data-cat="大模型 API" data-expiry="" data-verified="2026-11-12" data-search="openrouter free 免费模型 限速 50次 1000次 大模型 api">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>OpenRouter :free 免费模型（按充值历史分档限速)</h3>
-      <p class="row-sub">:free 模型 $0 · 限速 50 次/天，充值满 $10 后 1,000 次/天</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://openrouter.ai/docs/api/reference/limits" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">一次性额度 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://docs.inceptionlabs.ai/get-started" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-openrouter-free" data-deal="openrouter-free" data-cat="大模型 API" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="openrouter free 免费模型 限速 50次 1000次 大模型 api">
+  <div class="card-top">
+    <span class="icon" style="background:#8a63d2" aria-hidden="true">O</span>
+    <div class="card-head">
+      <h3>OpenRouter :free 免费模型（按充值历史分档限速）</h3>
+      <p class="card-cat">OpenRouter · 大模型 API</p>
+    </div>
+  </div>
+  <p class="quota-big">:free 模型 $0 调用</p>
+  <p class="intro">OpenRouter 上模型 ID 以 :free 结尾的免费变体集合，价格 $0，通用免费模型入口。与 Crouton Alpha 是两条，不要混为一条。</p>
+  <div class="pills"><span class="pill">大模型 API</span><span class="pill">真实免费</span><span class="pill">全球</span></div>
+  <p class="gate"><b>门槛：</b>注册账号、建 API Key 即可用最低档，免绑卡</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">OpenRouter 上模型 ID 以 :free 结尾的免费变体集合，价格 $0，通用免费模型入口。与 Crouton Alpha 是两条，不要混为一条。</p><div class="d-quota"><span class="d-label">免费额度</span>限速按账号历史充值分档：充值 &lt;10 美元 → 20 次/分钟、<b>50 次/天</b>；≥10 美元 → 20 次/分钟、<b>1,000 次/天</b>。:free 模型数量随上下架浮动，不写固定个数。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>注册账号、建 API Key 即可用最低档，免绑卡；升到 1,000 次/天需一次性购满约 10 美元额度（非订阅）。</dd></div><div><dt>适用地区</dt><dd>全球</dd></div><div><dt>成本</dt><dd>免费档 0 元；可选一次性小额充值提档</dd></div><div><dt>风险</dt><dd class="risk">账号余额为负会停用免费模型；免费模型数据政策不一，敏感内容慎入；高峰期易触发上游限流 429。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/offers.md" target="_blank" rel="noopener">懒猫 AI · 免费额度全量表</a></dd></div><div><dt>官方入口</dt><dd><a href="https://openrouter.ai/docs/api/reference/limits" target="_blank" rel="noopener">OpenRouter 限速文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-mistral" data-deal="mistral" data-cat="大模型 API" data-expiry="" data-verified="2026-11-12" data-search="mistral free mode 免费层 experiment api 额度未核实 大模型">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>Mistral 免费层 Free mode（额度未核实) <span class="tags"><span class="tag tag-unv">额度未核实</span></span></h3>
-      <p class="row-sub">免费层 Free mode · 具体额度官方未公布</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://mistral.ai/pricing" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://openrouter.ai/docs/api/reference/limits" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-mistral" data-deal="mistral" data-cat="大模型 API" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="mistral free mode 免费层 experiment api 额度未核实 大模型">
+  <div class="card-top">
+    <span class="icon" style="background:#e8590c" aria-hidden="true">M</span>
+    <div class="card-head">
+      <h3>Mistral 免费层 Free mode（额度未核实）</h3>
+      <p class="card-cat">Mistral · 大模型 API</p>
+    </div>
+    <span class="badges"><span class="badge badge-amber">额度未核实</span></span>
+  </div>
+  <p class="quota-big">免费层长期可用</p>
+  <p class="intro">Mistral 官方 API 平台免费使用模式（原 Experiment 计划，现称 Free mode），注册即可调用 Mistral 模型。</p>
+  <div class="pills"><span class="pill">大模型 API</span><span class="pill">真实免费</span><span class="pill">全球</span></div>
+  <p class="gate"><b>门槛：</b>注册 Mistral 账号即可，Free mode 默认开启；免绑卡</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">Mistral 官方 API 平台免费使用模式（原 Experiment 计划，现称 Free mode），注册即可调用 Mistral 模型。</p><div class="d-quota"><span class="d-label">免费额度</span><b>未核实：官方未公布，仅账号内可见</b>——免费层存在且免绑卡、默认开启已由官方确认，但具体限速与月度总量官方已不公开数字，仅在各账号 Admin Limits 页内显示；来源站旧数字（约 1 请求/秒、约 10 亿 tokens/月）无现行官方依据。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>注册 Mistral 账号即可，Free mode 默认开启；免绑卡。</dd></div><div><dt>适用地区</dt><dd>全球</dd></div><div><dt>成本</dt><dd>免费；免费模式数据使用政策与付费层不同，敏感数据慎入</dd></div><div><dt>风险</dt><dd class="risk">额度数字以登录后 Admin Limits 页实际显示为准；政策近年改名调整过（Experiment → Free mode），随时可能再变。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/offers.md" target="_blank" rel="noopener">懒猫 AI · 免费额度全量表</a></dd></div><div><dt>官方入口</dt><dd><a href="https://mistral.ai/pricing" target="_blank" rel="noopener">mistral.ai/pricing</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 额度官方未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://mistral.ai/pricing" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
+  </div>
 </article>
-  </div>
-</section>
-
-<section class="group" data-group="AI 应用试用">
-  <h2 class="group-title">AI 应用试用 <span class="group-count">2 条</span></h2>
-  <div class="rows">
-<article class="row" id="deal-tingwu" data-deal="tingwu" data-cat="AI 应用试用" data-expiry="" data-verified="2026-11-12" data-search="通义听悟 阿里云 音视频 转写 实时记录 90天 免费试用 ai 应用">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>通义听悟免费试用 90 天（实时记录每天 48 小时 + 文件转写每天 2 小时)</h3>
-      <p class="row-sub">免费试用 90 天：实时记录每天 48 小时 + 文件转写每天 2 小时</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+<article class="card" id="deal-tingwu" data-deal="tingwu" data-cat="AI 应用试用" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="通义听悟 阿里云 音视频 转写 实时记录 90天 免费试用 ai 应用">
+  <div class="card-top">
+    <span class="icon" style="background:#f08c00" aria-hidden="true">听</span>
+    <div class="card-head">
+      <h3>通义听悟免费试用 90 天（实时记录每天 48 小时 + 文件转写每天 2 小时）</h3>
+      <p class="card-cat">阿里云 · AI 应用</p>
     </div>
-    <a class="go" href="https://help.aliyun.com/zh/tingwu/pricing-and-billing-rules" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
   </div>
+  <p class="quota-big">免费试用 90 天</p>
+  <p class="intro">阿里云音视频内容理解助手，实时记录、文件转写、说话人分离与摘要纪要；本条为阿里云服务侧免费试用口径。</p>
+  <div class="pills"><span class="pill">AI 应用</span><span class="pill">真实免费</span><span class="pill">国内直连</span></div>
+  <p class="gate"><b>门槛：</b>阿里云账号（国内手机号），控制台开通服务时选择「试用」</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">阿里云音视频内容理解助手，实时记录、文件转写、说话人分离与摘要纪要；本条为阿里云服务侧免费试用口径。</p><div class="d-quota"><span class="d-label">免费额度</span>新开通用户<b>免费试用 90 天</b>：实时记录每天 48 小时（并发 2 路）、音视频文件转写每天 2 小时（并发 1 路），当日用完等 24 小时恢复。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>阿里云账号（国内手机号），控制台开通服务时选择「试用」。</dd></div><div><dt>适用地区</dt><dd>国内直连</dd></div><div><dt>成本</dt><dd>¥0（试用期内）；期后转后付费按时长计费</dd></div><div><dt>风险</dt><dd class="risk">此为服务开通试用口径，与网页版/App 个人免费额度是两回事（网页版月度额度官方未公布明文数字）；90 天后个人版长期政策官方未明确。</dd></div><div><dt>到期时间</dt><dd class="expiry">开通后 90 天（试用期）</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/tongyi-tingwu/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://help.aliyun.com/zh/tingwu/pricing-and-billing-rules" target="_blank" rel="noopener">阿里云听悟计费文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">试用期 · 开通后 90 天</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://help.aliyun.com/zh/tingwu/pricing-and-billing-rules" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
+  </div>
 </article>
-<article class="row" id="deal-coze" data-deal="coze" data-cat="AI 应用试用" data-expiry="" data-verified="2026-11-12" data-search="扣子 coze 字节跳动 智能体 每日 1500 积分 免费版 ai 应用 国内版">
-  <div class="row-main">
-    <div class="row-text">
+<article class="card" id="deal-coze" data-deal="coze" data-cat="AI 应用试用" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="扣子 coze 字节跳动 智能体 每日 1500 积分 免费版 ai 应用 国内版">
+  <div class="card-top">
+    <span class="icon" style="background:#d6336c" aria-hidden="true">扣</span>
+    <div class="card-head">
       <h3>扣子 Coze（国内版）免费版每日 1,500 积分</h3>
-      <p class="row-sub">免费版每日登录 1,500 积分；新用户一次性 60 积分</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+      <p class="card-cat">字节跳动 · AI 应用</p>
     </div>
-    <a class="go" href="https://docs.coze.cn/coze_pro_credits" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
   </div>
+  <p class="quota-big">每日 1,500 积分</p>
+  <p class="intro">字节跳动 AI 智能体/应用搭建平台国内版（coze.cn），免费版靠每日登录积分体验；与海外版账号体系不互通。</p>
+  <div class="pills"><span class="pill">AI 应用</span><span class="pill">真实免费</span><span class="pill">国内直连</span></div>
+  <p class="gate"><b>门槛：</b>国内手机号注册 coze.cn，个人免费版每日登录领取</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">字节跳动 AI 智能体/应用搭建平台国内版（coze.cn），免费版靠每日登录积分体验；与海外版账号体系不互通。</p><div class="d-quota"><span class="d-label">免费额度</span>个人免费版每日登录发放 <b>1,500 积分</b>（有效期 1 天）；新用户注册一次性 60 积分（30 天有效）——已按官方现行《积分》页口径，来源站所称 5,000 积分是旧口径、不采用。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>国内手机号注册 coze.cn，个人免费版每日登录领取。</dd></div><div><dt>适用地区</dt><dd>国内直连（仅国内版）</dd></div><div><dt>成本</dt><dd>¥0（免费版）；积分为 0 后服务停止，付费版 39.9 元/月起</dd></div><div><dt>风险</dt><dd class="risk">官方已公告 2026-11-13 起个人版付费档价格/积分调整，免费档每日 1,500 以当期文档为准。</dd></div><div><dt>到期时间</dt><dd class="expiry">每日积分当日有效；新用户一次性积分 30 天</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/coze-cn/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://docs.coze.cn/coze_pro_credits" target="_blank" rel="noopener">扣子官方积分文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">每日积分当日有效</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://docs.coze.cn/coze_pro_credits" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
-</section>
-
-<section class="group" data-group="云服务">
-  <h2 class="group-title">云服务 <span class="group-count">3 条</span></h2>
-  <div class="rows">
-<article class="row" id="deal-workers-ai" data-deal="workers-ai" data-cat="云服务" data-expiry="" data-verified="2026-11-12" data-search="cloudflare workers ai neurons 10000 每天 免费 推理 云服务 边缘">
-  <div class="row-main">
-    <div class="row-text">
+</article>
+<article class="card" id="deal-workers-ai" data-deal="workers-ai" data-cat="云服务" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="cloudflare workers ai neurons 10000 每天 免费 推理 云服务 边缘">
+  <div class="card-top">
+    <span class="icon" style="background:#e8821e" aria-hidden="true">C</span>
+    <div class="card-head">
       <h3>Cloudflare Workers AI 每日 10,000 Neurons 免费推理</h3>
-      <p class="row-sub">每账号每天 10,000 Neurons 免费推理</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+      <p class="card-cat">Cloudflare · 云服务</p>
     </div>
-    <a class="go" href="https://developers.cloudflare.com/workers-ai/platform/pricing/" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
   </div>
+  <p class="quota-big">10000 Neurons/天</p>
+  <p class="intro">Cloudflare 边缘 AI 推理服务，Workers 免费/付费计划内均含每日免费推理额度，Neurons 为统一算力计费单位。</p>
+  <div class="pills"><span class="pill">云服务</span><span class="pill">真实免费</span><span class="pill">海外</span></div>
+  <p class="gate"><b>门槛：</b>注册 Cloudflare 账号即可，无需信用卡</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">Cloudflare 边缘 AI 推理服务，Workers 免费/付费计划内均含每日免费推理额度，Neurons 为统一算力计费单位。</p><div class="d-quota"><span class="d-label">免费额度</span>每账号<b>每天 10,000 Neurons 免费</b>，全模型共享，每日 00:00 UTC 重置；超出后 Free 计划直接报错，Paid 计划按 $0.011/1,000 Neurons 计费。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>注册 Cloudflare 账号即可，无需信用卡。</dd></div><div><dt>适用地区</dt><dd>海外（需海外网络）</dd></div><div><dt>成本</dt><dd>¥0（每日免费额度内）</dd></div><div><dt>风险</dt><dd class="risk">10,000 Neurons 是算力池而非 token 数，大模型消耗极快、实际可用量远小于直觉；额度不结转。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/cloudflare-workers-ai-free-neurons/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://developers.cloudflare.com/workers-ai/platform/pricing/" target="_blank" rel="noopener">Cloudflare Workers AI 定价文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-azure-students" data-deal="azure-students" data-cat="云服务" data-expiry="" data-verified="2026-11-12" data-search="azure for students 微软 学生 100美元 额度 免信用卡 云服务 microsoft">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>Azure for Students（$100 额度 + 常驻免费服务，免信用卡)</h3>
-      <p class="row-sub">$100 额度（12 个月）+ 常驻免费服务，免信用卡</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://azure.microsoft.com/en-in/free/students" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://developers.cloudflare.com/workers-ai/platform/pricing/" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-azure-students" data-deal="azure-students" data-cat="云服务" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="azure for students 微软 学生 100美元 额度 免信用卡 云服务 microsoft">
+  <div class="card-top">
+    <span class="icon" style="background:#2b7cd3" aria-hidden="true">A</span>
+    <div class="card-head">
+      <h3>Azure for Students（$100 额度 + 常驻免费服务，免信用卡）</h3>
+      <p class="card-cat">微软 · 云服务</p>
+    </div>
+  </div>
+  <p class="quota-big">$100 额度 + 常驻免费服务</p>
+  <p class="intro">微软面向在校学生的 Azure 免费计划，免信用卡，给一笔云额度加一批常驻免费服务。</p>
+  <div class="pills"><span class="pill">云服务</span><span class="pill">真实免费</span><span class="pill">海外</span></div>
+  <p class="gate"><b>门槛：</b>年满 18 岁、全日制在校大学生，学校邮箱验证学术身份</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">微软面向在校学生的 Azure 免费计划，免信用卡，给一笔云额度加一批常驻免费服务。</p><div class="d-quota"><span class="d-label">免费额度</span><b>$100 Azure 额度</b>（12 个月内使用）+ 20 多项热门服务 12 个月免费月度量 + 65 项以上常驻免费服务的每月免费用量；学生身份保持期间可逐年续订。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>年满 18 岁、全日制在校大学生，学校邮箱验证学术身份；每人限一份；仅限新 Azure 客户享免费月度量。</dd></div><div><dt>适用地区</dt><dd>海外（国家/地区与学校资格以注册页为准）</dd></div><div><dt>成本</dt><dd>¥0、无需信用卡；$100 不能用于 Azure Marketplace 商品</dd></div><div><dt>风险</dt><dd class="risk">激活名额有限、官方可随时终止该 offer；非学生不可用；国内访问可能需稳定海外网络。</dd></div><div><dt>到期时间</dt><dd class="expiry">$100 额度为开通后 12 个月（offer 结束日未公布）</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/azure-for-students-100-credit/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://azure.microsoft.com/en-in/free/students" target="_blank" rel="noopener">azure.microsoft.com/en-in/free/students</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-upstash-box" data-deal="upstash-box" data-cat="云服务" data-expiry="" data-verified="2026-11-12" data-search="upstash box 沙箱 agent 免费层 并发 cpu 云服务">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>Upstash Box 免费层（每月 5 小时活跃 CPU，10 个并发沙箱)</h3>
-      <p class="row-sub">免费层每月 5 小时活跃 CPU、10 个并发沙箱</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://upstash.com/pricing/box" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">$100 额度开通后 12 个月</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://azure.microsoft.com/en-in/free/students" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-upstash-box" data-deal="upstash-box" data-cat="云服务" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="upstash box 沙箱 agent 免费层 并发 cpu 云服务">
+  <div class="card-top">
+    <span class="icon" style="background:#0ca678" aria-hidden="true">U</span>
+    <div class="card-head">
+      <h3>Upstash Box 免费层（每月 5 小时活跃 CPU，10 个并发沙箱）</h3>
+      <p class="card-cat">Upstash · 云服务</p>
+    </div>
+  </div>
+  <p class="quota-big">每月 5 小时活跃 CPU</p>
+  <p class="intro">Upstash 的 Agent 沙箱云服务（跑在 AWS 美东），模型用量走用户自己的服务商 Key。</p>
+  <div class="pills"><span class="pill">云服务</span><span class="pill">真实免费</span><span class="pill">全球</span></div>
+  <p class="gate"><b>门槛：</b>注册 Upstash 账号即可；免绑卡</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">Upstash 的 Agent 沙箱云服务（跑在 AWS 美东），模型用量走用户自己的服务商 Key。</p><div class="d-quota"><span class="d-label">免费额度</span>Free 层 $0：最多 <b>10 个并发 Box、每月 5 小时活跃 CPU 时间</b>、单 Box 2 vCPU / 4GB 内存、10GB 存储；闲置 Box 自动冻结省额度。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>注册 Upstash 账号即可；免绑卡。</dd></div><div><dt>适用地区</dt><dd>全球（运行于 AWS us-east-1）</dd></div><div><dt>成本</dt><dd>免费；大模型费用由自己的模型 Key 承担，Upstash 不含模型额度</dd></div><div><dt>风险</dt><dd class="risk">5 小时/月活跃 CPU 很少，适合轻量试用；超出需升付费层。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://jidan.si/c/credit" target="_blank" rel="noopener">赛博鸡蛋 · 免费额度列表</a></dd></div><div><dt>官方入口</dt><dd><a href="https://upstash.com/pricing/box" target="_blank" rel="noopener">upstash.com/pricing/box</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://upstash.com/pricing/box" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
+  </div>
 </article>
-  </div>
-</section>
-
-<section class="group" data-group="开发工具">
-  <h2 class="group-title">开发工具 <span class="group-count">3 条</span></h2>
-  <div class="rows">
-<article class="row" id="deal-zcode" data-deal="zcode" data-cat="开发工具" data-expiry="" data-verified="2026-11-12" data-search="zcode 智谱 bigmodel glm-5.3 glm 编程客户端 开发工具 新用户 5天 免费体验 agent 代码 z.ai">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>ZCode 新用户 5 天免费体验，GLM-5.3 每天 300 万 Token <span class="tags"><span class="tag tag-new">今日新上</span></span></h3>
-      <p class="row-sub">新用户 5 天内每天 800 万 Token（GLM-5.3 每天 300 万 + Flash 500 万）· 首次使用起算</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+<article class="card" id="deal-zcode" data-deal="zcode" data-cat="开发工具" data-scope="new" data-expiry="" data-verified="2026-11-12" data-search="zcode 智谱 bigmodel glm-5.3 glm 编程客户端 开发工具 新用户 5天 免费体验 agent 代码 z.ai">
+  <div class="card-top">
+    <span class="icon" style="background:#c2255c" aria-hidden="true">智</span>
+    <div class="card-head">
+      <h3>ZCode 新用户 5 天免费体验，GLM-5.3 每天 300 万 Token</h3>
+      <p class="card-cat">智谱 · 工具</p>
     </div>
-    <a class="go" href="https://zcode.z.ai/cn" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+    <span class="badges"><span class="badge">今日新上</span></span>
   </div>
+  <p class="quota-big">5 天 · 每天 800 万 Token</p>
+  <p class="intro">智谱官方编程客户端 ZCode，新用户连接 BigModel 账号后自动获得体验套餐，可在真实项目里跑 Agent。</p>
+  <div class="pills"><span class="pill">工具</span><span class="pill">真实免费</span><span class="pill">国内</span></div>
+  <p class="gate"><b>门槛：</b>新用户；下载 ZCode 并连接 BigModel 账号后自动发放</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">智谱官方编程客户端 ZCode，新用户连接 BigModel 账号后自动获得体验套餐，可在真实项目里跑 Agent。</p><div class="d-quota"><span class="d-label">免费额度</span>首次使用起 <b>5 天内，每天 800 万 Token</b>（GLM-5.3 每天 300 万 + GLM-5.3-Flash 每天 500 万），每日刷新。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>新用户；下载 ZCode 并连接 BigModel 账号后自动发放，无需付费；官方文档未提绑卡 / 实名。</dd></div><div><dt>适用地区</dt><dd>国内直连（BigModel）；Z.ai 海外通道同类体验官方未单列拆分数字。</dd></div><div><dt>成本</dt><dd>¥0</dd></div><div><dt>风险</dt><dd class="risk">仅 5 天、到期失效，并非长期每日额度；仅限 ZCode 客户端内体验，5 天后需订阅 GLM Coding Plan。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布（活动整体截止官方未公布；个人试用为首次使用起 5 天）</dd></div><div><dt>来源</dt><dd><a href="https://jidan.si/c/credit" target="_blank" rel="noopener">赛博鸡蛋 · 免费额度列表</a></dd></div><div><dt>官方入口</dt><dd><a href="https://zcode.z.ai/cn" target="_blank" rel="noopener">zcode.z.ai/cn</a> · 官方依据：<a href="https://zcode.z.ai/cn/docs/configuration" target="_blank" rel="noopener">ZCode 配置文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-copilot" data-deal="copilot" data-cat="开发工具" data-expiry="" data-verified="2026-11-12" data-search="github copilot free 代码补全 2000次 对话 agent 开发工具 vscode">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>GitHub Copilot Free（每月 2,000 次补全，对话次数未核实) <span class="tags"><span class="tag tag-unv">部分未核实</span></span></h3>
-      <p class="row-sub">代码补全每月 2,000 次；对话次数官方未公布</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://github.com/features/copilot/plans" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">个人试用 · 首次使用起 5 天</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://zcode.z.ai/cn" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-copilot" data-deal="copilot" data-cat="开发工具" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="github copilot free 代码补全 2000次 对话 agent 开发工具 vscode">
+  <div class="card-top">
+    <span class="icon" style="background:#6741d9" aria-hidden="true">G</span>
+    <div class="card-head">
+      <h3>GitHub Copilot Free（每月 2,000 次补全，对话次数未核实）</h3>
+      <p class="card-cat">GitHub · 工具</p>
+    </div>
+    <span class="badges"><span class="badge badge-amber">部分未核实</span></span>
+  </div>
+  <p class="quota-big">每月免费额度</p>
+  <p class="intro">GitHub 官方 AI 编程助手免费层，VS Code 等编辑器内代码补全与有限的对话/Agent 用量。</p>
+  <div class="pills"><span class="pill">工具</span><span class="pill">真实免费</span><span class="pill">海外</span></div>
+  <p class="gate"><b>门槛：</b>GitHub 个人账号即可开通；免绑卡</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">GitHub 官方 AI 编程助手免费层，VS Code 等编辑器内代码补全与有限的对话/Agent 用量。</p><div class="d-quota"><span class="d-label">免费额度</span>代码补全<b>每月 2,000 次</b>（官方套餐页已核实）；对话/Agent 用量官方现行页面仅写「有限（Limited）」、按 AI Credits 计量——来源站「50 次/月」是旧口径、现行官方页已无此数字，卡面对话次数写「未核实」。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>GitHub 个人账号即可开通；免绑卡。</dd></div><div><dt>适用地区</dt><dd>全球</dd></div><div><dt>成本</dt><dd>免费</dd></div><div><dt>风险</dt><dd class="risk">对话额度无公开固定数字，实际可用量以产品内显示为准，不要按旧口径理解。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://baipiaoji.com/limits.json" target="_blank" rel="noopener">白嫖计 limits.json</a></dd></div><div><dt>官方入口</dt><dd><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener">github.com/features/copilot/plans</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://github.com/features/copilot/plans" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
+  </div>
 </article>
-<article class="row" id="deal-gemini-cli" data-deal="gemini-cli" data-cat="开发工具" data-expiry="" data-verified="2026-11-12" data-search="gemini cli google 终端 编程 agent 1000次 每天 免费 开发工具">
-  <div class="row-main">
-    <div class="row-text">
+<article class="card" id="deal-gemini-cli" data-deal="gemini-cli" data-cat="开发工具" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="gemini cli google 终端 编程 agent 1000次 每天 免费 开发工具">
+  <div class="card-top">
+    <span class="icon" style="background:#1c7ed6" aria-hidden="true">G</span>
+    <div class="card-head">
       <h3>Gemini CLI 个人账号每天 1,000 次免费请求</h3>
-      <p class="row-sub">个人账号 60 次/分钟、1,000 次/天免费请求</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+      <p class="card-cat">Google · 工具</p>
     </div>
-    <a class="go" href="https://developers.google.com/gemini-code-assist/resources/quotas" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
   </div>
+  <p class="quota-big">每天 1,000 次请求</p>
+  <p class="intro">Google 开源终端 AI 编程 Agent，个人 Google 账号登录即享高额免费请求配额。</p>
+  <div class="pills"><span class="pill">工具</span><span class="pill">真实免费</span><span class="pill">海外</span></div>
+  <p class="gate"><b>门槛：</b>安装 Gemini CLI 后用个人 Google 账号登录；免绑卡</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">Google 开源终端 AI 编程 Agent，个人 Google 账号登录即享高额免费请求配额。</p><div class="d-quota"><span class="d-label">免费额度</span>个人 Google 账号 <b>60 次请求/分钟、1,000 次请求/天</b>（官方 Code Assist 配额页口径）；未付费 API Key 方式仅 250 次/天且限 Flash 模型。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>安装 Gemini CLI 后用个人 Google 账号登录；免绑卡。</dd></div><div><dt>适用地区</dt><dd>Code Assist 个人版支持的国家/地区（中国大陆不在官方支持区，直连不可用）</dd></div><div><dt>成本</dt><dd>免费</dd></div><div><dt>风险</dt><dd class="risk">按「模型请求」计次，一次 Agent 任务可消耗多次请求；免费层可用模型范围有过收紧记录，以官方公告为准。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/offers.md" target="_blank" rel="noopener">懒猫 AI · 免费额度全量表</a></dd></div><div><dt>官方入口</dt><dd><a href="https://developers.google.com/gemini-code-assist/resources/quotas" target="_blank" rel="noopener">Gemini Code Assist 配额文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://developers.google.com/gemini-code-assist/resources/quotas" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
+  </div>
 </article>
-  </div>
-</section>
-
-<section class="group" data-group="免费算力">
-  <h2 class="group-title">免费算力 <span class="group-count">3 条</span></h2>
-  <div class="rows">
-<article class="row" id="deal-kaggle" data-deal="kaggle" data-cat="免费算力" data-expiry="" data-verified="2026-11-12" data-search="kaggle gpu 免费 每周 30小时 t4 tpu 笔记本 训练 算力">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>Kaggle 免费 GPU（每周 30 小时双 T4，不用绑卡) <span class="tags"><span class="tag tag-unv">部分未核实</span></span></h3>
-      <p class="row-sub">GPU 每周 30 小时（双 T4），免绑卡</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+<article class="card" id="deal-kaggle" data-deal="kaggle" data-cat="免费算力" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="kaggle gpu 免费 每周 30小时 t4 tpu 笔记本 训练 算力">
+  <div class="card-top">
+    <span class="icon" style="background:#2f9e44" aria-hidden="true">K</span>
+    <div class="card-head">
+      <h3>Kaggle 免费 GPU（每周 30 小时双 T4，不用绑卡）</h3>
+      <p class="card-cat">Kaggle · 算力</p>
     </div>
-    <a class="go" href="https://www.kaggle.com/docs/efficient-gpu-usage" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+    <span class="badges"><span class="badge badge-amber">部分未核实</span></span>
   </div>
+  <p class="quota-big">每周 30 小时 GPU</p>
+  <p class="intro">Kaggle 笔记本环境免费提供 GPU/TPU 加速器，按周发放配额，适合学习与中小规模训练。</p>
+  <div class="pills"><span class="pill">算力</span><span class="pill">真实免费</span><span class="pill">全球</span></div>
+  <p class="gate"><b>门槛：</b>注册 Kaggle 账号，启用 GPU 前完成手机号验证；免绑卡</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">Kaggle 笔记本环境免费提供 GPU/TPU 加速器，按周发放配额，适合学习与中小规模训练。</p><div class="d-quota"><span class="d-label">免费额度</span>GPU <b>每周 30 小时</b>（官方口径「30 小时或更高」，含双 T4 等，单会话最长 12 小时），配额每周重置；免费 TPU v3-8 可用（单会话最长 9 小时），TPU 周配额数字未核实。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>注册 Kaggle 账号，启用 GPU 前完成手机号验证；免绑卡。</dd></div><div><dt>适用地区</dt><dd>全球（需可接收验证短信的手机号）</dd></div><div><dt>成本</dt><dd>免费，无需绑卡</dd></div><div><dt>风险</dt><dd class="risk">高峰期要排队；配额为浮动口径，以账号设置页显示为准；TPU「每周 20 小时」未核实（官方 TPU 文档页抓取失败，仅第三方转述）。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://jidan.si/c/credit" target="_blank" rel="noopener">赛博鸡蛋 · 免费额度列表</a></dd></div><div><dt>官方入口</dt><dd><a href="https://www.kaggle.com/docs/efficient-gpu-usage" target="_blank" rel="noopener">Kaggle GPU 使用文档</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
-<article class="row" id="deal-aistudio" data-deal="aistudio" data-cat="免费算力" data-expiry="" data-verified="2026-11-12" data-search="百度 飞桨 aistudio paddlepaddle gpu v100 每日 算力卡 免费算力">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>百度飞桨 AI Studio 每日免费 GPU（8 点算力卡 / 天，V100)</h3>
-      <p class="row-sub">每日 8 点算力卡（约 16 小时 V100 16GB）</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
-    </div>
-    <a class="go" href="https://aistudio.baidu.com/" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 配额每周重置</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://www.kaggle.com/docs/efficient-gpu-usage" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
+</article>
+<article class="card" id="deal-aistudio" data-deal="aistudio" data-cat="免费算力" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="百度 飞桨 aistudio paddlepaddle gpu v100 每日 算力卡 免费算力">
+  <div class="card-top">
+    <span class="icon" style="background:#e03131" aria-hidden="true">百</span>
+    <div class="card-head">
+      <h3>百度飞桨 AI Studio 每日免费 GPU（8 点算力卡 / 天，V100）</h3>
+      <p class="card-cat">百度飞桨 · 算力</p>
+    </div>
+  </div>
+  <p class="quota-big">每日免费 GPU 算力</p>
+  <p class="intro">Notebook 形态云端 GPU，每日运行项目自动发放算力卡，主力卡型 V100。</p>
+  <div class="pills"><span class="pill">算力</span><span class="pill">真实免费</span><span class="pill">国内</span></div>
+  <p class="gate"><b>门槛：</b>注册百度账号（国内手机号）；每日启动/运行项目自动发放</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">Notebook 形态云端 GPU，每日运行项目自动发放算力卡，主力卡型 V100。</p><div class="d-quota"><span class="d-label">免费额度</span>每日送 <b>8 点算力卡</b>（1 点 = V100 16GB×2 小时或 V100 32GB×1 小时，即每天约 16 小时 V100 16GB）；新手任务另送 100 点（一次性）。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>注册百度账号（国内手机号）；每日启动/运行项目自动发放。</dd></div><div><dt>适用地区</dt><dd>中国大陆</dd></div><div><dt>成本</dt><dd>免费</dd></div><div><dt>风险</dt><dd class="risk">官方帮助文档未标更新日期，卡型近年有变动，实际可选规格以环境启动页为准；每日算力点有效时长官方未写明，以个人中心显示为准。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布</dd></div><div><dt>来源</dt><dd><a href="https://lanmao.ai/zh/o/baidu-aistudio-daily-gpu/" target="_blank" rel="noopener">懒猫 AI 详情页</a></dd></div><div><dt>官方入口</dt><dd><a href="https://aistudio.baidu.com/" target="_blank" rel="noopener">aistudio.baidu.com</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">常驻免费 · 每日发放</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://aistudio.baidu.com/" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
+  </div>
 </article>
-<article class="row" id="deal-daytona" data-deal="daytona" data-cat="免费算力" data-expiry="" data-verified="2026-11-12" data-search="daytona 沙箱 sandbox 200美元 算力额度 agent 云端 免费算力">
-  <div class="row-main">
-    <div class="row-text">
-      <h3>Daytona 新用户 $200 算力额度（AI 沙箱，免绑卡)</h3>
-      <p class="row-sub">新用户 $200 一次性算力额度，免绑卡</p>
-      <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
+<article class="card" id="deal-daytona" data-deal="daytona" data-cat="免费算力" data-scope="" data-expiry="" data-verified="2026-11-12" data-search="daytona 沙箱 sandbox 200美元 算力额度 agent 云端 免费算力">
+  <div class="card-top">
+    <span class="icon" style="background:#e64980" aria-hidden="true">D</span>
+    <div class="card-head">
+      <h3>Daytona 新用户 $200 算力额度（AI 沙箱，免绑卡）</h3>
+      <p class="card-cat">Daytona · 算力</p>
     </div>
-    <a class="go" href="https://www.daytona.com/pricing" target="_blank" rel="noopener">去领 <span aria-hidden="true">↗</span></a>
   </div>
+  <p class="quota-big">$200 算力额度</p>
+  <p class="intro">面向 AI Agent 的云端代码沙箱平台，按秒计费，新账号赠送一次性算力额度。</p>
+  <div class="pills"><span class="pill">算力</span><span class="pill">真实免费</span><span class="pill">全球</span></div>
+  <p class="gate"><b>门槛：</b>注册账号、邮箱验证解锁 Tier 1；免绑卡</p>
+  <button class="toggle" type="button" aria-expanded="false">详情 <span class="chev" aria-hidden="true">›</span></button>
   <div class="detail" hidden><p class="d-intro">面向 AI Agent 的云端代码沙箱平台，按秒计费，新账号赠送一次性算力额度。</p><div class="d-quota"><span class="d-label">免费额度</span>新用户 <b>$200 一次性免费算力额度</b>（官方定价页原文，免信用卡）；邮箱验证后 Tier 1 上限 10 vCPU / 10GiB 内存 / 30GiB 磁盘。</div><dl class="d-fields"><div><dt>领取条件</dt><dd>注册账号、邮箱验证解锁 Tier 1；免绑卡。</dd></div><div><dt>适用地区</dt><dd>全球</dd></div><div><dt>成本</dt><dd>免费额度内 0 元；按预留资源秒计费，额度用完转付费</dd></div><div><dt>风险</dt><dd class="risk">免费额度不能用于 GPU 沙箱（官方 Billing 文档原文）；按预留而非实际用量计费，闲置沙箱也持续消耗额度。</dd></div><div><dt>到期时间</dt><dd class="expiry">未公布（以账户 Wallet 显示为准）</dd></div><div><dt>来源</dt><dd><a href="https://jidan.si/c/credit" target="_blank" rel="noopener">赛博鸡蛋 · 免费额度列表</a></dd></div><div><dt>官方入口</dt><dd><a href="https://www.daytona.com/pricing" target="_blank" rel="noopener">daytona.com/pricing</a></dd></div></dl><p class="d-verified">最后核实 2026-11-12</p></div>
-</article>
+  <div class="card-foot">
+    <div class="foot-meta"><span class="exp">一次性额度 · 到期未公布</span><span>最后核实 2026-11-12</span></div>
+    <a class="go" href="https://www.daytona.com/pricing" target="_blank" rel="noopener">去领取 <span aria-hidden="true">→</span></a>
   </div>
-</section>
+</article>
       </main>
 
       <div class="no-result" id="noResult">当前筛选下没有已核实的情报。换个关键词试试。</div>
@@ -473,23 +686,56 @@
 
     <script>
       (function () {
+        var root = document.documentElement;
+
+        /* ---------- 主题切换（默认浅色，localStorage 记住） ---------- */
+        var themeBtn = document.getElementById('themeBtn');
+        var themeIcon = document.getElementById('themeIcon');
+        var themeText = document.getElementById('themeText');
+        function paintThemeBtn() {
+          var dark = root.getAttribute('data-theme') === 'dark';
+          themeIcon.textContent = dark ? '☀️' : '🌙';
+          themeText.textContent = dark ? '浅色' : '深色';
+          themeBtn.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+        }
+        themeBtn.addEventListener('click', function () {
+          var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('gd-theme', next); } catch (e) {}
+          paintThemeBtn();
+        });
+        paintThemeBtn();
+
+        /* ---------- 统计（全部由页面卡片数据实算） ---------- */
+        var grid = document.getElementById('grid');
+        var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+        var newCount = cards.filter(function (c) { return c.getAttribute('data-scope') === 'new'; }).length;
+        var standing = cards.filter(function (c) {
+          var ex = c.querySelector('.expiry');
+          return ex && ex.textContent.trim().indexOf('未公布') === 0;
+        }).length;
+        var soonDates = cards.map(function (c) { return c.getAttribute('data-expiry'); })
+          .filter(Boolean).sort();
+        document.getElementById('statTotal').textContent = cards.length;
+        document.getElementById('statNew').textContent = newCount;
+        document.getElementById('statStanding').textContent = standing;
+        if (soonDates.length) {
+          document.getElementById('statSoon').textContent = soonDates[0].slice(0, 10);
+        }
+
+        /* ---------- 筛选 / 搜索 / 排序 ---------- */
         var q = document.getElementById('q');
         var sortSel = document.getElementById('sort');
-        var chips = Array.prototype.slice.call(document.querySelectorAll('#chips .chip'));
-        var groups = Array.prototype.slice.call(document.querySelectorAll('#catalog .group'));
-        var groupRows = groups.map(function (g) {
-          return Array.prototype.slice.call(g.querySelectorAll('.row'));
-        });
-        var allRows = Array.prototype.slice.call(document.querySelectorAll('#catalog .row'));
-        var spots = Array.prototype.slice.call(document.querySelectorAll('.top-group .row'));
+        var catChips = Array.prototype.slice.call(document.querySelectorAll('#chips .chip'));
+        var scopeChips = Array.prototype.slice.call(document.querySelectorAll('#scopeChips .chip'));
         var noResult = document.getElementById('noResult');
         var resultLine = document.getElementById('resultLine');
         var activeCat = 'all';
+        var activeScope = 'all';
 
-        // 展开 / 收起详情
         document.querySelectorAll('.toggle').forEach(function (btn) {
           btn.addEventListener('click', function () {
-            var detail = btn.closest('.row').querySelector('.detail');
+            var detail = btn.closest('.card').querySelector('.detail');
             var open = btn.getAttribute('aria-expanded') === 'true';
             btn.setAttribute('aria-expanded', String(!open));
             detail.hidden = open;
@@ -499,6 +745,7 @@
 
         function matches(el, text) {
           if (activeCat !== 'all' && el.getAttribute('data-cat') !== activeCat) return false;
+          if (activeScope !== 'all' && el.getAttribute('data-scope') !== activeScope) return false;
           if (!text) return true;
           var hay = (el.getAttribute('data-search') + ' ' + el.textContent).toLowerCase();
           return text.split(/\s+/).every(function (w) { return hay.indexOf(w) !== -1; });
@@ -506,54 +753,52 @@
 
         function applySort() {
           var mode = sortSel.value;
-          groups.forEach(function (g, gi) {
-            var wrap = g.querySelector('.rows');
-            var sorted = groupRows[gi].slice().sort(function (a, b) {
-              if (mode === 'verified') {
-                return b.getAttribute('data-verified').localeCompare(a.getAttribute('data-verified'));
-              }
-              var ea = a.getAttribute('data-expiry'), eb = b.getAttribute('data-expiry');
-              var ta = ea ? new Date(ea).getTime() : Infinity;
-              var tb = eb ? new Date(eb).getTime() : Infinity;
-              return ta - tb;
-            });
-            sorted.forEach(function (r) { wrap.appendChild(r); });
+          var sorted = cards.slice().sort(function (a, b) {
+            if (mode === 'verified') {
+              return b.getAttribute('data-verified').localeCompare(a.getAttribute('data-verified'));
+            }
+            var ea = a.getAttribute('data-expiry'), eb = b.getAttribute('data-expiry');
+            var ta = ea ? new Date(ea).getTime() : Infinity;
+            var tb = eb ? new Date(eb).getTime() : Infinity;
+            return ta - tb;
           });
+          sorted.forEach(function (c) { grid.appendChild(c); });
         }
 
         function applyFilter() {
           var text = q.value.trim().toLowerCase();
           var visible = 0;
-          allRows.forEach(function (r) {
-            var ok = matches(r, text);
-            r.hidden = !ok;
+          cards.forEach(function (c) {
+            var ok = matches(c, text);
+            c.hidden = !ok;
             if (ok) visible++;
           });
-          groups.forEach(function (g) {
-            var anyVisible = Array.prototype.some.call(g.querySelectorAll('.row'), function (r) { return !r.hidden; });
-            g.hidden = !anyVisible;
-          });
-          spots.forEach(function (s) { s.hidden = !matches(s, text); });
-          document.getElementById('sec-new').hidden = document.getElementById('spot-zcode').hidden;
-          document.getElementById('sec-soon').hidden = document.getElementById('spot-conatus').hidden;
           noResult.classList.toggle('show', visible === 0);
-          resultLine.textContent = (activeCat === 'all' && !text)
-            ? '显示全部 19 条情报'
-            : '当前筛选下显示 ' + visible + ' 条情报（共 19 条）';
+          resultLine.textContent = (activeCat === 'all' && activeScope === 'all' && !text)
+            ? '显示全部 ' + cards.length + ' 条情报'
+            : '当前筛选下显示 ' + visible + ' 条情报（共 ' + cards.length + ' 条）';
         }
 
-        chips.forEach(function (chip) {
+        catChips.forEach(function (chip) {
           chip.addEventListener('click', function () {
-            chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+            catChips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
             chip.setAttribute('aria-pressed', 'true');
             activeCat = chip.getAttribute('data-cat');
+            applyFilter();
+          });
+        });
+        scopeChips.forEach(function (chip) {
+          chip.addEventListener('click', function () {
+            scopeChips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+            chip.setAttribute('aria-pressed', 'true');
+            activeScope = chip.getAttribute('data-scope');
             applyFilter();
           });
         });
         q.addEventListener('input', applyFilter);
         sortSel.addEventListener('change', function () { applySort(); applyFilter(); });
 
-        // Conatus 倒计时（截止 2026-11-30 23:59 北京时间）
+        /* ---------- Conatus 倒计时（截止 2026-11-30 23:59 北京时间） ---------- */
         var cd = document.getElementById('cd-days');
         var deadline = new Date('2026-11-30T23:59:59+08:00').getTime();
         function tick() {
