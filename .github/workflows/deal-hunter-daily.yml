@@ -1,0 +1,55 @@
+name: Deal Hunter 每日复查
+
+on:
+  schedule:
+    # 每天一次，北京时间 08:30（= UTC 00:30）
+    - cron: "30 0 * * *"
+  workflow_dispatch: {}   # 允许在 Actions 页面手动触发
+
+# 允许工作流把复查结果提交回仓库
+permissions:
+  contents: write
+
+# 并发控制：避免 schedule 与手动触发同时跑，两个 job 并行写同一文件导致冲突
+concurrency:
+  group: deal-hunter-daily
+  cancel-in-progress: false
+
+jobs:
+  recheck:
+    # 防自触发死循环：仅 schedule / 手动时运行；bot 自身的提交推送不再触发
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event.pusher.name != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 运行复查脚本
+        run: |
+          python3 tools/check.py | tee recheck-log.txt
+          {
+            echo "## 本次复查待人工复核清单"
+            cat NEEDS_REVIEW.md
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/deals.json tools/page_state.json NEEDS_REVIEW.md index.html
+          if git diff --cached --quiet; then
+            echo "内容无变化，跳过提交"
+          else
+            git commit -m "chore: 每日复查 $(TZ=Asia/Shanghai date +%F)"
+            # 若 GitHub 在此期间往分支提交了其他内容，先变基再推送，避免 non-fast-forward 失败
+            git pull --rebase origin main || git rebase origin/main
+            git push
+          fi
