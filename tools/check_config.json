@@ -1,0 +1,306 @@
+{
+ "aistudio": {
+  "check_urls": [
+   "https://aistudio.baidu.com/"
+  ],
+  "groups": [
+   [
+    "AI Studio",
+    "飞桨",
+    "aistudio"
+   ]
+  ],
+  "note": "每日 8 点算力卡；官网为 JS 应用，只做存在性核对"
+ },
+ "azure-students": {
+  "check_urls": [
+   "https://azure.microsoft.com/en-in/free/students"
+  ],
+  "groups": [
+   [
+    "USD 100",
+    "$ 100",
+    "$100"
+   ],
+   [
+    "student",
+    "Student"
+   ]
+  ],
+  "note": "学生 $100 额度，免信用卡"
+ },
+ "bigmodel": {
+  "check_urls": [
+   "https://docs.bigmodel.cn/cn/guide/start/pricing"
+  ],
+  "groups": [
+   [
+    "GLM-4.7-Flash",
+    "GLM-4-Flash",
+    "Flash"
+   ],
+   [
+    "免费"
+   ]
+  ],
+  "note": "Flash 系列免费 + 新人 2000 万 Token"
+ },
+ "conatus": {
+  "check_urls": [
+   "https://www.qiniu.com/ai/free-models/conatus-2026"
+  ],
+  "groups": [
+   [
+    "Conatus",
+    "conatus"
+   ],
+   [
+    "1 亿",
+    "1亿",
+    "100M"
+   ]
+  ],
+  "note": "实名每日 1 亿 Token，2026-11-30 23:59 结束"
+ },
+ "copilot": {
+  "check_urls": [
+   "https://github.com/features/copilot/plans"
+  ],
+  "groups": [
+   [
+    "Copilot"
+   ],
+   [
+    "2,000",
+    "2000"
+   ]
+  ],
+  "note": "补全 2000 次/月；对话次数官方未公布固定数字"
+ },
+ "coze": {
+  "check_urls": [
+   "https://docs.coze.cn/coze_pro_credits"
+  ],
+  "groups": [
+   [
+    "积分"
+   ],
+   [
+    "1,500",
+    "1500"
+   ]
+  ],
+  "note": "每日 1500 积分；调价公告日期已顺延至 2026-11-14"
+ },
+ "crouton": {
+  "check_urls": [
+   "https://openrouter.ai/stealth/crouton-alpha:free"
+  ],
+  "groups": [
+   [
+    "crouton",
+    "Crouton"
+   ]
+  ],
+  "note": "隐身期已结束，仅作情报记录；只确认页面还在"
+ },
+ "daytona": {
+  "check_urls": [
+   "https://www.daytona.com/pricing"
+  ],
+  "groups": [
+   [
+    "Daytona"
+   ],
+   [
+    "$200",
+    "200"
+   ]
+  ],
+  "note": "新用户 $200 一次性额度，不能用于 GPU 沙箱"
+ },
+ "gemini-cli": {
+  "check_urls": [
+   "https://developers.google.com/gemini-code-assist/resources/quotas"
+  ],
+  "groups": [
+   [
+    "1,000",
+    "1000"
+   ],
+   [
+    "60"
+   ]
+  ],
+  "note": "个人账号 1000 次/天、60 次/分钟"
+ },
+ "inception": {
+  "check_urls": [
+   "https://docs.inceptionlabs.ai/get-started"
+  ],
+  "groups": [
+   [
+    "Mercury"
+   ],
+   [
+    "100M",
+    "100 million",
+    "100,000,000",
+    "1 亿"
+   ]
+  ],
+  "note": "新账号 1 亿 Token；服务 2026-12-28 终止（2026-11-13 复查确认）"
+ },
+ "kaggle": {
+  "check_urls": [
+   "https://www.kaggle.com/docs/efficient-gpu-usage"
+  ],
+  "groups": [
+   [
+    "GPU"
+   ]
+  ],
+  "note": "GPU 每周 30 小时；官方文档是 JS 渲染，脚本只能确认页面存在，配额数字靠人工复核"
+ },
+ "mistral": {
+  "check_urls": [
+   "https://mistral.ai/pricing"
+  ],
+  "groups": [
+   [
+    "Mistral"
+   ],
+   [
+    "Free",
+    "free"
+   ]
+  ],
+  "note": "免费层存在但额度官方未公布，只确认页面与 Free 口径还在"
+ },
+ "openrouter-free": {
+  "check_urls": [
+   "https://openrouter.ai/docs/api/reference/limits.md"
+  ],
+  "groups": [
+   [
+    ":free"
+   ],
+   [
+    "50"
+   ]
+  ],
+  "note": ":free 限速两档 50/天 与 1000/天；HTML 版限速表是 JS 渲染，改查官方 .md 版文档"
+ },
+ "siliconflow": {
+  "check_urls": [
+   "https://docs.siliconflow.com/cn/faqs/billing-rules"
+  ],
+  "groups": [
+   [
+    "14 元",
+    "14元"
+   ],
+   [
+    "免费"
+   ]
+  ],
+  "note": "免费模型清单 + 注册 14 元额度"
+ },
+ "sources": [
+  {
+   "name": "懒猫 AI",
+   "url": "https://lanmao.ai/zh/offers.md"
+  },
+  {
+   "name": "AIHot",
+   "url": "https://aihot.news/free-tokens"
+  },
+  {
+   "name": "赛博鸡蛋",
+   "url": "https://jidan.si/c/credit"
+  },
+  {
+   "name": "白嫖计",
+   "url": "https://baipiaoji.com/limits.json"
+  }
+ ],
+ "tingwu": {
+  "check_urls": [
+   "https://help.aliyun.com/zh/tingwu/pricing-and-billing-rules"
+  ],
+  "groups": [
+   [
+    "试用"
+   ],
+   [
+    "90 天",
+    "90天"
+   ]
+  ],
+  "note": "新开通试用 90 天"
+ },
+ "tokenhub": {
+  "check_urls": [
+   "https://www.tencentcloud.com/zh/document/product/1300/80423"
+  ],
+  "groups": [
+   [
+    "100 万",
+    "100万",
+    "1000000"
+   ],
+   [
+    "TokenHub",
+    "体验包",
+    "新人"
+   ]
+  ],
+  "note": "每模型 100 万 Token，领取活动至 2026-12-31"
+ },
+ "upstash-box": {
+  "check_urls": [
+   "https://upstash.com/pricing/box"
+  ],
+  "groups": [
+   [
+    "Box"
+   ],
+   [
+    "Free",
+    "free"
+   ]
+  ],
+  "note": "Free 层每月 5 小时 CPU"
+ },
+ "workers-ai": {
+  "check_urls": [
+   "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  ],
+  "groups": [
+   [
+    "Neurons"
+   ],
+   [
+    "10,000",
+    "10000"
+   ]
+  ],
+  "note": "每天 10000 Neurons"
+ },
+ "zcode": {
+  "check_urls": [
+   "https://zcode.z.ai/cn/docs/configuration"
+  ],
+  "groups": [
+   [
+    "GLM"
+   ],
+   [
+    "800",
+    "300",
+    "500"
+   ]
+  ],
+  "note": "新用户 5 天，每天 800 万 Token"
+ }
+}
