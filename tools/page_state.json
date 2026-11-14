@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "deals": {
     "conatus": {
       "status": "ok",
@@ -9,27 +9,27 @@
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "f1a47cc77c1f"
+      "hash": "9d110fbebd8d"
     },
     "siliconflow": {
       "status": "ok",
       "detail": "",
-      "hash": "ee5ae2ff7668"
+      "hash": "a45df200aa56"
     },
     "bigmodel": {
       "status": "ok",
       "detail": "",
-      "hash": "ef85499f9933"
+      "hash": "2e960fc56db7"
     },
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "407ad77c3e1f"
+      "hash": "72b0a2ada2c7"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "71a3ec76da8c"
+      "hash": "ca17057d068b"
     },
     "openrouter-free": {
       "status": "ok",
@@ -39,12 +39,12 @@
     "mistral": {
       "status": "ok",
       "detail": "",
-      "hash": "ca59ebebee61"
+      "hash": "85baa44211a4"
     },
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "4753afacc75e"
+      "hash": "825850b1cd9f"
     },
     "coze": {
       "status": "ok",
@@ -59,32 +59,32 @@
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "4bd8215147e6"
+      "hash": "4dfd5a1da9df"
     },
     "upstash-box": {
       "status": "ok",
       "detail": "",
-      "hash": "1e0202587e53"
+      "hash": "1016c16f5739"
     },
     "zcode": {
       "status": "ok",
       "detail": "",
-      "hash": "9da62f71cb7c"
+      "hash": "a722b6418e40"
     },
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "be5ee85a41f9"
+      "hash": "5a5210fa082c"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "12ac7d4d0cb1"
+      "hash": "4d3b5be461b6"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "ced4ca5663c7"
+      "hash": "302625ea1adf"
     },
     "aistudio": {
       "status": "ok",
@@ -94,7 +94,7 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "d5af9f297602"
+      "hash": "3990ad6c246d"
     }
   },
   "source_baseline": {
@@ -442,22 +442,9 @@
       "https://lanmao.ai/zh/o/zilliz-cloud-free-5gb-2-5m-vcus/"
     ],
     "赛博鸡蛋": [
-      "https://jidan.si/free/206-ibm-cloud-newuser-200-usd-credit",
-      "https://jidan.si/free/211-replicas-new-org-100-usd-free-usage",
-      "https://jidan.si/free/212-daytona-ai-sandbox-200-usd-free-compute",
-      "https://jidan.si/free/216-zhipu-autoclaw-double11-50m-100m-tokens",
-      "https://jidan.si/free/219-scnet-client-unlimited-flagship-tokens-nov30",
-      "https://jidan.si/free/220-huaweicloud-ai-coding-bootcamp-certificate-300-cny",
-      "https://jidan.si/free/225-specstream-signup-10-usd-search-credit",
       "https://jidan.si/free/228-liveswap-signup-30-credits",
       "https://jidan.si/free/233-workbuddy-education-teacher-2000-credits-12-months",
       "https://jidan.si/free/234-kaggle-free-gpu-30-hours-weekly-t4x2",
-      "https://jidan.si/free/240-meoo-daily-2000-points",
-      "https://jidan.si/free/241-qoder-cn-daily-100-credits",
-      "https://jidan.si/free/242-minimax-code-daily-checkin-points",
-      "https://jidan.si/free/245-workbuddy-daily-100-points-buddy-station",
-      "https://jidan.si/free/246-ima-daily-checkin-50-compute",
-      "https://jidan.si/free/247-wps-lingxi-daily-checkin-points",
       "https://jidan.si/free/251-huawei-codearts-invite-1000-points",
       "https://jidan.si/free/252-zcode-new-user-5day-trial-8m-tokens-daily",
       "https://jidan.si/free/264-uppcoder-spark-free-dev-environment",
@@ -465,6 +452,19 @@
       "https://jidan.si/free/287-upstash-box-free-tier",
       "https://jidan.si/free/288-workbuddy-november-starbucks-300-credits",
       "https://jidan.si/free/291-amd-token-lab-10-points-free-api",
+      "https://jidan.si/free/292-google-cloud-300-credit-gemini-platform-nov16-deadline",
+      "https://jidan.si/free/294-codex-banked-reset-dot-updates",
+      "https://jidan.si/free/296-deapi-5-usd-signup-credit-free-api",
+      "https://jidan.si/free/298-vmodel-10-usd-signup-credit-free-api",
+      "https://jidan.si/free/302-huawei-codearts-skill-contest-credits",
+      "https://jidan.si/free/304-zcode-weekend-build-500m-glm-5-3-flash-tokens",
+      "https://jidan.si/free/305-telnyx-pretrial-25-usd-ai-credits",
+      "https://jidan.si/free/306-reducto-new-standard-account-150-usd-credits",
+      "https://jidan.si/free/308-autoclaw-100m-tokens-nov-16-22",
+      "https://jidan.si/free/309-instabox-free-cloud-linux-machine-agent",
+      "https://jidan.si/free/310-polyai-new-account-100-usd-dialog-rsn-1-credits",
+      "https://jidan.si/free/312-cloudzyro-launch-free-hosting",
+      "https://jidan.si/free/313-mara-inference-new-account-5-usd-free-credits",
       "https://jidan.si/free/91-huawei-cloud-xiaohongshu-skill-competition-200-credits"
     ],
     "白嫖计": [
