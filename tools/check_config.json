@@ -302,5 +302,22 @@
    ]
   ],
   "note": "新用户 5 天，每天 800 万 Token"
+ },
+ "stepaudio-3": {
+  "check_urls": [
+   "https://platform.stepfun.ai/docs/en/guides/pricing/details"
+  ],
+  "groups": [
+   [
+    "StepAudio 3"
+   ],
+   [
+    "November 17, 2026"
+   ],
+   [
+    "11:59:59"
+   ]
+  ],
+  "note": "StepAudio 3 系列限免至 2026-11-17 11:59:59（北京时间），官方定价页核对"
  }
 }

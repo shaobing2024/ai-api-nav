@@ -530,6 +530,74 @@
       "go_url": "https://mistral.ai/pricing"
     },
     {
+      "slug": "stepaudio-3",
+      "article_class": "card",
+      "cat": "大模型 API",
+      "scope": "soon",
+      "expiry": "2026-11-17T11:59:59+08:00",
+      "verified": "2026-11-15",
+      "search": "阶跃星辰 stepfun stepaudio 3 语音 限时免费 实时语音 语音合成 音色复刻 音乐生成 语音识别 tts asr 大模型 api",
+      "icon_color": "#0b7285",
+      "icon_char": "阶",
+      "title": "阶跃星辰 StepAudio 3 语音系列限时免费（至 11 月 17 日）",
+      "vendor": "阶跃星辰 StepFun · 大模型 API",
+      "badges": [
+        {
+          "cls": "badge-amber",
+          "text": "2026-11-17 到期"
+        }
+      ],
+      "quota": "限免期内调用不收费",
+      "intro": "阶跃星辰新一代语音多模态系列：实时全双工语音、语音合成与音色复刻/设计、音频与音效生成、AI 音乐生成、高精语音识别。官方定价页确认限免至 2026-11-17 11:59:59，之后按新价计费。",
+      "pills": [
+        "大模型 API",
+        "真实免费",
+        "国内直连"
+      ],
+      "gate_html": "<b>门槛：</b>注册开放平台账号，个人账户需先完成实名认证，控制台创建 API Key 后调用；免绑卡、免预充值",
+      "detail_intro": "阶跃星辰新一代语音多模态系列：实时全双工语音、语音合成与音色复刻/设计、音频与音效生成、AI 音乐生成、高精语音识别。官方定价页确认限免至 2026-11-17 11:59:59，之后按新价计费。Base URL https://api.stepfun.com/v1，OpenAI 兼容。",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>限免期内调用 <b>0 元</b>，不限量、按账户等级限速（官方定价页）：个人账户 V0（累计现金充值不足约 ¥100）并发 5 / RPM 100 / TPM 500,000，累计充值只计现金、代金券不计。<b>免费覆盖的逐模型清单未核实</b>：官方定价页只说「适用限时免费政策的模型」限免至 11-17 11:59:59，未逐项列明；据赛博鸡蛋为全系 6 项，其中实时语音、对话语音、音频生成、音乐生成在限免期用 -preview 专属 ID，语音合成与语音识别用正式 ID；另有第三方清单称仅 4 个 -preview 模型免费、TTS 与独立 ASR 不在内——调用前请在控制台确认所用模型的计费状态。",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "注册阶跃星辰开放平台账号；个人账户需先完成实名认证（官方定价页明示），在控制台「API Key 管理」创建密钥后调用；免绑卡、免预充值。",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "国内直连",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（限免期内）。2026-11-17 12:00 起按新价计费：实时语音 0.65 元/会话分钟、语音合成与音频生成 95 元/百万计费字符、音色复刻/设计 10 元/个、音乐生成 16 元/输出音频小时起、语音识别 7.5 元/音频小时（人民币价据赛博鸡蛋转录的官方定价页；官方英文定价页以美元计价）。",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "11-17 中午起自动转按量计费，账户里有余额的留意非预期扣费；限免 ID 与正式 ID 可能不同（-preview 后缀），混用可能直接产生费用；免费覆盖范围未获官方逐项确认（见上方额度说明）。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "2026-11-17 11:59:59（北京时间）",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://saibodan.com/deals/stepfun-free-models\" target=\"_blank\" rel=\"noopener\">赛博鸡蛋详情页</a> · <a href=\"https://jidan.si/free/231-stepfun-stepaudio-3-voice-series-free-nov17\" target=\"_blank\" rel=\"noopener\">赛博鸡蛋报道页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://platform.stepfun.com/\" target=\"_blank\" rel=\"noopener\">platform.stepfun.com</a> · <a href=\"https://platform.stepfun.ai/docs/en/guides/pricing/details\" target=\"_blank\" rel=\"noopener\">官方定价页</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "⏳ 2026-11-17 11:59 截止",
+      "go_url": "https://platform.stepfun.com/"
+    },
+    {
       "slug": "tingwu",
       "article_class": "card",
       "cat": "AI 应用试用",
