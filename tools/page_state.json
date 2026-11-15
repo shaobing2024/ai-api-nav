@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "deals": {
     "conatus": {
       "status": "ok",
@@ -9,27 +9,27 @@
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "9d110fbebd8d"
+      "hash": "e09c6f70df94"
     },
     "siliconflow": {
       "status": "ok",
       "detail": "",
-      "hash": "a45df200aa56"
+      "hash": "0f58a87d6523"
     },
     "bigmodel": {
       "status": "ok",
       "detail": "",
-      "hash": "2e960fc56db7"
+      "hash": "36aadb5ee835"
     },
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "72b0a2ada2c7"
+      "hash": "35d5c9a6badd"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "ca17057d068b"
+      "hash": "77ff7728e1c9"
     },
     "openrouter-free": {
       "status": "ok",
@@ -44,7 +44,7 @@
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "825850b1cd9f"
+      "hash": "442637dba1a6"
     },
     "coze": {
       "status": "ok",
@@ -59,7 +59,7 @@
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "4dfd5a1da9df"
+      "hash": "074cf5a9edb9"
     },
     "upstash-box": {
       "status": "ok",
@@ -74,17 +74,17 @@
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "5a5210fa082c"
+      "hash": "90322db2130c"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "4d3b5be461b6"
+      "hash": "52efa28dba1d"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "302625ea1adf"
+      "hash": "720af1945947"
     },
     "aistudio": {
       "status": "ok",
@@ -94,7 +94,7 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "3990ad6c246d"
+      "hash": "5547daa135ea"
     }
   },
   "source_baseline": {
@@ -258,6 +258,7 @@
       "https://lanmao.ai/zh/o/ibm-watsonx-lite-free-tier/",
       "https://lanmao.ai/zh/o/ideogram-free/",
       "https://lanmao.ai/zh/o/inception-mercury-100m-free-tokens/",
+      "https://lanmao.ai/zh/o/inferbase-free-plan/",
       "https://lanmao.ai/zh/o/intel-tiber-ai-cloud-free-tier/",
       "https://lanmao.ai/zh/o/iteracompute-qwen38-27b-free-30m-monthly/",
       "https://lanmao.ai/zh/o/jdcloud-joycode-team-free/",
@@ -339,6 +340,7 @@
       "https://lanmao.ai/zh/o/read-ai-free-5-meetings/",
       "https://lanmao.ai/zh/o/recraft-free/",
       "https://lanmao.ai/zh/o/reducto-standard-free-150-usd/",
+      "https://lanmao.ai/zh/o/regolo-ai-30-day-free-trial/",
       "https://lanmao.ai/zh/o/requesty-free-models/",
       "https://lanmao.ai/zh/o/retell-ai-voice-agent-10-usd-credit/",
       "https://lanmao.ai/zh/o/rev-ai-free-5-hours-credit/",
@@ -442,8 +444,6 @@
       "https://lanmao.ai/zh/o/zilliz-cloud-free-5gb-2-5m-vcus/"
     ],
     "赛博鸡蛋": [
-      "https://jidan.si/free/228-liveswap-signup-30-credits",
-      "https://jidan.si/free/233-workbuddy-education-teacher-2000-credits-12-months",
       "https://jidan.si/free/234-kaggle-free-gpu-30-hours-weekly-t4x2",
       "https://jidan.si/free/251-huawei-codearts-invite-1000-points",
       "https://jidan.si/free/252-zcode-new-user-5day-trial-8m-tokens-daily",
@@ -465,7 +465,9 @@
       "https://jidan.si/free/310-polyai-new-account-100-usd-dialog-rsn-1-credits",
       "https://jidan.si/free/312-cloudzyro-launch-free-hosting",
       "https://jidan.si/free/313-mara-inference-new-account-5-usd-free-credits",
-      "https://jidan.si/free/91-huawei-cloud-xiaohongshu-skill-competition-200-credits"
+      "https://jidan.si/free/315-tavily-geekroom-8000-credits",
+      "https://jidan.si/free/317-aliyun-student-300-yuan-credit-bailian-api",
+      "https://jidan.si/free/318-50x-ai-100-usd-deepseek-v41-flash"
     ],
     "白嫖计": [
       "category",
