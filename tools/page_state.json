@@ -9,7 +9,7 @@
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "e8dd04466e1f"
+      "hash": "fc7474f6ffc2"
     },
     "siliconflow": {
       "status": "ok",
@@ -24,12 +24,12 @@
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "2277ac77a5cc"
+      "hash": "69d0dabb9e00"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "ea0ae838393c"
+      "hash": "7bb6a671cc47"
     },
     "openrouter-free": {
       "status": "ok",
@@ -44,7 +44,7 @@
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "2400bde5e2a6"
+      "hash": "2914247816f9"
     },
     "coze": {
       "status": "ok",
@@ -59,7 +59,7 @@
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "d214ad480c9c"
+      "hash": "bfdda554f78b"
     },
     "upstash-box": {
       "status": "ok",
@@ -74,17 +74,17 @@
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "b342703fa105"
+      "hash": "09a237c0dd57"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "a22a13c8fe40"
+      "hash": "6cff2e2563d8"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "fef6c7a8eab2"
+      "hash": "1b514345f821"
     },
     "aistudio": {
       "status": "ok",
@@ -94,7 +94,7 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "e4964774ac3e"
+      "hash": "71670b4eb78b"
     },
     "stepaudio-3": {
       "status": "ok",
@@ -107,6 +107,7 @@
       "https://lanmao.ai/zh/o/360-nami-search/",
       "https://lanmao.ai/zh/o/ai21-studio-free-trial/",
       "https://lanmao.ai/zh/o/aion-labs-free-tier-20k-tokens-daily/",
+      "https://lanmao.ai/zh/o/aiping-newuser-6-yuan-gift/",
       "https://lanmao.ai/zh/o/aiva-free-3-downloads-monthly/",
       "https://lanmao.ai/zh/o/alibabacloud-model-studio-intl-free-quota/",
       "https://lanmao.ai/zh/o/aliyun-bailian-knowledge-base-720h-free/",
@@ -417,6 +418,7 @@
       "https://lanmao.ai/zh/o/vercel-sandbox-hobby-5-cpu-hours-monthly/",
       "https://lanmao.ai/zh/o/vidu-ai/",
       "https://lanmao.ai/zh/o/vizard-free-60-credits-monthly/",
+      "https://lanmao.ai/zh/o/volcengine-ark-collaboration-reward/",
       "https://lanmao.ai/zh/o/volcengine-ark-managed-agents-free-pack/",
       "https://lanmao.ai/zh/o/volcengine-ark-web-search-plugin-20k-monthly/",
       "https://lanmao.ai/zh/o/volcengine-ark/",

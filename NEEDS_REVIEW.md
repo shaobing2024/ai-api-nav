@@ -6,8 +6,8 @@
 
 ## 新候选线索（仅报告，未收录，等用户点头）
 
-- 赛博鸡蛋：https://jidan.si/free/319-zhihu-search-api-free-10000-daily
-- 赛博鸡蛋：https://jidan.si/free/91-huawei-cloud-xiaohongshu-skill-competition-200-credits
+- 懒猫 AI：https://lanmao.ai/zh/o/aiping-newuser-6-yuan-gift/
+- 懒猫 AI：https://lanmao.ai/zh/o/volcengine-ark-collaboration-reward/
 
 ## 来源站读取说明
 
