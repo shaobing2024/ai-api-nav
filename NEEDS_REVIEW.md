@@ -1,12 +1,13 @@
-# 待人工复核（2026-11-15 自动复查）
+# 待人工复核（2026-11-16 自动复查）
+
+## 即将到期 / 已过期
+
+- **stepaudio-3**：1 天后到期（2026-11-17）
 
 ## 新候选线索（仅报告，未收录，等用户点头）
 
-- 懒猫 AI：https://lanmao.ai/zh/o/inferbase-free-plan/
-- 懒猫 AI：https://lanmao.ai/zh/o/regolo-ai-30-day-free-trial/
-- 赛博鸡蛋：https://jidan.si/free/315-tavily-geekroom-8000-credits
-- 赛博鸡蛋：https://jidan.si/free/317-aliyun-student-300-yuan-credit-bailian-api
-- 赛博鸡蛋：https://jidan.si/free/318-50x-ai-100-usd-deepseek-v41-flash
+- 赛博鸡蛋：https://jidan.si/free/319-zhihu-search-api-free-10000-daily
+- 赛博鸡蛋：https://jidan.si/free/91-huawei-cloud-xiaohongshu-skill-competition-200-credits
 
 ## 来源站读取说明
 
