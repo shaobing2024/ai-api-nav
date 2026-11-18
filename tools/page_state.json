@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "deals": {
     "conatus": {
       "status": "ok",
@@ -9,27 +9,27 @@
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "2306d65bea51"
+      "hash": "9404eca8e72f"
     },
     "siliconflow": {
       "status": "ok",
       "detail": "",
-      "hash": "b1a5bad07592"
+      "hash": "f9560dd962e3"
     },
     "bigmodel": {
       "status": "ok",
       "detail": "",
-      "hash": "e48fb68f39d0"
+      "hash": "01fc68749553"
     },
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "6e98278fa979"
+      "hash": "fc6dd888bceb"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "4f3621a0f4ed"
+      "hash": "ef58ba935b85"
     },
     "openrouter-free": {
       "status": "ok",
@@ -39,17 +39,17 @@
     "mistral": {
       "status": "ok",
       "detail": "",
-      "hash": "95386e3df62b"
+      "hash": "f05aa3310a52"
     },
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "55a2a6f55256"
+      "hash": "d7f6b9cdc139"
     },
     "coze": {
       "status": "ok",
       "detail": "",
-      "hash": "350776f66032"
+      "hash": "a9543cc9e872"
     },
     "workers-ai": {
       "status": "ok",
@@ -59,12 +59,12 @@
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "31e068ad3c04"
+      "hash": "2c11695a0aeb"
     },
     "upstash-box": {
       "status": "ok",
       "detail": "",
-      "hash": "1016c16f5739"
+      "hash": "0440da802999"
     },
     "zcode": {
       "status": "ok",
@@ -74,17 +74,17 @@
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "43a0971b585d"
+      "hash": "7100042d00db"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "debc1feaa8f9"
+      "hash": "382551a68c4e"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "1a841df0803d"
+      "hash": "b7194f5c1e30"
     },
     "aistudio": {
       "status": "ok",
@@ -94,12 +94,47 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "7146310e785b"
+      "hash": "06c63999ec27"
     },
-    "stepaudio-3": {
-      "status": "needs_review",
-      "detail": "未命中：November 17, 2026",
-      "hash": "ba3feecf81c8"
+    "simular-box-free-5000-credits": {
+      "status": "ok",
+      "detail": "",
+      "hash": "6e2260d9c717"
+    },
+    "meshy-z-axis-awards-1000-free-credits": {
+      "status": "ok",
+      "detail": "",
+      "hash": "8bc6f5d497d8"
+    },
+    "polyai-100-usd-credits-registration-before-dec-1": {
+      "status": "ok",
+      "detail": "",
+      "hash": "7cc89a4a21c7"
+    },
+    "aliyun-pai-dlc-free-trial-100-cuh": {
+      "status": "ok",
+      "detail": "",
+      "hash": "4d98d2328d9d"
+    },
+    "aliyun-rds-contextdb-newuser-834-yuan": {
+      "status": "ok",
+      "detail": "",
+      "hash": "9e2d3d8c8105"
+    },
+    "ctyun-research-assistant-free-7day-gpu-devbox": {
+      "status": "ok",
+      "detail": "",
+      "hash": "4d49bb644c2d"
+    },
+    "aliyun-pai-eas-free-trial-500-yuan": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "isaacus-100-free-credits-new-users": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
     }
   },
   "source_baseline": {
@@ -455,8 +490,6 @@
       "https://lanmao.ai/zh/o/zilliz-cloud-free-5gb-2-5m-vcus/"
     ],
     "赛博鸡蛋": [
-      "https://jidan.si/free/233-workbuddy-education-teacher-2000-credits-12-months",
-      "https://jidan.si/free/234-kaggle-free-gpu-30-hours-weekly-t4x2",
       "https://jidan.si/free/252-zcode-new-user-5day-trial-8m-tokens-daily",
       "https://jidan.si/free/264-uppcoder-spark-free-dev-environment",
       "https://jidan.si/free/271-claude-paid-users-free-full-reset-dec10",
@@ -478,27 +511,142 @@
       "https://jidan.si/free/318-50x-ai-100-usd-deepseek-v41-flash",
       "https://jidan.si/free/319-zhihu-search-api-free-10000-daily",
       "https://jidan.si/free/348-isaacus-100-free-credits-new-users",
-      "https://jidan.si/free/91-huawei-cloud-xiaohongshu-skill-competition-200-credits"
+      "https://jidan.si/free/350-simular-box-free-5000-credits",
+      "https://jidan.si/free/355-meshy-z-axis-awards-1000-free-credits",
+      "https://jidan.si/free/356-polyai-100-usd-credits-registration-before-dec-1"
     ],
     "白嫖计": [
-      "category",
-      "checked",
-      "count",
-      "generated",
-      "license",
-      "name",
-      "note",
-      "of_total_listed",
-      "page",
-      "page_en",
-      "publisher",
-      "quota",
-      "slug",
-      "source",
-      "title",
-      "tools",
-      "url",
-      "wall"
+      "ai360",
+      "aider",
+      "aippt",
+      "ante",
+      "anythingllm",
+      "bailian",
+      "bing-image",
+      "bolt",
+      "caiyun",
+      "canva",
+      "cerebras",
+      "character-ai",
+      "chatgpt",
+      "civitai",
+      "claude",
+      "cline",
+      "cloudflare-workers-ai",
+      "codebuddy",
+      "codex",
+      "cody",
+      "cohere",
+      "comate",
+      "consensus",
+      "continue",
+      "coze",
+      "cursor",
+      "d-id",
+      "deepinfra",
+      "deepl",
+      "deepseek",
+      "devv",
+      "dify",
+      "doubao",
+      "doubao-aixue",
+      "duckduckgo-ai",
+      "elevenlabs",
+      "elicit",
+      "exa",
+      "fastgpt",
+      "feishu-miaoji",
+      "felo",
+      "figma",
+      "fireworks",
+      "fish-audio",
+      "framer",
+      "gamma",
+      "gaoding",
+      "gemini",
+      "gemini-cli",
+      "gezhe",
+      "github-copilot",
+      "github-models",
+      "google-ai-studio",
+      "google-flow",
+      "gptzero",
+      "grammarly",
+      "grok",
+      "groq",
+      "guojia-fanzha",
+      "hailuo",
+      "haiper",
+      "heygen",
+      "huggingface",
+      "ideogram",
+      "ima",
+      "immersive-translate",
+      "jimeng",
+      "jsdesign",
+      "kimi",
+      "kiro",
+      "kling",
+      "krea",
+      "languagetool",
+      "leonardo",
+      "liblib",
+      "lm-studio",
+      "lovable",
+      "luma",
+      "marscode",
+      "metaso",
+      "mistral",
+      "motiff",
+      "ms-copilot",
+      "n8n",
+      "napkin",
+      "notebooklm",
+      "notion-ai",
+      "nvidia-nim",
+      "ollama",
+      "openrouter",
+      "opusclip",
+      "perplexity",
+      "phind",
+      "pika",
+      "pixlr",
+      "pixverse",
+      "playground-ai",
+      "poe",
+      "processon",
+      "qingying",
+      "qoder",
+      "quark-ai",
+      "quillbot",
+      "ragflow",
+      "recraft",
+      "removebg",
+      "replit",
+      "runway",
+      "scispace",
+      "siliconflow",
+      "suno",
+      "tongyi",
+      "tongyi-lingma",
+      "tongyi-wanxiang",
+      "trae",
+      "ttsmaker",
+      "tusiart",
+      "udio",
+      "upscayl",
+      "v0",
+      "vidu",
+      "wenxin",
+      "windsurf",
+      "wordvice",
+      "wps-ai",
+      "wujie",
+      "xinghuo",
+      "yige",
+      "youdao",
+      "zhihu-zhida",
+      "zhipu-glm"
     ]
   }
 }

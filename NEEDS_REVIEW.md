@@ -1,22 +1,10 @@
-# 待人工复核（2026-11-17 自动复查）
+# 待人工复核（2026-11-18 自动复查）
 
-## 模式未命中（数据未改动）
+## 已自动上架
 
-- **stepaudio-3**：未命中：November 17, 2026
-
-## 即将到期 / 已过期
-
-- **stepaudio-3**：0 天后到期（2026-11-17）
-
-## 新候选线索（仅报告，未收录，等用户点头）
-
-- 懒猫 AI：https://lanmao.ai/zh/o/aliyun-pai-dlc-free-trial-100-cuh/
-- 懒猫 AI：https://lanmao.ai/zh/o/aliyun-pai-eas-free-trial-500-yuan/
-- 懒猫 AI：https://lanmao.ai/zh/o/aliyun-rds-contextdb-newuser-834-yuan/
-- 懒猫 AI：https://lanmao.ai/zh/o/ctyun-research-assistant-free-7day-gpu-devbox/
-- 赛博鸡蛋：https://jidan.si/free/233-workbuddy-education-teacher-2000-credits-12-months
-- 赛博鸡蛋：https://jidan.si/free/348-isaacus-100-free-credits-new-users
+- **aliyun-pai-eas-free-trial-500-yuan**：阿里云 PAI-EAS 新用户免费试用（模型在线服务 500 元 GPU 抵扣金，1 个月）（来源：https://free.aliyun.com/）
+- **isaacus-100-free-credits-new-users**：Isaacus 法律 AI 新用户送 100 美元 API 额度：Kanon 2 模型免费试用两个月（来源：https://isaacus.com/pricing）
 
 ## 来源站读取说明
 
-- AIHot 未纳入自动候选扫描（需人工浏览）
+- AIHot 未纳入自动扫描（页面详情靠点击加载、无公开数据接口，仍需人工浏览）
