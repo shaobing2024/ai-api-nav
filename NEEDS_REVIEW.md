@@ -2,8 +2,13 @@
 
 ## 已自动上架
 
-- **aliyun-pai-eas-free-trial-500-yuan**：阿里云 PAI-EAS 新用户免费试用（模型在线服务 500 元 GPU 抵扣金，1 个月）（来源：https://free.aliyun.com/）
-- **isaacus-100-free-credits-new-users**：Isaacus 法律 AI 新用户送 100 美元 API 额度：Kanon 2 模型免费试用两个月（来源：https://isaacus.com/pricing）
+- **axforge-free-3m-serverless-tokens-monthly**：AxForge 欧洲推理 API（每 30 天 3M 免费 token，Qwen3.8 / GLM-5.3-Flash （来源：https://axforge.ai/）
+- **databricks-trial-400-usd-14-days**：Databricks 免费试用（最高 400 美元用量，14 天，含 Foundation Model Serving （来源：https://www.databricks.com/try-databricks）
+- **sail-research-free-5-usd-monthly-credits**：Sail Research 推理 API（每月 5 美元免费额度，Kimi K3.1 / GLM-5.3 / DeepS（来源：https://sailresearch.com/）
+
+## 模式未命中（数据未改动）
+
+- **coze**：未命中：1,500 或 1500
 
 ## 来源站读取说明
 

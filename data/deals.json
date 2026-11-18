@@ -1878,6 +1878,234 @@
         ],
         "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
       }
+    },
+    {
+      "slug": "axforge-free-3m-serverless-tokens-monthly",
+      "article_class": "card",
+      "cat": "大模型 API",
+      "scope": "",
+      "expiry": "",
+      "verified": "2026-11-18",
+      "added": "2026-11-18",
+      "search": "AxForge 欧洲推理 API（每 30 天 3M 免费 token，Qwen3.8 / GLM-5.3-Flash / MiMo） AxForge 大模型 API 免费 额度 懒猫 AI",
+      "icon_color": "#087f5b",
+      "icon_char": "A",
+      "title": "AxForge 欧洲推理 API（每 30 天 3M 免费 token，Qwen3.8 / GLM-5.3-Flash ",
+      "vendor": "AxForge · 大模型 API",
+      "badges": [],
+      "quota": "每个新账号每 30 天含 300 万免费 serverless token",
+      "intro": "每个新账号每 30 天含 300 万免费 serverless token，免信用卡；可在 Claude Code、Codex、Cline、OpenCode 等工具里接入",
+      "pills": [
+        "大模型 API",
+        "真实免费",
+        "海外"
+      ],
+      "gate_html": "<b>门槛：</b>邮箱注册 / 需海外网络",
+      "detail_intro": "每个新账号每 30 天含 300 万免费 serverless token，免信用卡；可在 Claude Code、Codex、Cline、OpenCode 等工具里接入",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>每个新账号每 30 天含 300 万免费 serverless token，免信用卡；可在 Claude Code、Codex、Cline、OpenCode 等工具里接入（来源：懒猫 AI，未逐条官方核实）",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "邮箱注册 / 需海外网络",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "海外",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（免费额度内，来源站口径）",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "本条由每日复查按来源站内容自动收录，未逐条官方核实；额度、条件与到期以官方页为准，领取前请再确认。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "未公布",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://lanmao.ai/zh/o/axforge-free-3m-serverless-tokens-monthly/\" target=\"_blank\" rel=\"noopener\">懒猫 AI详情页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://axforge.ai/\" target=\"_blank\" rel=\"noopener\">axforge.ai</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "到期未公布",
+      "go_url": "https://axforge.ai/",
+      "check": {
+        "check_urls": [
+          "https://lanmao.ai/zh/o/axforge-free-3m-serverless-tokens-monthly/",
+          "https://axforge.ai/"
+        ],
+        "groups": [
+          [
+            "AxForge"
+          ]
+        ],
+        "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
+      }
+    },
+    {
+      "slug": "databricks-trial-400-usd-14-days",
+      "article_class": "card",
+      "cat": "大模型 API",
+      "scope": "",
+      "expiry": "",
+      "verified": "2026-11-18",
+      "added": "2026-11-18",
+      "search": "Databricks 免费试用（最高 400 美元用量，14 天，含 Foundation Model Serving 模型服务） Databricks 大模型 API 免费 额度 懒猫 AI",
+      "icon_color": "#1864ab",
+      "icon_char": "D",
+      "title": "Databricks 免费试用（最高 400 美元用量，14 天，含 Foundation Model Serving ",
+      "vendor": "Databricks · 大模型 API",
+      "badges": [],
+      "quota": "企业试用账号最高 400 美元免费用量",
+      "intro": "企业试用账号最高 400 美元免费用量，有效期 14 天，免信用卡；Foundation Model Serving 同样可用试用额度调用",
+      "pills": [
+        "大模型 API",
+        "真实免费",
+        "海外"
+      ],
+      "gate_html": "<b>门槛：</b>邮箱注册 / 需海外网络",
+      "detail_intro": "企业试用账号最高 400 美元免费用量，有效期 14 天，免信用卡；Foundation Model Serving 同样可用试用额度调用",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>企业试用账号最高 400 美元免费用量，有效期 14 天，免信用卡；Foundation Model Serving 同样可用试用额度调用（来源：懒猫 AI，未逐条官方核实）",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "邮箱注册 / 需海外网络",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "海外",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（免费额度内，来源站口径）",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "本条由每日复查按来源站内容自动收录，未逐条官方核实；额度、条件与到期以官方页为准，领取前请再确认。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "未公布",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://lanmao.ai/zh/o/databricks-trial-400-usd-14-days/\" target=\"_blank\" rel=\"noopener\">懒猫 AI详情页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://www.databricks.com/try-databricks\" target=\"_blank\" rel=\"noopener\">www.databricks.com</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "到期未公布",
+      "go_url": "https://www.databricks.com/try-databricks",
+      "check": {
+        "check_urls": [
+          "https://lanmao.ai/zh/o/databricks-trial-400-usd-14-days/",
+          "https://www.databricks.com/try-databricks"
+        ],
+        "groups": [
+          [
+            "Databricks"
+          ]
+        ],
+        "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
+      }
+    },
+    {
+      "slug": "sail-research-free-5-usd-monthly-credits",
+      "article_class": "card",
+      "cat": "大模型 API",
+      "scope": "",
+      "expiry": "",
+      "verified": "2026-11-18",
+      "added": "2026-11-18",
+      "search": "Sail Research 推理 API（每月 5 美元免费额度，Kimi K3.1 / GLM-5.3 / DeepSeek V4） Sail 大模型 API 免费 额度 懒猫 AI",
+      "icon_color": "#0b7285",
+      "icon_char": "S",
+      "title": "Sail Research 推理 API（每月 5 美元免费额度，Kimi K3.1 / GLM-5.3 / DeepS",
+      "vendor": "Sail · 大模型 API",
+      "badges": [],
+      "quota": "每月获赠 5 美元推理额度",
+      "intro": "Free 计划绑定支付方式后，每月获赠 5 美元推理额度，可调用 Kimi K3.1、GLM-5.3、DeepSeek V4 等开源模型（OpenAI / Anthropic 兼容接口）",
+      "pills": [
+        "大模型 API",
+        "真实免费",
+        "海外"
+      ],
+      "gate_html": "<b>门槛：</b>邮箱注册 / 需信用卡 / 需海外网络",
+      "detail_intro": "Free 计划绑定支付方式后，每月获赠 5 美元推理额度，可调用 Kimi K3.1、GLM-5.3、DeepSeek V4 等开源模型（OpenAI / Anthropic 兼容接口）",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>Free 计划绑定支付方式后，每月获赠 5 美元推理额度，可调用 Kimi K3.1、GLM-5.3、DeepSeek V4 等开源模型（OpenAI / Anthropic 兼容…（来源：懒猫 AI，未逐条官方核实）",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "邮箱注册 / 需信用卡 / 需海外网络",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "海外",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（免费额度内，来源站口径）",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "本条由每日复查按来源站内容自动收录，未逐条官方核实；额度、条件与到期以官方页为准，领取前请再确认。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "未公布",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://lanmao.ai/zh/o/sail-research-free-5-usd-monthly-credits/\" target=\"_blank\" rel=\"noopener\">懒猫 AI详情页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://sailresearch.com/\" target=\"_blank\" rel=\"noopener\">sailresearch.com</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "到期未公布",
+      "go_url": "https://sailresearch.com/",
+      "check": {
+        "check_urls": [
+          "https://lanmao.ai/zh/o/sail-research-free-5-usd-monthly-credits/",
+          "https://sailresearch.com/"
+        ],
+        "groups": [
+          [
+            "Sail"
+          ]
+        ],
+        "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
+      }
     }
   ]
 }

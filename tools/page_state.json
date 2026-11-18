@@ -4,12 +4,12 @@
     "conatus": {
       "status": "ok",
       "detail": "",
-      "hash": "929246444e1d"
+      "hash": "bb0a13c52654"
     },
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "9404eca8e72f"
+      "hash": "7c72fce6b821"
     },
     "siliconflow": {
       "status": "ok",
@@ -24,12 +24,12 @@
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "fc6dd888bceb"
+      "hash": "ca7103510508"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "ef58ba935b85"
+      "hash": "b39135b2e680"
     },
     "openrouter-free": {
       "status": "ok",
@@ -44,12 +44,12 @@
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "d7f6b9cdc139"
+      "hash": "7cdba2b55832"
     },
     "coze": {
-      "status": "ok",
-      "detail": "",
-      "hash": "a9543cc9e872"
+      "status": "needs_review",
+      "detail": "未命中：1,500 或 1500",
+      "hash": "0bcb662c74de"
     },
     "workers-ai": {
       "status": "ok",
@@ -59,7 +59,7 @@
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "2c11695a0aeb"
+      "hash": "cf8ccc9acb0b"
     },
     "upstash-box": {
       "status": "ok",
@@ -74,17 +74,17 @@
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "7100042d00db"
+      "hash": "7c9e35deb122"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "382551a68c4e"
+      "hash": "0b2afccffe4c"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "b7194f5c1e30"
+      "hash": "29363a122ad0"
     },
     "aistudio": {
       "status": "ok",
@@ -94,22 +94,22 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "06c63999ec27"
+      "hash": "4e66fd14c20f"
     },
     "simular-box-free-5000-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "6e2260d9c717"
+      "hash": "e3136efc3480"
     },
     "meshy-z-axis-awards-1000-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "8bc6f5d497d8"
+      "hash": "22a6c54d619d"
     },
     "polyai-100-usd-credits-registration-before-dec-1": {
       "status": "ok",
       "detail": "",
-      "hash": "7cc89a4a21c7"
+      "hash": "81874659239b"
     },
     "aliyun-pai-dlc-free-trial-100-cuh": {
       "status": "ok",
@@ -128,10 +128,25 @@
     },
     "aliyun-pai-eas-free-trial-500-yuan": {
       "status": "ok",
+      "detail": "",
+      "hash": "7a64274660d2"
+    },
+    "isaacus-100-free-credits-new-users": {
+      "status": "ok",
+      "detail": "",
+      "hash": "49884979f126"
+    },
+    "axforge-free-3m-serverless-tokens-monthly": {
+      "status": "ok",
       "detail": "自动收录",
       "hash": null
     },
-    "isaacus-100-free-credits-new-users": {
+    "databricks-trial-400-usd-14-days": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "sail-research-free-5-usd-monthly-credits": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
@@ -177,6 +192,7 @@
       "https://lanmao.ai/zh/o/aws-textract-free-tier-3-months-1000-pages/",
       "https://lanmao.ai/zh/o/aws-transcribe-60-minutes-monthly-12-months/",
       "https://lanmao.ai/zh/o/aws-translate-2m-chars-monthly-12-months/",
+      "https://lanmao.ai/zh/o/axforge-free-3m-serverless-tokens-monthly/",
       "https://lanmao.ai/zh/o/azure-ai-content-safety-free-5k/",
       "https://lanmao.ai/zh/o/azure-ai-foundry-free-credit/",
       "https://lanmao.ai/zh/o/azure-ai-language-f0-5k-text-records/",
@@ -233,6 +249,7 @@
       "https://lanmao.ai/zh/o/ctyun-cloud-drive-ai-membership/",
       "https://lanmao.ai/zh/o/ctyun-research-assistant-free-7day-gpu-devbox/",
       "https://lanmao.ai/zh/o/cursor-hobby/",
+      "https://lanmao.ai/zh/o/databricks-trial-400-usd-14-days/",
       "https://lanmao.ai/zh/o/daytona-200-usd-free-compute/",
       "https://lanmao.ai/zh/o/deepgram-free-200-credit/",
       "https://lanmao.ai/zh/o/deepl-api-developer-1m-chars/",
@@ -395,6 +412,7 @@
       "https://lanmao.ai/zh/o/rocket-new-free-20-credits/",
       "https://lanmao.ai/zh/o/runloop-pro-trial-50-usd-credit/",
       "https://lanmao.ai/zh/o/runway-free-125-credits/",
+      "https://lanmao.ai/zh/o/sail-research-free-5-usd-monthly-credits/",
       "https://lanmao.ai/zh/o/sakura-ai-engine-free-plan/",
       "https://lanmao.ai/zh/o/sambanova-cloud-free-tier/",
       "https://lanmao.ai/zh/o/sarvam-api-signup-100-inr-credit/",
