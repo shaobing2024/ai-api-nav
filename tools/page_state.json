@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "deals": {
     "conatus": {
       "status": "ok",
@@ -9,27 +9,27 @@
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "7c72fce6b821"
+      "hash": "95602804d790"
     },
     "siliconflow": {
       "status": "ok",
       "detail": "",
-      "hash": "f9560dd962e3"
+      "hash": "4ce0d4a69c24"
     },
     "bigmodel": {
       "status": "ok",
       "detail": "",
-      "hash": "01fc68749553"
+      "hash": "5853d435bb2f"
     },
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "ca7103510508"
+      "hash": "d918933fb579"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "b39135b2e680"
+      "hash": "9bcfaf3a6328"
     },
     "openrouter-free": {
       "status": "ok",
@@ -39,12 +39,12 @@
     "mistral": {
       "status": "ok",
       "detail": "",
-      "hash": "f05aa3310a52"
+      "hash": "1d950d6d7377"
     },
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "7cdba2b55832"
+      "hash": "9929ddc7548b"
     },
     "coze": {
       "status": "needs_review",
@@ -54,17 +54,17 @@
     "workers-ai": {
       "status": "ok",
       "detail": "",
-      "hash": "59f919a23eb4"
+      "hash": "af3fc4e036d0"
     },
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "cf8ccc9acb0b"
+      "hash": "342f4d31255f"
     },
     "upstash-box": {
       "status": "ok",
       "detail": "",
-      "hash": "0440da802999"
+      "hash": "5ac82dda0cf3"
     },
     "zcode": {
       "status": "ok",
@@ -74,17 +74,17 @@
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "7c9e35deb122"
+      "hash": "f16e57e6d318"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "0b2afccffe4c"
+      "hash": "dfa2ef186ec7"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "29363a122ad0"
+      "hash": "6a2501954f56"
     },
     "aistudio": {
       "status": "ok",
@@ -94,59 +94,64 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "4e66fd14c20f"
+      "hash": "7b7d8cf53d21"
     },
     "simular-box-free-5000-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "e3136efc3480"
+      "hash": "617a475d87ea"
     },
     "meshy-z-axis-awards-1000-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "22a6c54d619d"
+      "hash": "901d7bae7184"
     },
     "polyai-100-usd-credits-registration-before-dec-1": {
       "status": "ok",
       "detail": "",
-      "hash": "81874659239b"
+      "hash": "25ff2d6f64cd"
     },
     "aliyun-pai-dlc-free-trial-100-cuh": {
       "status": "ok",
       "detail": "",
-      "hash": "4d98d2328d9d"
+      "hash": "70cfc91d105c"
     },
     "aliyun-rds-contextdb-newuser-834-yuan": {
       "status": "ok",
       "detail": "",
-      "hash": "9e2d3d8c8105"
+      "hash": "9d6d6f448834"
     },
     "ctyun-research-assistant-free-7day-gpu-devbox": {
       "status": "ok",
       "detail": "",
-      "hash": "4d49bb644c2d"
+      "hash": "c972cdd29dc7"
     },
     "aliyun-pai-eas-free-trial-500-yuan": {
       "status": "ok",
       "detail": "",
-      "hash": "7a64274660d2"
+      "hash": "ce9305a12c77"
     },
     "isaacus-100-free-credits-new-users": {
       "status": "ok",
       "detail": "",
-      "hash": "49884979f126"
+      "hash": "946094c30b5c"
     },
     "axforge-free-3m-serverless-tokens-monthly": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "5bec71013650"
     },
     "databricks-trial-400-usd-14-days": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "a4eb7b10208f"
     },
     "sail-research-free-5-usd-monthly-credits": {
+      "status": "ok",
+      "detail": "",
+      "hash": "b1c98409cad0"
+    },
+    "opengame-game-jam-1-elevenlabs-creator-free-month-meshy-pro-1-usd": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
@@ -508,7 +513,6 @@
       "https://lanmao.ai/zh/o/zilliz-cloud-free-5gb-2-5m-vcus/"
     ],
     "赛博鸡蛋": [
-      "https://jidan.si/free/252-zcode-new-user-5day-trial-8m-tokens-daily",
       "https://jidan.si/free/264-uppcoder-spark-free-dev-environment",
       "https://jidan.si/free/271-claude-paid-users-free-full-reset-dec10",
       "https://jidan.si/free/287-upstash-box-free-tier",
@@ -531,7 +535,8 @@
       "https://jidan.si/free/348-isaacus-100-free-credits-new-users",
       "https://jidan.si/free/350-simular-box-free-5000-credits",
       "https://jidan.si/free/355-meshy-z-axis-awards-1000-free-credits",
-      "https://jidan.si/free/356-polyai-100-usd-credits-registration-before-dec-1"
+      "https://jidan.si/free/356-polyai-100-usd-credits-registration-before-dec-1",
+      "https://jidan.si/free/361-opengame-game-jam-1-elevenlabs-creator-free-month-meshy-pro-1-usd"
     ],
     "白嫖计": [
       "ai360",
