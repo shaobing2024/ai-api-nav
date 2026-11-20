@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Render index.html from data/deals.json + tools/template.html.
 
-Board dates （页头「数据 · <日期>」、页头与页脚「本版核实日期 <日期>」) are
+Board dates （页头「数据 · <日期>」、页脚「本版核实日期 <日期>」) are
 generated, never hard-coded: board_date = the newest verified date across
 deals (i.e. the latest successful recheck, Beijing date).
+Hero card body is fixed copy set by the user 2026-11-18:
+「官方每条严格核实，放心领取，数据实时更新。」— it carries no date slot.
 The stat caption「今日新上 2026-11-12 核实上架」is ZCode's listing date and
 stays literal in the template -- it is NOT a board date.
 
@@ -83,7 +85,7 @@ def main():
     deals = data["deals"]
     board_date = args.board_date or max(d["verified"] for d in deals)
     tpl = (ROOT / "tools" / "template.html").read_text(encoding="utf-8")
-    assert tpl.count("{{BOARD_DATE}}") == 3, "template must carry exactly 3 board-date slots"
+    assert tpl.count("{{BOARD_DATE}}") == 2, "template must carry exactly 2 board-date slots"
     cards_html = "".join(render_card(d, board_date) for d in deals).rstrip("\n")
     out = tpl.replace("{{BOARD_DATE}}", board_date).replace("<!--CARDS-->\n", cards_html)
     # 「最近截止」stat: the template's static date + vendor label go stale the
