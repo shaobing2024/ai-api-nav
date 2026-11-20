@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "deals": {
     "conatus": {
       "status": "ok",
@@ -9,42 +9,42 @@
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "95602804d790"
+      "hash": "19ba186e8147"
     },
     "siliconflow": {
       "status": "ok",
       "detail": "",
-      "hash": "4ce0d4a69c24"
+      "hash": "067b7e379399"
     },
     "bigmodel": {
       "status": "ok",
       "detail": "",
-      "hash": "5853d435bb2f"
+      "hash": "268f043f2f6e"
     },
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "d918933fb579"
+      "hash": "67152422e960"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "9bcfaf3a6328"
+      "hash": "792ce4b80388"
     },
     "openrouter-free": {
       "status": "ok",
       "detail": "",
-      "hash": "a6c7d364fa40"
+      "hash": "7532bbbfc625"
     },
     "mistral": {
       "status": "ok",
       "detail": "",
-      "hash": "1d950d6d7377"
+      "hash": "fbd65d461854"
     },
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "9929ddc7548b"
+      "hash": "76bc25638f78"
     },
     "coze": {
       "status": "needs_review",
@@ -59,12 +59,12 @@
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "342f4d31255f"
+      "hash": "0adf92eb23cc"
     },
     "upstash-box": {
       "status": "ok",
       "detail": "",
-      "hash": "5ac82dda0cf3"
+      "hash": "2cee2d2ecf30"
     },
     "zcode": {
       "status": "ok",
@@ -74,17 +74,17 @@
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "f16e57e6d318"
+      "hash": "6e428fa2c60e"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "dfa2ef186ec7"
+      "hash": "8bbfb1b14111"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "6a2501954f56"
+      "hash": "b9ded7872823"
     },
     "aistudio": {
       "status": "ok",
@@ -94,22 +94,22 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "7b7d8cf53d21"
+      "hash": "84c43cf7017e"
     },
     "simular-box-free-5000-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "617a475d87ea"
+      "hash": "c38899bd14f9"
     },
     "meshy-z-axis-awards-1000-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "901d7bae7184"
+      "hash": "320ac29ab231"
     },
     "polyai-100-usd-credits-registration-before-dec-1": {
       "status": "ok",
       "detail": "",
-      "hash": "25ff2d6f64cd"
+      "hash": "11c3b6bd7374"
     },
     "aliyun-pai-dlc-free-trial-100-cuh": {
       "status": "ok",
@@ -134,7 +134,7 @@
     "isaacus-100-free-credits-new-users": {
       "status": "ok",
       "detail": "",
-      "hash": "946094c30b5c"
+      "hash": "a5dacb8f9ad0"
     },
     "axforge-free-3m-serverless-tokens-monthly": {
       "status": "ok",
@@ -152,6 +152,66 @@
       "hash": "b1c98409cad0"
     },
     "opengame-game-jam-1-elevenlabs-creator-free-month-meshy-pro-1-usd": {
+      "status": "ok",
+      "detail": "",
+      "hash": "43ed75f6abbd"
+    },
+    "qoder-cn-qwen38-flash-free-daily-credits": {
+      "status": "ok",
+      "detail": "",
+      "hash": "61aed58bc556"
+    },
+    "amd-radeon-token-factory": {
+      "status": "ok",
+      "detail": "",
+      "hash": "e46455f20742"
+    },
+    "ant-ling-api-free-daily": {
+      "status": "ok",
+      "detail": "",
+      "hash": "a91749992895"
+    },
+    "scnet-maas-new-user-10m-tokens": {
+      "status": "ok",
+      "detail": "",
+      "hash": "7d70347b7859"
+    },
+    "blink-free-plan-5-daily-credits": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "kiro-students-1000-credits-monthly-one-year": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "lumen5-free-plan-5-videos-monthly": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "macaly-free-plan-1m-monthly-credits": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "pitch-free-plan-unlimited-decks-500-ai-credits": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "sembly-free-plan-5-meeting-hours": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "sensetime-raccoon-free-300-daily-points": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "unreal-speech-free-250k-characters-monthly": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
@@ -226,6 +286,7 @@
       "https://lanmao.ai/zh/o/bigmodel-cogview3-cogvideox-flash-free/",
       "https://lanmao.ai/zh/o/bigmodel-glm/",
       "https://lanmao.ai/zh/o/bing-image-creator/",
+      "https://lanmao.ai/zh/o/blink-free-plan-5-daily-credits/",
       "https://lanmao.ai/zh/o/bolt-new-free-plan/",
       "https://lanmao.ai/zh/o/brave-search-api-free-credits/",
       "https://lanmao.ai/zh/o/bria-ai-free-100-generations/",
@@ -338,6 +399,7 @@
       "https://lanmao.ai/zh/o/kimi-chat/",
       "https://lanmao.ai/zh/o/kimi-ppt/",
       "https://lanmao.ai/zh/o/kiro-free-tier/",
+      "https://lanmao.ai/zh/o/kiro-students-1000-credits-monthly-one-year/",
       "https://lanmao.ai/zh/o/kling-ai/",
       "https://lanmao.ai/zh/o/kombai-free-plan/",
       "https://lanmao.ai/zh/o/krea-free-daily-units/",
@@ -351,6 +413,8 @@
       "https://lanmao.ai/zh/o/llm7-free-gateway/",
       "https://lanmao.ai/zh/o/lovable-free-daily-credits/",
       "https://lanmao.ai/zh/o/ltx-studio-free-800-credits/",
+      "https://lanmao.ai/zh/o/lumen5-free-plan-5-videos-monthly/",
+      "https://lanmao.ai/zh/o/macaly-free-plan-1m-monthly-credits/",
       "https://lanmao.ai/zh/o/manus-ai/",
       "https://lanmao.ai/zh/o/maritaca-s5-free-limited-time-api/",
       "https://lanmao.ai/zh/o/meetgeek-basic-free-3-hours-monthly/",
@@ -391,6 +455,7 @@
       "https://lanmao.ai/zh/o/perplexity-free/",
       "https://lanmao.ai/zh/o/pgs-ai-coding-plan-free-month/",
       "https://lanmao.ai/zh/o/pinecone-starter-free-2gb/",
+      "https://lanmao.ai/zh/o/pitch-free-plan-unlimited-decks-500-ai-credits/",
       "https://lanmao.ai/zh/o/pixverse/",
       "https://lanmao.ai/zh/o/playground-ai-free-plan/",
       "https://lanmao.ai/zh/o/poe-daily-free-points/",
@@ -422,7 +487,9 @@
       "https://lanmao.ai/zh/o/sambanova-cloud-free-tier/",
       "https://lanmao.ai/zh/o/sarvam-api-signup-100-inr-credit/",
       "https://lanmao.ai/zh/o/scaleway-generative-apis-free-tier/",
+      "https://lanmao.ai/zh/o/sembly-free-plan-5-meeting-hours/",
       "https://lanmao.ai/zh/o/sensenova/",
+      "https://lanmao.ai/zh/o/sensetime-raccoon-free-300-daily-points/",
       "https://lanmao.ai/zh/o/serpapi-free-250-searches-monthly/",
       "https://lanmao.ai/zh/o/serper-free-tier/",
       "https://lanmao.ai/zh/o/sightengine-free-2000-operations-monthly/",
@@ -470,6 +537,7 @@
       "https://lanmao.ai/zh/o/trae-cn/",
       "https://lanmao.ai/zh/o/turboscribe-free-plan/",
       "https://lanmao.ai/zh/o/unisound-u2-flash-free-api/",
+      "https://lanmao.ai/zh/o/unreal-speech-free-250k-characters-monthly/",
       "https://lanmao.ai/zh/o/unstructured-free-10000-pages/",
       "https://lanmao.ai/zh/o/upstash-vector-free-10k-daily/",
       "https://lanmao.ai/zh/o/v0-free-monthly-credits/",
