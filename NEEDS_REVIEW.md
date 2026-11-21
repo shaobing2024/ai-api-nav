@@ -1,15 +1,11 @@
-# 待人工复核（2026-11-20 自动复查）
+# 待人工复核（2026-11-21 自动复查）
 
 ## 已自动上架
 
-- **blink-free-plan-5-daily-credits**：Blink 免费档（AI 全栈应用构建 Agent，每日 5 个 credits，每月最多 30）（来源：https://blink.new/pricing）
-- **kiro-students-1000-credits-monthly-one-year**：Kiro 学生计划（认证大学生每月 1000 credits，免费一年）（来源：https://kiro.dev/students/）
-- **lumen5-free-plan-5-videos-monthly**：Lumen5 免费档（AI 文章转视频，每月 5 条）（来源：https://lumen5.com/pricing/）
-- **macaly-free-plan-1m-monthly-credits**：Macaly 免费档（AI 建站 Agent，每月 100 万 credits）（来源：https://macaly.com/pricing）
-- **pitch-free-plan-unlimited-decks-500-ai-credits**：Pitch 免费档（AI 演示文稿，演示文稿不限量，含 500 个 AI credits）（来源：https://pitch.com/pricing）
-- **sembly-free-plan-5-meeting-hours**：Sembly 免费档（AI 会议记录与转写，含 5 小时会议）（来源：https://www.sembly.ai/pricing/）
-- **sensetime-raccoon-free-300-daily-points**：商汤小浣熊免费版（AI 工作助手，每日 300 积分）（来源：https://xiaohuanxiong.com/）
-- **unreal-speech-free-250k-characters-monthly**：Unreal Speech 免费档（文本转语音 API，每月 25 万字符）（来源：https://unrealspeech.com/）
+- **readdy-free-plan-250-monthly-credits**：Readdy 免费档（AI 网页设计与建站，每月 250 credits）（来源：https://readdy.ai/pricing）
+- **stackai-free-plan-500-runs-monthly**：StackAI 免费档（拖拽式 AI Agent 工作流，每月 500 次运行）（来源：https://www.stack-ai.com/pricing）
+- **tavily-student-4-months-4000-credits**：Tavily 学生计划（认证学生免费 4 个月 Project 档，每月 4000 API credits）（来源：https://help.tavily.com/articles/6606514713-student-account）
+- **ultravox-pay-as-you-go-30-free-minutes**：Ultravox 语音 Agent 平台（前 30 分钟通话免费，试听场不限量）（来源：https://www.ultravox.ai/pricing）
 
 ## 模式未命中（数据未改动）
 
