@@ -1,11 +1,14 @@
-# 待人工复核（2026-11-21 自动复查）
+# 待人工复核（2026-11-22 自动复查）
 
 ## 已自动上架
 
-- **readdy-free-plan-250-monthly-credits**：Readdy 免费档（AI 网页设计与建站，每月 250 credits）（来源：https://readdy.ai/pricing）
-- **stackai-free-plan-500-runs-monthly**：StackAI 免费档（拖拽式 AI Agent 工作流，每月 500 次运行）（来源：https://www.stack-ai.com/pricing）
-- **tavily-student-4-months-4000-credits**：Tavily 学生计划（认证学生免费 4 个月 Project 档，每月 4000 API credits）（来源：https://help.tavily.com/articles/6606514713-student-account）
-- **ultravox-pay-as-you-go-30-free-minutes**：Ultravox 语音 Agent 平台（前 30 分钟通话免费，试听场不限量）（来源：https://www.ultravox.ai/pricing）
+- **chroma-cloud-starter-5-usd-free-credits**：Chroma Cloud 向量数据库（Starter 档送 5 美元额度）（来源：https://www.trychroma.com/pricing）
+- **datalab-free-10-usd-credit-document-ocr-api**：Datalab 文档解析与 OCR API（注册送 10 美元，绑卡再送 10 美元）（来源：https://www.datalab.to/pricing）
+- **netlify-free-300-credits-agent-runners-ai-gateway**：Netlify 免费档（Agent Runners 与 AI Gateway，每月 300 credits）（来源：https://www.netlify.com/pricing/）
+- **ocrspace-free-ocr-api-25000-monthly**：OCR.space 免费 OCR API（每月 25000 次请求）（来源：https://ocr.space/ocrapi/freekey）
+- **reducto-standard-150-usd-free-usage-document-api**：Reducto 文档解析与抽取 API（Standard 档含 150 美元免费用量）（来源：https://reducto.ai/pricing）
+- **parallel-signup-20-free-credits**：Parallel 免费注册送 20 美元额度：AI 搜索引擎，不用绑卡（来源：https://parallel.ai/pricing）
+- **liberclaw-free-ai-agent-24-7**：LiberClaw 免费部署 AI 智能体：24 小时在线，免绑卡，不用 API Key（来源：https://liberclaw.ai/pricing）
 
 ## 模式未命中（数据未改动）
 
