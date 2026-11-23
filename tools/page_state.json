@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "deals": {
     "conatus": {
       "status": "ok",
       "detail": "",
-      "hash": "bb0a13c52654"
+      "hash": "9189e63cbe59"
     },
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "3a023f12529b"
+      "hash": "a94675448cdd"
     },
     "siliconflow": {
       "status": "ok",
       "detail": "",
-      "hash": "55b928aa965d"
+      "hash": "b4f681a1ab46"
     },
     "bigmodel": {
       "status": "ok",
       "detail": "",
-      "hash": "3f74fb5322b2"
+      "hash": "5be377c245c4"
     },
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "29f16a1201d6"
+      "hash": "f2fd7f57f442"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "ef429dd6c80d"
+      "hash": "0a5b0f663663"
     },
     "openrouter-free": {
       "status": "ok",
       "detail": "",
-      "hash": "7532bbbfc625"
+      "hash": "b53a3fc4ccf3"
     },
     "mistral": {
       "status": "ok",
       "detail": "",
-      "hash": "8f23c6577170"
+      "hash": "a0b808f40c11"
     },
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "a0276cfa8db9"
+      "hash": "948f0d436566"
     },
     "coze": {
       "status": "needs_review",
@@ -59,7 +59,7 @@
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "47d652583e54"
+      "hash": "60073340fea2"
     },
     "upstash-box": {
       "status": "ok",
@@ -69,22 +69,22 @@
     "zcode": {
       "status": "ok",
       "detail": "",
-      "hash": "a722b6418e40"
+      "hash": "3a6d88dc521a"
     },
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "7a252ec254dc"
+      "hash": "5ace0bdb3798"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "0b3e37576c23"
+      "hash": "e162525fb71c"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "e7884bc5c523"
+      "hash": "5301a64d94c8"
     },
     "aistudio": {
       "status": "ok",
@@ -94,22 +94,22 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "6f19884785ad"
+      "hash": "e8f843568e1f"
     },
     "simular-box-free-5000-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "240d54f78440"
+      "hash": "daaac6b46f00"
     },
     "meshy-z-axis-awards-1000-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "86cdbddd71d2"
+      "hash": "397288d06cb2"
     },
     "polyai-100-usd-credits-registration-before-dec-1": {
       "status": "ok",
       "detail": "",
-      "hash": "0b57b8a72695"
+      "hash": "8f96d064a84e"
     },
     "aliyun-pai-dlc-free-trial-100-cuh": {
       "status": "ok",
@@ -134,12 +134,12 @@
     "isaacus-100-free-credits-new-users": {
       "status": "ok",
       "detail": "",
-      "hash": "95fc1a0b5fae"
+      "hash": "9e5ffeac3f78"
     },
     "axforge-free-3m-serverless-tokens-monthly": {
       "status": "ok",
       "detail": "",
-      "hash": "5bec71013650"
+      "hash": "9b1dfbb28998"
     },
     "databricks-trial-400-usd-14-days": {
       "status": "ok",
@@ -149,22 +149,22 @@
     "sail-research-free-5-usd-monthly-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "b1c98409cad0"
+      "hash": "19c3da1554ba"
     },
     "opengame-game-jam-1-elevenlabs-creator-free-month-meshy-pro-1-usd": {
       "status": "ok",
       "detail": "",
-      "hash": "14bca009720d"
+      "hash": "4b1be7d319f2"
     },
     "qoder-cn-qwen38-flash-free-daily-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "61aed58bc556"
+      "hash": "57f00bc04d0c"
     },
     "amd-radeon-token-factory": {
       "status": "ok",
       "detail": "",
-      "hash": "6b2cb5614201"
+      "hash": "2e40a1cb6754"
     },
     "ant-ling-api-free-daily": {
       "status": "ok",
@@ -238,35 +238,60 @@
     },
     "chroma-cloud-starter-5-usd-free-credits": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "782612af2d54"
     },
     "datalab-free-10-usd-credit-document-ocr-api": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "7980642575c0"
     },
     "netlify-free-300-credits-agent-runners-ai-gateway": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "37e01eb5fc24"
     },
     "ocrspace-free-ocr-api-25000-monthly": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "4d302940bd83"
     },
     "reducto-standard-150-usd-free-usage-document-api": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "b9db922e6720"
     },
     "parallel-signup-20-free-credits": {
+      "status": "ok",
+      "detail": "",
+      "hash": "16918aa59cda"
+    },
+    "liberclaw-free-ai-agent-24-7": {
+      "status": "ok",
+      "detail": "",
+      "hash": "2fa5f6aaccb2"
+    },
+    "aliyun-agentbay-newuser-100-points-voucher": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
     },
-    "liberclaw-free-ai-agent-24-7": {
+    "hyperbolic-phone-verification-1-usd-credit": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "qwennote-standard-free-300-min-transcription": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "qwenwork-personal-free-plan-300-points": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "upstash-box-free-tier": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
@@ -280,6 +305,7 @@
       "https://lanmao.ai/zh/o/aiping-newuser-6-yuan-gift/",
       "https://lanmao.ai/zh/o/aiva-free-3-downloads-monthly/",
       "https://lanmao.ai/zh/o/alibabacloud-model-studio-intl-free-quota/",
+      "https://lanmao.ai/zh/o/aliyun-agentbay-newuser-100-points-voucher/",
       "https://lanmao.ai/zh/o/aliyun-bailian-knowledge-base-720h-free/",
       "https://lanmao.ai/zh/o/aliyun-bailian-managed-agents-10h-runtime/",
       "https://lanmao.ai/zh/o/aliyun-bailian-student-300-voucher/",
@@ -439,6 +465,7 @@
       "https://lanmao.ai/zh/o/huggingface-inference-providers-free/",
       "https://lanmao.ai/zh/o/huggingface-zerogpu-free-daily-gpu/",
       "https://lanmao.ai/zh/o/humata-free-60-pages-monthly/",
+      "https://lanmao.ai/zh/o/hyperbolic-phone-verification-1-usd-credit/",
       "https://lanmao.ai/zh/o/hyperbrowser-free-5000-credits/",
       "https://lanmao.ai/zh/o/ibm-watsonx-lite-free-tier/",
       "https://lanmao.ai/zh/o/ideogram-free/",
@@ -528,6 +555,8 @@
       "https://lanmao.ai/zh/o/qoder-cn-qwen38-flash-free-daily-credits/",
       "https://lanmao.ai/zh/o/qoder-global-free/",
       "https://lanmao.ai/zh/o/qwen-code-cli/",
+      "https://lanmao.ai/zh/o/qwennote-standard-free-300-min-transcription/",
+      "https://lanmao.ai/zh/o/qwenwork-personal-free-plan-300-points/",
       "https://lanmao.ai/zh/o/read-ai-free-5-meetings/",
       "https://lanmao.ai/zh/o/readdy-free-plan-250-monthly-credits/",
       "https://lanmao.ai/zh/o/recraft-free/",
@@ -645,6 +674,7 @@
       "https://lanmao.ai/zh/o/zilliz-cloud-free-5gb-2-5m-vcus/"
     ],
     "赛博鸡蛋": [
+      "https://jidan.si/free/287-upstash-box-free-tier",
       "https://jidan.si/free/291-amd-token-lab-10-points-free-api",
       "https://jidan.si/free/294-codex-banked-reset-dot-updates",
       "https://jidan.si/free/296-deapi-5-usd-signup-credit-free-api",
@@ -652,7 +682,6 @@
       "https://jidan.si/free/302-huawei-codearts-skill-contest-credits",
       "https://jidan.si/free/305-telnyx-pretrial-25-usd-ai-credits",
       "https://jidan.si/free/306-reducto-new-standard-account-150-usd-credits",
-      "https://jidan.si/free/308-autoclaw-100m-tokens-nov-16-22",
       "https://jidan.si/free/309-instabox-free-cloud-linux-machine-agent",
       "https://jidan.si/free/310-polyai-new-account-100-usd-dialog-rsn-1-credits",
       "https://jidan.si/free/312-cloudzyro-launch-free-hosting",

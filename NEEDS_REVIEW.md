@@ -1,18 +1,21 @@
-# 待人工复核（2026-11-22 自动复查）
+# 待人工复核（2026-11-23 自动复查）
 
 ## 已自动上架
 
-- **chroma-cloud-starter-5-usd-free-credits**：Chroma Cloud 向量数据库（Starter 档送 5 美元额度）（来源：https://www.trychroma.com/pricing）
-- **datalab-free-10-usd-credit-document-ocr-api**：Datalab 文档解析与 OCR API（注册送 10 美元，绑卡再送 10 美元）（来源：https://www.datalab.to/pricing）
-- **netlify-free-300-credits-agent-runners-ai-gateway**：Netlify 免费档（Agent Runners 与 AI Gateway，每月 300 credits）（来源：https://www.netlify.com/pricing/）
-- **ocrspace-free-ocr-api-25000-monthly**：OCR.space 免费 OCR API（每月 25000 次请求）（来源：https://ocr.space/ocrapi/freekey）
-- **reducto-standard-150-usd-free-usage-document-api**：Reducto 文档解析与抽取 API（Standard 档含 150 美元免费用量）（来源：https://reducto.ai/pricing）
-- **parallel-signup-20-free-credits**：Parallel 免费注册送 20 美元额度：AI 搜索引擎，不用绑卡（来源：https://parallel.ai/pricing）
-- **liberclaw-free-ai-agent-24-7**：LiberClaw 免费部署 AI 智能体：24 小时在线，免绑卡，不用 API Key（来源：https://liberclaw.ai/pricing）
+- **aliyun-agentbay-newuser-100-points-voucher**：阿里云无影 AgentBay（新用户 100 积分体验券）（来源：https://www.aliyun.com/product/agentbay）
+- **hyperbolic-phone-verification-1-usd-credit**：Hyperbolic 推理平台（手机验证送 1 美元额度）（来源：https://app.hyperbolic.ai/）
+- **qwennote-standard-free-300-min-transcription**：QwenNote 标准会员（永久免费，每月 300 分钟转写）（来源：https://www.qwennote.cn/）
+- **qwenwork-personal-free-plan-300-points**：千问办公 QwenWork 个人免费版（注册送 300 积分，每月 100 积分）（来源：https://qwenwork.cn/）
+- **upstash-box-free-tier**：Upstash Box 免费版：每月 5 小时活跃 CPU，10 个并发云端 Agent 沙箱（来源：https://upstash.com/box）
 
 ## 模式未命中（数据未改动）
 
 - **coze**：未命中：1,500 或 1500
+
+## 即将到期
+
+- **conatus**：7 天后到期（2026-11-30）
+- **aliyun-rds-contextdb-newuser-834-yuan**：7 天后到期（2026-11-30）
 
 ## 来源站读取说明
 
