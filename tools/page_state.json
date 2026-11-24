@@ -1,35 +1,35 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "deals": {
     "conatus": {
       "status": "ok",
       "detail": "",
-      "hash": "9189e63cbe59"
+      "hash": "9a6f654ce6e7"
     },
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "a94675448cdd"
+      "hash": "2561acaab7a1"
     },
     "siliconflow": {
       "status": "ok",
       "detail": "",
-      "hash": "b4f681a1ab46"
+      "hash": "278c10b659a0"
     },
     "bigmodel": {
       "status": "ok",
       "detail": "",
-      "hash": "5be377c245c4"
+      "hash": "2f1acb3bb118"
     },
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "f2fd7f57f442"
+      "hash": "591d1fe32e67"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "0a5b0f663663"
+      "hash": "2fb547438376"
     },
     "openrouter-free": {
       "status": "ok",
@@ -39,12 +39,12 @@
     "mistral": {
       "status": "ok",
       "detail": "",
-      "hash": "a0b808f40c11"
+      "hash": "79c6f67871c9"
     },
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "948f0d436566"
+      "hash": "21408ab06f68"
     },
     "coze": {
       "status": "needs_review",
@@ -54,37 +54,37 @@
     "workers-ai": {
       "status": "ok",
       "detail": "",
-      "hash": "af3fc4e036d0"
+      "hash": "647d3f134ca6"
     },
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "60073340fea2"
+      "hash": "385d27e1dfbc"
     },
     "upstash-box": {
       "status": "ok",
       "detail": "",
-      "hash": "a0ddeb5309c1"
+      "hash": "9f471b4a6efc"
     },
     "zcode": {
       "status": "ok",
       "detail": "",
-      "hash": "3a6d88dc521a"
+      "hash": "88dc65a66f7d"
     },
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "5ace0bdb3798"
+      "hash": "e691f5c61a6d"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "e162525fb71c"
+      "hash": "f7835ddc29e3"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "5301a64d94c8"
+      "hash": "f6dbd3466c23"
     },
     "aistudio": {
       "status": "ok",
@@ -94,67 +94,67 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "e8f843568e1f"
+      "hash": "5599f718d121"
     },
     "simular-box-free-5000-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "daaac6b46f00"
+      "hash": "6529cceade46"
     },
     "meshy-z-axis-awards-1000-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "397288d06cb2"
+      "hash": "c3da7b9b92ac"
     },
     "polyai-100-usd-credits-registration-before-dec-1": {
       "status": "ok",
       "detail": "",
-      "hash": "8f96d064a84e"
+      "hash": "07057cee578a"
     },
     "aliyun-pai-dlc-free-trial-100-cuh": {
       "status": "ok",
       "detail": "",
-      "hash": "70cfc91d105c"
+      "hash": "b2038abb33e6"
     },
     "aliyun-rds-contextdb-newuser-834-yuan": {
       "status": "ok",
       "detail": "",
-      "hash": "9d6d6f448834"
+      "hash": "1874e8955025"
     },
     "ctyun-research-assistant-free-7day-gpu-devbox": {
       "status": "ok",
       "detail": "",
-      "hash": "c972cdd29dc7"
+      "hash": "aec8e4562387"
     },
     "aliyun-pai-eas-free-trial-500-yuan": {
       "status": "ok",
       "detail": "",
-      "hash": "ce9305a12c77"
+      "hash": "56fae7133b9e"
     },
     "isaacus-100-free-credits-new-users": {
       "status": "ok",
       "detail": "",
-      "hash": "9e5ffeac3f78"
+      "hash": "c23258f27351"
     },
     "axforge-free-3m-serverless-tokens-monthly": {
       "status": "ok",
       "detail": "",
-      "hash": "9b1dfbb28998"
+      "hash": "4c7c2f482016"
     },
     "databricks-trial-400-usd-14-days": {
       "status": "ok",
       "detail": "",
-      "hash": "a4eb7b10208f"
+      "hash": "47cc74587985"
     },
     "sail-research-free-5-usd-monthly-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "19c3da1554ba"
+      "hash": "2fc6fc041f0a"
     },
     "opengame-game-jam-1-elevenlabs-creator-free-month-meshy-pro-1-usd": {
       "status": "ok",
       "detail": "",
-      "hash": "4b1be7d319f2"
+      "hash": "28d6fcfac78b"
     },
     "qoder-cn-qwen38-flash-free-daily-credits": {
       "status": "ok",
@@ -164,12 +164,12 @@
     "amd-radeon-token-factory": {
       "status": "ok",
       "detail": "",
-      "hash": "2e40a1cb6754"
+      "hash": "e05145062d44"
     },
     "ant-ling-api-free-daily": {
       "status": "ok",
       "detail": "",
-      "hash": "a91749992895"
+      "hash": "b53374c6ea03"
     },
     "scnet-maas-new-user-10m-tokens": {
       "status": "ok",
@@ -179,119 +179,144 @@
     "blink-free-plan-5-daily-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "3be084fca073"
+      "hash": "9e0ecd57a7cc"
     },
     "kiro-students-1000-credits-monthly-one-year": {
       "status": "ok",
       "detail": "",
-      "hash": "e9d0866ea94f"
+      "hash": "36b831cc8140"
     },
     "lumen5-free-plan-5-videos-monthly": {
       "status": "ok",
       "detail": "",
-      "hash": "93004a5e285b"
+      "hash": "85e8cfdab8ce"
     },
     "macaly-free-plan-1m-monthly-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "bd059efbda55"
+      "hash": "3f2f17a05d52"
     },
     "pitch-free-plan-unlimited-decks-500-ai-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "726f41cecfda"
+      "hash": "30b9179b4e65"
     },
     "sembly-free-plan-5-meeting-hours": {
       "status": "ok",
       "detail": "",
-      "hash": "1ed821bbd3bb"
+      "hash": "b09694a461d1"
     },
     "sensetime-raccoon-free-300-daily-points": {
       "status": "ok",
       "detail": "",
-      "hash": "e447e4835853"
+      "hash": "cfc48fe83226"
     },
     "unreal-speech-free-250k-characters-monthly": {
       "status": "ok",
       "detail": "",
-      "hash": "c7249880e83d"
+      "hash": "a4771373696a"
     },
     "readdy-free-plan-250-monthly-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "d39b1c5a7236"
+      "hash": "fc032150a9b5"
     },
     "stackai-free-plan-500-runs-monthly": {
       "status": "ok",
       "detail": "",
-      "hash": "dda6d6a3cdff"
+      "hash": "869aa704c2bb"
     },
     "tavily-student-4-months-4000-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "83a8ed459c4a"
+      "hash": "7f4899c155f0"
     },
     "ultravox-pay-as-you-go-30-free-minutes": {
       "status": "ok",
       "detail": "",
-      "hash": "4ff2facd82f1"
+      "hash": "3e05e4232170"
     },
     "chroma-cloud-starter-5-usd-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "782612af2d54"
+      "hash": "c2af3e4828c7"
     },
     "datalab-free-10-usd-credit-document-ocr-api": {
       "status": "ok",
       "detail": "",
-      "hash": "7980642575c0"
+      "hash": "b63b930f897d"
     },
     "netlify-free-300-credits-agent-runners-ai-gateway": {
       "status": "ok",
       "detail": "",
-      "hash": "37e01eb5fc24"
+      "hash": "280733deaccb"
     },
     "ocrspace-free-ocr-api-25000-monthly": {
       "status": "ok",
       "detail": "",
-      "hash": "4d302940bd83"
+      "hash": "719274d97927"
     },
     "reducto-standard-150-usd-free-usage-document-api": {
       "status": "ok",
       "detail": "",
-      "hash": "b9db922e6720"
+      "hash": "60c05be80eaf"
     },
     "parallel-signup-20-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "16918aa59cda"
+      "hash": "28041a32d9b9"
     },
     "liberclaw-free-ai-agent-24-7": {
       "status": "ok",
       "detail": "",
-      "hash": "2fa5f6aaccb2"
+      "hash": "e5391d510c77"
     },
     "aliyun-agentbay-newuser-100-points-voucher": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "7d49943c9a41"
     },
     "hyperbolic-phone-verification-1-usd-credit": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "8d1fa987ef83"
     },
     "qwennote-standard-free-300-min-transcription": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "38d8b6e65384"
     },
     "qwenwork-personal-free-plan-300-points": {
+      "status": "ok",
+      "detail": "",
+      "hash": "d7d74189159d"
+    },
+    "upstash-box-free-tier": {
+      "status": "ok",
+      "detail": "",
+      "hash": "4263f8b1f9d9"
+    },
+    "aliyun-dashvector-free-trial-cluster-1-month": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
     },
-    "upstash-box-free-tier": {
+    "aliyun-function-compute-newuser-cu-trial-3-months": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "baidu-vectordb-free-instance-1-month": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "volcengine-viking-knowledge-base-free-30d": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "flyio-free-plan-5-usd-monthly": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
@@ -310,7 +335,9 @@
       "https://lanmao.ai/zh/o/aliyun-bailian-managed-agents-10h-runtime/",
       "https://lanmao.ai/zh/o/aliyun-bailian-student-300-voucher/",
       "https://lanmao.ai/zh/o/aliyun-bailian/",
+      "https://lanmao.ai/zh/o/aliyun-dashvector-free-trial-cluster-1-month/",
       "https://lanmao.ai/zh/o/aliyun-document-mind-monthly-free-3000-pages/",
+      "https://lanmao.ai/zh/o/aliyun-function-compute-newuser-cu-trial-3-months/",
       "https://lanmao.ai/zh/o/aliyun-isi-asr-trial/",
       "https://lanmao.ai/zh/o/aliyun-mt-monthly-free/",
       "https://lanmao.ai/zh/o/aliyun-nlp-basic-daily-free/",
@@ -361,6 +388,7 @@
       "https://lanmao.ai/zh/o/baidu-qianfan-newuser-tokens/",
       "https://lanmao.ai/zh/o/baidu-qianfan-search-api-free-quota/",
       "https://lanmao.ai/zh/o/baidu-speech-free-test-resources/",
+      "https://lanmao.ai/zh/o/baidu-vectordb-free-instance-1-month/",
       "https://lanmao.ai/zh/o/base44-free-plan/",
       "https://lanmao.ai/zh/o/baseten-signup-credits/",
       "https://lanmao.ai/zh/o/berget-ai-trial-5-eur-credits/",
@@ -647,6 +675,7 @@
       "https://lanmao.ai/zh/o/volcengine-ark/",
       "https://lanmao.ai/zh/o/volcengine-doubao-speech-trial/",
       "https://lanmao.ai/zh/o/volcengine-mt-monthly-free/",
+      "https://lanmao.ai/zh/o/volcengine-viking-knowledge-base-free-30d/",
       "https://lanmao.ai/zh/o/voyage-ai-free-tokens/",
       "https://lanmao.ai/zh/o/warp-ai-free-credits/",
       "https://lanmao.ai/zh/o/weaviate-cloud-free-100k-objects/",
@@ -695,9 +724,9 @@
       "https://jidan.si/free/355-meshy-z-axis-awards-1000-free-credits",
       "https://jidan.si/free/356-polyai-100-usd-credits-registration-before-dec-1",
       "https://jidan.si/free/361-opengame-game-jam-1-elevenlabs-creator-free-month-meshy-pro-1-usd",
-      "https://jidan.si/free/374-zcode-weekend-build-500m-glm-5-3-flash-tokens-1120",
       "https://jidan.si/free/378-parallel-signup-20-free-credits",
-      "https://jidan.si/free/380-liberclaw-free-ai-agent-24-7"
+      "https://jidan.si/free/380-liberclaw-free-ai-agent-24-7",
+      "https://jidan.si/free/404-flyio-free-plan-5-usd-monthly"
     ],
     "白嫖计": [
       "ai360",

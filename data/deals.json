@@ -6,7 +6,7 @@
       "cat": "大模型 API",
       "scope": "soon",
       "expiry": "2026-11-30T23:59:59+08:00",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "七牛云 conatus qiniu 限时免费模型 实名 每日 1亿 token 程序员节 大模型 api 融合模型 qiniu/conatus-free 工具调用 深度思考 图像理解",
       "icon_color": "#e8722a",
       "icon_char": "七",
@@ -74,7 +74,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "openrouter crouton alpha 免费 隐身模型 stealth 大模型 api 编码 agent 多模态 muse ember meta 欧洲",
       "icon_color": "#7c5cd6",
       "icon_char": "O",
@@ -146,7 +146,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "硅基流动 siliconflow 开源模型 免费 api qwen glm yi 新用户 14元 大模型 api 聚合",
       "icon_color": "#4a6fd4",
       "icon_char": "硅",
@@ -214,7 +214,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "智谱 bigmodel glm-4.7-flash flash 免费 2000万 tokens 大模型 api 开放平台",
       "icon_color": "#3850c8",
       "icon_char": "智",
@@ -277,7 +277,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "2026-12-31T23:59:59+08:00",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "腾讯云 tokenhub 新人体验包 deepseek glm kimi minimax qwen 混元 每模型 100万 tokens 大模型 api",
       "icon_color": "#2e9be6",
       "icon_char": "腾",
@@ -340,7 +340,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "2026-12-28T23:59:59+08:00",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "inception mercury 扩散语言模型 1亿 100m 免费 tokens api 高速生成",
       "icon_color": "#5b8def",
       "icon_char": "I",
@@ -403,7 +403,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "openrouter free 免费模型 限速 50次 1000次 大模型 api",
       "icon_color": "#8a63d2",
       "icon_char": "O",
@@ -466,7 +466,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "mistral free mode 免费层 experiment api 额度未核实 大模型",
       "icon_color": "#e8590c",
       "icon_char": "M",
@@ -534,7 +534,7 @@
       "cat": "AI 应用试用",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "通义听悟 阿里云 音视频 转写 实时记录 90天 免费试用 ai 应用",
       "icon_color": "#f08c00",
       "icon_char": "听",
@@ -660,7 +660,7 @@
       "cat": "云服务",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "cloudflare workers ai neurons 10000 每天 免费 推理 云服务 边缘",
       "icon_color": "#e8821e",
       "icon_char": "C",
@@ -723,7 +723,7 @@
       "cat": "云服务",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "azure for students 微软 学生 100美元 额度 免信用卡 云服务 microsoft",
       "icon_color": "#2b7cd3",
       "icon_char": "A",
@@ -786,7 +786,7 @@
       "cat": "云服务",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "upstash box 沙箱 agent 免费层 并发 cpu 云服务",
       "icon_color": "#0ca678",
       "icon_char": "U",
@@ -849,7 +849,7 @@
       "cat": "开发工具",
       "scope": "new",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "zcode 智谱 bigmodel glm-5.3 glm 编程客户端 开发工具 新用户 5天 免费体验 agent 代码 z.ai",
       "icon_color": "#c2255c",
       "icon_char": "智",
@@ -917,7 +917,7 @@
       "cat": "开发工具",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "github copilot free 代码补全 2000次 对话 agent 开发工具 vscode",
       "icon_color": "#6741d9",
       "icon_char": "G",
@@ -985,7 +985,7 @@
       "cat": "开发工具",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "gemini cli google 终端 编程 agent 1000次 每天 免费 开发工具",
       "icon_color": "#1c7ed6",
       "icon_char": "G",
@@ -1048,7 +1048,7 @@
       "cat": "免费算力",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "kaggle gpu 免费 每周 30小时 t4 tpu 笔记本 训练 算力",
       "icon_color": "#2f9e44",
       "icon_char": "K",
@@ -1116,7 +1116,7 @@
       "cat": "免费算力",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "百度 飞桨 aistudio paddlepaddle gpu v100 每日 算力卡 免费算力",
       "icon_color": "#e03131",
       "icon_char": "百",
@@ -1179,7 +1179,7 @@
       "cat": "免费算力",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "search": "daytona 沙箱 sandbox 200美元 算力额度 agent 云端 免费算力",
       "icon_color": "#e64980",
       "icon_char": "D",
@@ -1242,7 +1242,7 @@
       "cat": "免费算力",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "Simular box 免费领 5,000 积分，给 Agent 一台云电脑 Simular 免费算力 免费 额度 赛博鸡蛋",
       "icon_color": "#0e7490",
@@ -1322,7 +1322,7 @@
       "cat": "AI 应用试用",
       "scope": "",
       "expiry": "2027-01-24T23:59:59+08:00",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "Meshy Z-Axis 大赛免费领 1000 积分，相当于 Pro 一个月生成量 Meshy AI 应用试用 免费 额度 赛博鸡蛋",
       "icon_color": "#6d28d9",
@@ -1407,7 +1407,7 @@
       "cat": "免费算力",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "阿里云 PAI-DLC 新用户免费试用（分布式训练 100 计算时，3 个月，A10 / V100 GPU） 阿里云 免费算力 免费 额度 懒猫 AI",
       "icon_color": "#087f5b",
@@ -1483,7 +1483,7 @@
       "cat": "云服务",
       "scope": "",
       "expiry": "2026-11-30T23:59:59+08:00",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "阿里云 RDS ContextDB 新用户福利（面向 Agent 的上下文数据库：799 Credits 包加 35 元存储代金券，价值 834 元） 阿里云 云服务 免费 额度 懒猫 AI",
       "icon_color": "#087f5b",
@@ -1568,7 +1568,7 @@
       "cat": "免费算力",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "天翼云科研助手免费体验（7 天 GPU 开发机：10 核 CPU、20GB 内存、1 块 GPU） 天翼云科研助手免费体验 免费算力 免费 额度 懒猫 AI",
       "icon_color": "#1864ab",
@@ -1647,7 +1647,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "2026-12-01T23:59:59+08:00",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "PolyAI 新账号 $100 额度，Dialog-RSN-1 免费调，截止延至 12 月 1 日 PolyAI 大模型 API 免费 额度 赛博鸡蛋",
       "icon_color": "#0e7490",
@@ -1728,7 +1728,7 @@
       "cat": "免费算力",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "阿里云 PAI-EAS 新用户免费试用（模型在线服务 500 元 GPU 抵扣金，1 个月） 阿里云 免费算力 免费 额度 懒猫 AI",
       "icon_color": "#1864ab",
@@ -1808,7 +1808,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "Isaacus 法律 AI 新用户送 100 美元 API 额度：Kanon 2 模型免费试用两个月 Isaacus 大模型 API 免费 额度 赛博鸡蛋",
       "icon_color": "#0e7490",
@@ -1884,7 +1884,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "AxForge 欧洲推理 API（每 30 天 3M 免费 token，Qwen3.8 / GLM-5.3-Flash / MiMo） AxForge 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#087f5b",
@@ -1960,7 +1960,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "Databricks 免费试用（最高 400 美元用量，14 天，含 Foundation Model Serving 模型服务） Databricks 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#1864ab",
@@ -2036,7 +2036,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "Sail Research 推理 API（每月 5 美元免费额度，Kimi K3.1 / GLM-5.3 / DeepSeek V4） Sail 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#0b7285",
@@ -2112,7 +2112,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "2026-12-18T23:59:59-08:00",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-19",
       "search": "OpenGame 游戏开发赛报名送 ElevenLabs Creator 一个月 OpenGame 大模型 API 免费 额度 赛博鸡蛋",
       "icon_color": "#1971c2",
@@ -2196,7 +2196,7 @@
       "cat": "开发工具",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "Qoder CN 限时福利（Qwen3.8-Flash 调用不扣 Credits + 每日主动领取 100 通用 Credits） Qoder 开发工具 免费 额度 懒猫 AI",
       "icon_color": "#5f3dc4",
@@ -2272,7 +2272,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "AMD Radeon Token Factory（中国开发者门户每日免费额度） AMD 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#1864ab",
@@ -2351,7 +2351,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "蚂蚁百灵 Ling API 开放平台每日免费额度 蚂蚁百灵 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#0b7285",
@@ -2431,7 +2431,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "2026-12-31T23:59:59+08:00",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-18",
       "search": "SCNet 超算互联网 MaaS 新客量包（注册领 1,000 万 Tokens） SCNet 大模型 API 免费 额度 AIHot",
       "icon_color": "#1864ab",
@@ -2516,7 +2516,7 @@
       "cat": "云服务",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-20",
       "search": "Blink 免费档（AI 全栈应用构建 Agent，每日 5 个 credits，每月最多 30） Blink 云服务 免费 额度 懒猫 AI",
       "icon_color": "#087f5b",
@@ -2592,7 +2592,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-20",
       "search": "Kiro 学生计划（认证大学生每月 1000 credits，免费一年） Kiro 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#a61e4d",
@@ -2672,7 +2672,7 @@
       "cat": "AI 应用试用",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-20",
       "search": "Lumen5 免费档（AI 文章转视频，每月 5 条） Lumen5 AI 应用试用 免费 额度 懒猫 AI",
       "icon_color": "#6d28d9",
@@ -2748,7 +2748,7 @@
       "cat": "云服务",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-20",
       "search": "Macaly 免费档（AI 建站 Agent，每月 100 万 credits） Macaly 云服务 免费 额度 懒猫 AI",
       "icon_color": "#087f5b",
@@ -2828,7 +2828,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-20",
       "search": "Pitch 免费档（AI 演示文稿，演示文稿不限量，含 500 个 AI credits） Pitch 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#a61e4d",
@@ -2904,7 +2904,7 @@
       "cat": "AI 应用试用",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-20",
       "search": "Sembly 免费档（AI 会议记录与转写，含 5 小时会议） Sembly AI 应用试用 免费 额度 懒猫 AI",
       "icon_color": "#5f3dc4",
@@ -2980,7 +2980,7 @@
       "cat": "AI 应用试用",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-20",
       "search": "商汤小浣熊免费版（AI 工作助手，每日 300 积分） 商汤小浣熊免费版 AI 应用试用 免费 额度 懒猫 AI",
       "icon_color": "#0b7285",
@@ -3060,7 +3060,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-20",
       "search": "Unreal Speech 免费档（文本转语音 API，每月 25 万字符） Unreal 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#0e7490",
@@ -3136,7 +3136,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-21",
       "search": "Readdy 免费档（AI 网页设计与建站，每月 250 credits） Readdy 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#0e7490",
@@ -3216,7 +3216,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-21",
       "search": "StackAI 免费档（拖拽式 AI Agent 工作流，每月 500 次运行） StackAI 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#6d28d9",
@@ -3296,7 +3296,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-21",
       "search": "Tavily 学生计划（认证学生免费 4 个月 Project 档，每月 4000 API credits） Tavily 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#0b7285",
@@ -3372,7 +3372,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-21",
       "search": "Ultravox 语音 Agent 平台（前 30 分钟通话免费，试听场不限量） Ultravox 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#1864ab",
@@ -3448,7 +3448,7 @@
       "cat": "云服务",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-22",
       "search": "Chroma Cloud 向量数据库（Starter 档送 5 美元额度） Chroma 云服务 免费 额度 懒猫 AI",
       "icon_color": "#b45309",
@@ -3524,7 +3524,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-22",
       "search": "Datalab 文档解析与 OCR API（注册送 10 美元，绑卡再送 10 美元） Datalab 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#1864ab",
@@ -3600,7 +3600,7 @@
       "cat": "开发工具",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-22",
       "search": "Netlify 免费档（Agent Runners 与 AI Gateway，每月 300 credits） Netlify 开发工具 免费 额度 懒猫 AI",
       "icon_color": "#5f3dc4",
@@ -3680,7 +3680,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-22",
       "search": "OCR.space 免费 OCR API（每月 25000 次请求） OCR.space 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#1864ab",
@@ -3760,7 +3760,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-22",
       "search": "Reducto 文档解析与抽取 API（Standard 档含 150 美元免费用量） Reducto 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#087f5b",
@@ -3836,7 +3836,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-22",
       "search": "Parallel 免费注册送 20 美元额度：AI 搜索引擎，不用绑卡 Parallel 大模型 API 免费 额度 赛博鸡蛋",
       "icon_color": "#5f3dc4",
@@ -3912,7 +3912,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-22",
       "search": "LiberClaw 免费部署 AI 智能体：24 小时在线，免绑卡，不用 API Key LiberClaw 大模型 API 免费 额度 赛博鸡蛋",
       "icon_color": "#6d28d9",
@@ -3988,7 +3988,7 @@
       "cat": "免费算力",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-23",
       "search": "阿里云无影 AgentBay（新用户 100 积分体验券） 阿里云无影 免费算力 免费 额度 懒猫 AI",
       "icon_color": "#5f3dc4",
@@ -4068,7 +4068,7 @@
       "cat": "大模型 API",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-23",
       "search": "Hyperbolic 推理平台（手机验证送 1 美元额度） Hyperbolic 大模型 API 免费 额度 懒猫 AI",
       "icon_color": "#0e7490",
@@ -4144,7 +4144,7 @@
       "cat": "AI 应用试用",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-23",
       "search": "QwenNote 标准会员（永久免费，每月 300 分钟转写） QwenNote AI 应用试用 免费 额度 懒猫 AI",
       "icon_color": "#087f5b",
@@ -4224,7 +4224,7 @@
       "cat": "云服务",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-23",
       "search": "千问办公 QwenWork 个人免费版（注册送 300 积分，每月 100 积分） 千问办公 云服务 免费 额度 懒猫 AI",
       "icon_color": "#0b7285",
@@ -4304,7 +4304,7 @@
       "cat": "开发工具",
       "scope": "",
       "expiry": "",
-      "verified": "2026-11-23",
+      "verified": "2026-11-24",
       "added": "2026-11-23",
       "search": "Upstash Box 免费版：每月 5 小时活跃 CPU，10 个并发云端 Agent 沙箱 Upstash 开发工具 免费 额度 赛博鸡蛋",
       "icon_color": "#6d28d9",
@@ -4369,6 +4369,394 @@
         "groups": [
           [
             "Upstash"
+          ]
+        ],
+        "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
+      }
+    },
+    {
+      "slug": "aliyun-dashvector-free-trial-cluster-1-month",
+      "article_class": "card",
+      "cat": "大模型 API",
+      "scope": "",
+      "expiry": "",
+      "verified": "2026-11-24",
+      "added": "2026-11-24",
+      "search": "阿里云向量检索服务 DashVector 免费试用 Cluster（1 个月有效，最多 2 个 Collection，到期可再申请） 阿里云向量检索服务 大模型 API 免费 额度 懒猫 AI",
+      "icon_color": "#a61e4d",
+      "icon_char": "阿",
+      "title": "阿里云向量检索服务 DashVector 免费试用 Cluster（1 个月有效，最多 2 个 Collection，到",
+      "vendor": "阿里云向量检索服务 · 大模型 API",
+      "badges": [],
+      "quota": "有效期 1 个月",
+      "intro": "阿里云官方 DashVector 文档写明：可创建免费试用 Cluster，有效期 1 个月，最多 2 个 Collection，每个账户同一时间只能有 1 个，到期或主动释放后可以再申请一个",
+      "pills": [
+        "大模型 API",
+        "真实免费",
+        "国内直连"
+      ],
+      "gate_html": "<b>门槛：</b>国内手机号 / 实名认证",
+      "detail_intro": "阿里云官方 DashVector 文档写明：可创建免费试用 Cluster，有效期 1 个月，最多 2 个 Collection，每个账户同一时间只能有 1 个，到期或主动释放后可以再申请一个",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>阿里云官方 DashVector 文档写明：可创建免费试用 Cluster，有效期 1 个月，最多 2 个 Collection，每个账户同一时间只能有 1 个，到期或主动释放后可…（来源：懒猫 AI，未逐条官方核实）",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "国内手机号 / 实名认证",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "国内直连",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（免费额度内，来源站口径）",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "本条由每日复查按来源站内容自动收录，未逐条官方核实；额度、条件与到期以官方页为准，领取前请再确认。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "未公布",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://lanmao.ai/zh/o/aliyun-dashvector-free-trial-cluster-1-month/\" target=\"_blank\" rel=\"noopener\">懒猫 AI详情页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://help.aliyun.com/document_detail/2568083.html\" target=\"_blank\" rel=\"noopener\">help.aliyun.com</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "到期未公布",
+      "go_url": "https://help.aliyun.com/document_detail/2568083.html",
+      "check": {
+        "check_urls": [
+          "https://lanmao.ai/zh/o/aliyun-dashvector-free-trial-cluster-1-month/",
+          "https://help.aliyun.com/document_detail/2568083.html"
+        ],
+        "groups": [
+          [
+            "阿里云向量检索服务"
+          ]
+        ],
+        "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
+      }
+    },
+    {
+      "slug": "aliyun-function-compute-newuser-cu-trial-3-months",
+      "article_class": "card",
+      "cat": "免费算力",
+      "scope": "",
+      "expiry": "",
+      "verified": "2026-11-24",
+      "added": "2026-11-24",
+      "search": "阿里云函数计算 FC 新用户 CU 试用额度（首次开通后连续 3 个月，每月 15 万 CU，GPU 用量可折算） 阿里云函数计算 免费算力 免费 额度 懒猫 AI",
+      "icon_color": "#5f3dc4",
+      "icon_char": "阿",
+      "title": "阿里云函数计算 FC 新用户 CU 试用额度（首次开通后连续 3 个月，每月 15 万 CU，GPU 用量可折算）",
+      "vendor": "阿里云函数计算 · 免费算力",
+      "badges": [],
+      "quota": "首次开通函数计算的用户可 0 元享试用额度",
+      "intro": "阿里云官方产品变更公告：自 2024 年 8 月 27 日起，首次开通函数计算的用户可 0 元享试用额度，以月为周期连续提供 3 个周期，每周期 15 万 CU 使用量",
+      "pills": [
+        "免费算力",
+        "真实免费",
+        "国内直连"
+      ],
+      "gate_html": "<b>门槛：</b>国内手机号",
+      "detail_intro": "阿里云官方产品变更公告：自 2024 年 8 月 27 日起，首次开通函数计算的用户可 0 元享试用额度，以月为周期连续提供 3 个周期，每周期 15 万 CU 使用量",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>阿里云官方产品变更公告：自 2024 年 8 月 27 日起，首次开通函数计算的用户可 0 元享试用额度，以月为周期连续提供 3 个周期，每周期 15 万 CU 使用量（来源：懒猫 AI，未逐条官方核实）",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "国内手机号",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "国内直连",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（免费额度内，来源站口径）",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "本条由每日复查按来源站内容自动收录，未逐条官方核实；额度、条件与到期以官方页为准，领取前请再确认。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "未公布",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://lanmao.ai/zh/o/aliyun-function-compute-newuser-cu-trial-3-months/\" target=\"_blank\" rel=\"noopener\">懒猫 AI详情页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://help.aliyun.com/zh/functioncompute/fc/product-overview/billing-overview-of-fc\" target=\"_blank\" rel=\"noopener\">help.aliyun.com</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "到期未公布",
+      "go_url": "https://help.aliyun.com/zh/functioncompute/fc/product-overview/billing-overview-of-fc",
+      "check": {
+        "check_urls": [
+          "https://lanmao.ai/zh/o/aliyun-function-compute-newuser-cu-trial-3-months/",
+          "https://help.aliyun.com/zh/functioncompute/fc/product-overview/billing-overview-of-fc"
+        ],
+        "groups": [
+          [
+            "阿里云函数计算"
+          ],
+          [
+            "0 元",
+            "0元"
+          ]
+        ],
+        "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
+      }
+    },
+    {
+      "slug": "baidu-vectordb-free-instance-1-month",
+      "article_class": "card",
+      "cat": "云服务",
+      "scope": "",
+      "expiry": "",
+      "verified": "2026-11-24",
+      "added": "2026-11-24",
+      "search": "百度智能云向量数据库 VectorDB 免费版实例（单节点，每个用户 1 个，有效期 1 个月） 百度智能云向量数据库 云服务 免费 额度 懒猫 AI",
+      "icon_color": "#b45309",
+      "icon_char": "百",
+      "title": "百度智能云向量数据库 VectorDB 免费版实例（单节点，每个用户 1 个，有效期 1 个月）",
+      "vendor": "百度智能云向量数据库 · 云服务",
+      "badges": [],
+      "quota": "有效期 1 个月",
+      "intro": "百度智能云官方文档：创建实例时可选免费版，单节点架构、仅用于功能测试，每个用户限创建 1 个，有效期 1 个月",
+      "pills": [
+        "云服务",
+        "真实免费",
+        "国内直连"
+      ],
+      "gate_html": "<b>门槛：</b>国内手机号",
+      "detail_intro": "百度智能云官方文档：创建实例时可选免费版，单节点架构、仅用于功能测试，每个用户限创建 1 个，有效期 1 个月",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>百度智能云官方文档：创建实例时可选免费版，单节点架构、仅用于功能测试，每个用户限创建 1 个，有效期 1 个月（来源：懒猫 AI，未逐条官方核实）",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "国内手机号",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "国内直连",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（免费额度内，来源站口径）",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "本条由每日复查按来源站内容自动收录，未逐条官方核实；额度、条件与到期以官方页为准，领取前请再确认。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "未公布",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://lanmao.ai/zh/o/baidu-vectordb-free-instance-1-month/\" target=\"_blank\" rel=\"noopener\">懒猫 AI详情页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://cloud.baidu.com/doc/VDB/s/hlrsoazuf\" target=\"_blank\" rel=\"noopener\">cloud.baidu.com</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "到期未公布",
+      "go_url": "https://cloud.baidu.com/doc/VDB/s/hlrsoazuf",
+      "check": {
+        "check_urls": [
+          "https://lanmao.ai/zh/o/baidu-vectordb-free-instance-1-month/",
+          "https://cloud.baidu.com/doc/VDB/s/hlrsoazuf"
+        ],
+        "groups": [
+          [
+            "百度智能云向量数据库"
+          ]
+        ],
+        "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
+      }
+    },
+    {
+      "slug": "volcengine-viking-knowledge-base-free-30d",
+      "article_class": "card",
+      "cat": "大模型 API",
+      "scope": "",
+      "expiry": "",
+      "verified": "2026-11-24",
+      "added": "2026-11-24",
+      "search": "火山引擎 Viking 知识库免费体验版（30 天，500 篇文档、每天 300 次检索、100 万 token 模型调用） 火山引擎 大模型 API 免费 额度 懒猫 AI",
+      "icon_color": "#0e7490",
+      "icon_char": "火",
+      "title": "火山引擎 Viking 知识库免费体验版（30 天，500 篇文档、每天 300 次检索、100 万 token 模型调",
+      "vendor": "火山引擎 · 大模型 API",
+      "badges": [],
+      "quota": "含 500 篇文档、40 万个切片、每天 300 次检索",
+      "intro": "火山引擎官方文档：知识库推出免费 30 天体验版，一个火山账号最多建 1 个，含 500 篇文档、40 万个切片、每天 300 次检索，并送 100 万 token 模型调用额度",
+      "pills": [
+        "大模型 API",
+        "真实免费",
+        "国内直连"
+      ],
+      "gate_html": "<b>门槛：</b>国内手机号",
+      "detail_intro": "火山引擎官方文档：知识库推出免费 30 天体验版，一个火山账号最多建 1 个，含 500 篇文档、40 万个切片、每天 300 次检索，并送 100 万 token 模型调用额度",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>火山引擎官方文档：知识库推出免费 30 天体验版，一个火山账号最多建 1 个，含 500 篇文档、40 万个切片、每天 300 次检索，并送 100 万 token 模型调用额度（来源：懒猫 AI，未逐条官方核实）",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "国内手机号",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "国内直连",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（免费额度内，来源站口径）",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "本条由每日复查按来源站内容自动收录，未逐条官方核实；额度、条件与到期以官方页为准，领取前请再确认。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "未公布",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://lanmao.ai/zh/o/volcengine-viking-knowledge-base-free-30d/\" target=\"_blank\" rel=\"noopener\">懒猫 AI详情页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://docs.volcengine.com/docs/84313/1844830?lang=zh\" target=\"_blank\" rel=\"noopener\">docs.volcengine.com</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "到期未公布",
+      "go_url": "https://docs.volcengine.com/docs/84313/1844830?lang=zh",
+      "check": {
+        "check_urls": [
+          "https://lanmao.ai/zh/o/volcengine-viking-knowledge-base-free-30d/",
+          "https://docs.volcengine.com/docs/84313/1844830?lang=zh"
+        ],
+        "groups": [
+          [
+            "火山引擎"
+          ],
+          [
+            "300 次",
+            "300次"
+          ]
+        ],
+        "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
+      }
+    },
+    {
+      "slug": "flyio-free-plan-5-usd-monthly",
+      "article_class": "card",
+      "cat": "大模型 API",
+      "scope": "",
+      "expiry": "",
+      "verified": "2026-11-24",
+      "added": "2026-11-24",
+      "search": "Fly.io 新推免费套餐：每月 5 美元额度可跑 3 台小应用 Fly.io 大模型 API 免费 额度 赛博鸡蛋",
+      "icon_color": "#b45309",
+      "icon_char": "F",
+      "title": "Fly.io 新推免费套餐：每月 5 美元额度可跑 3 台小应用",
+      "vendor": "Fly.io · 大模型 API",
+      "badges": [],
+      "quota": "新账号免费套餐：不绑卡得 1 美元一次性额度（7 天有效）",
+      "intro": "Fly.io 2026 年 11 月 23 日新推免费套餐：每个新账号直接开通，不绑卡得 1 美元一次性额度；添加信用卡后每月得 5 美元托管额度，可用于跑应用、挂卷、传流量或开一台托管 Postgres，额度每月 1 日重置。",
+      "pills": [
+        "大模型 API",
+        "真实免费",
+        "全球"
+      ],
+      "gate_html": "<b>门槛：</b>客户端 / Web 需绑卡 无需预充值",
+      "detail_intro": "Fly.io 2026 年 11 月 23 日新推免费套餐：每个新账号直接开通，不绑卡得 1 美元一次性额度；添加信用卡后每月得 5 美元托管额度，可用于跑应用、挂卷、传流量或开一台托管 Postgres，额度每月 1 日重置。",
+      "detail_quota_html": "<span class=\"d-label\">免费额度</span>新账号免费套餐：不绑卡得 1 美元一次性额度（7 天有效）；绑卡后每月 5 美元托管额度，按月重置（来源：赛博鸡蛋，未逐条官方核实）",
+      "fields": [
+        {
+          "dt": "领取条件",
+          "dd_html": "客户端 / Web 需绑卡 无需预充值",
+          "dd_class": null
+        },
+        {
+          "dt": "适用地区",
+          "dd_html": "全球",
+          "dd_class": null
+        },
+        {
+          "dt": "成本",
+          "dd_html": "¥0（免费额度内，来源站口径）",
+          "dd_class": null
+        },
+        {
+          "dt": "风险",
+          "dd_html": "本条由每日复查按来源站内容自动收录，未逐条官方核实；额度、条件与到期以官方页为准，领取前请再确认。",
+          "dd_class": "risk"
+        },
+        {
+          "dt": "到期时间",
+          "dd_html": "未公布",
+          "dd_class": "expiry"
+        },
+        {
+          "dt": "来源",
+          "dd_html": "<a href=\"https://jidan.si/free/404-flyio-free-plan-5-usd-monthly\" target=\"_blank\" rel=\"noopener\">赛博鸡蛋详情页</a>",
+          "dd_class": null
+        },
+        {
+          "dt": "官方入口",
+          "dd_html": "<a href=\"https://docs.fly.io/about/free-plan\" target=\"_blank\" rel=\"noopener\">docs.fly.io</a>",
+          "dd_class": null
+        }
+      ],
+      "foot_exp_html": "到期未公布",
+      "go_url": "https://docs.fly.io/about/free-plan",
+      "check": {
+        "check_urls": [
+          "https://jidan.si/free/404-flyio-free-plan-5-usd-monthly",
+          "https://docs.fly.io/about/free-plan"
+        ],
+        "groups": [
+          [
+            "Fly.io"
           ]
         ],
         "note": "自动收录条目：以来源站详情页核对标题与额度关键串"
