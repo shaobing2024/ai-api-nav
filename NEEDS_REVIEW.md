@@ -1,12 +1,11 @@
-# 待人工复核（2026-11-24 自动复查）
+# 待人工复核（2026-11-25 自动复查）
 
 ## 已自动上架
 
-- **aliyun-dashvector-free-trial-cluster-1-month**：阿里云向量检索服务 DashVector 免费试用 Cluster（1 个月有效，最多 2 个 Collection，到（来源：https://help.aliyun.com/document_detail/2568083.html）
-- **aliyun-function-compute-newuser-cu-trial-3-months**：阿里云函数计算 FC 新用户 CU 试用额度（首次开通后连续 3 个月，每月 15 万 CU，GPU 用量可折算）（来源：https://help.aliyun.com/zh/functioncompute/fc/product-overview/billing-overview-of-fc）
-- **baidu-vectordb-free-instance-1-month**：百度智能云向量数据库 VectorDB 免费版实例（单节点，每个用户 1 个，有效期 1 个月）（来源：https://cloud.baidu.com/doc/VDB/s/hlrsoazuf）
-- **volcengine-viking-knowledge-base-free-30d**：火山引擎 Viking 知识库免费体验版（30 天，500 篇文档、每天 300 次检索、100 万 token 模型调（来源：https://docs.volcengine.com/docs/84313/1844830?lang=zh）
-- **flyio-free-plan-5-usd-monthly**：Fly.io 新推免费套餐：每月 5 美元额度可跑 3 台小应用（来源：https://docs.fly.io/about/free-plan）
+- **infomaniak-ai-tools-1m-free-credits-kimi-k26**：Infomaniak AI Tools（瑞士，开通即送 100 万免费 credits，可用 Kimi K2.6 等开源（来源：https://www.infomaniak.com/en/hosting/ai-services）
+- **liquid-ai-api-new-org-2-usd-credit**：Liquid AI API 控制台（新组织送 2 美元额度，LFM 系列模型）（来源：https://console.liquid.ai/）
+- **kiro-10k-bonus-credits-paid**：Kiro 付费订阅用户送 10K credits，相当于 200 美元额度（来源：https://kiro.dev/pricing/）
+- **chatgpt-business-banked-reset-fast-mode-dec2026**：ChatGPT Business 现有团队：免费额度重置卡，极速模式免费至 12 月 31 日（来源：https://jidan.si/free/410-chatgpt-business-banked-reset-fast-mode-dec2026）
 
 ## 模式未命中（数据未改动）
 
@@ -14,9 +13,9 @@
 
 ## 即将到期
 
-- **conatus**：6 天后到期（2026-11-30）
-- **aliyun-rds-contextdb-newuser-834-yuan**：6 天后到期（2026-11-30）
-- **polyai-100-usd-credits-registration-before-dec-1**：7 天后到期（2026-12-01）
+- **conatus**：5 天后到期（2026-11-30）
+- **aliyun-rds-contextdb-newuser-834-yuan**：5 天后到期（2026-11-30）
+- **polyai-100-usd-credits-registration-before-dec-1**：6 天后到期（2026-12-01）
 
 ## 来源站读取说明
 
