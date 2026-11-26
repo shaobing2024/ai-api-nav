@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "deals": {
     "conatus": {
       "status": "ok",
@@ -9,27 +9,27 @@
     "crouton": {
       "status": "ok",
       "detail": "",
-      "hash": "3245fadf9460"
+      "hash": "00ff83197ae7"
     },
     "siliconflow": {
       "status": "ok",
       "detail": "",
-      "hash": "0f2452b50798"
+      "hash": "5b9f53c29cf7"
     },
     "bigmodel": {
       "status": "ok",
       "detail": "",
-      "hash": "a88358e013fd"
+      "hash": "7fb64b88452f"
     },
     "tokenhub": {
       "status": "ok",
       "detail": "",
-      "hash": "bd53ac3f9373"
+      "hash": "1cc79bcbdafa"
     },
     "inception": {
       "status": "ok",
       "detail": "",
-      "hash": "57b4e67f54bb"
+      "hash": "09e03315cbf4"
     },
     "openrouter-free": {
       "status": "ok",
@@ -39,12 +39,12 @@
     "mistral": {
       "status": "ok",
       "detail": "",
-      "hash": "bcbdcdf7c4a1"
+      "hash": "b3e1877bdbc2"
     },
     "tingwu": {
       "status": "ok",
       "detail": "",
-      "hash": "2c1e75ca213d"
+      "hash": "cee6d1e4c652"
     },
     "coze": {
       "status": "needs_review",
@@ -54,17 +54,17 @@
     "workers-ai": {
       "status": "ok",
       "detail": "",
-      "hash": "d17b06149ba3"
+      "hash": "758c444ef3bc"
     },
     "azure-students": {
       "status": "ok",
       "detail": "",
-      "hash": "458350c981e3"
+      "hash": "30df2ec83fa0"
     },
     "upstash-box": {
       "status": "ok",
       "detail": "",
-      "hash": "9f471b4a6efc"
+      "hash": "46ccc2f539fd"
     },
     "zcode": {
       "status": "ok",
@@ -74,17 +74,17 @@
     "copilot": {
       "status": "ok",
       "detail": "",
-      "hash": "07fbbb069bb4"
+      "hash": "0975641d3a71"
     },
     "gemini-cli": {
       "status": "ok",
       "detail": "",
-      "hash": "c52a6bab63ca"
+      "hash": "bf7334f5b4cf"
     },
     "kaggle": {
       "status": "ok",
       "detail": "",
-      "hash": "882a24bb56d2"
+      "hash": "260816991b9f"
     },
     "aistudio": {
       "status": "ok",
@@ -94,22 +94,22 @@
     "daytona": {
       "status": "ok",
       "detail": "",
-      "hash": "32c462247dd2"
+      "hash": "e859f4d464ba"
     },
     "simular-box-free-5000-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "f5b1c3d948c3"
+      "hash": "0c416622660b"
     },
     "meshy-z-axis-awards-1000-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "74707d83c619"
+      "hash": "45dab1ff2110"
     },
     "polyai-100-usd-credits-registration-before-dec-1": {
       "status": "ok",
       "detail": "",
-      "hash": "b0a769fa2f3d"
+      "hash": "597829a0795d"
     },
     "aliyun-pai-dlc-free-trial-100-cuh": {
       "status": "ok",
@@ -134,7 +134,7 @@
     "isaacus-100-free-credits-new-users": {
       "status": "ok",
       "detail": "",
-      "hash": "b7c32ea5c105"
+      "hash": "d20122779be9"
     },
     "axforge-free-3m-serverless-tokens-monthly": {
       "status": "ok",
@@ -154,7 +154,7 @@
     "opengame-game-jam-1-elevenlabs-creator-free-month-meshy-pro-1-usd": {
       "status": "ok",
       "detail": "",
-      "hash": "1f7319570432"
+      "hash": "82ab20df5893"
     },
     "qoder-cn-qwen38-flash-free-daily-credits": {
       "status": "ok",
@@ -164,7 +164,7 @@
     "amd-radeon-token-factory": {
       "status": "ok",
       "detail": "",
-      "hash": "ca77ed08de64"
+      "hash": "e3bd1a28ee2e"
     },
     "ant-ling-api-free-daily": {
       "status": "ok",
@@ -264,12 +264,12 @@
     "parallel-signup-20-free-credits": {
       "status": "ok",
       "detail": "",
-      "hash": "d09a7397c0c6"
+      "hash": "9c40a8a2191d"
     },
     "liberclaw-free-ai-agent-24-7": {
       "status": "ok",
       "detail": "",
-      "hash": "11fc07d48a25"
+      "hash": "f921ff2eb4d0"
     },
     "aliyun-agentbay-newuser-100-points-voucher": {
       "status": "ok",
@@ -294,7 +294,7 @@
     "upstash-box-free-tier": {
       "status": "ok",
       "detail": "",
-      "hash": "b1d5ebdc4a36"
+      "hash": "b7ca34375fd6"
     },
     "aliyun-dashvector-free-trial-cluster-1-month": {
       "status": "ok",
@@ -319,24 +319,64 @@
     "flyio-free-plan-5-usd-monthly": {
       "status": "ok",
       "detail": "",
-      "hash": "36e5fd4cb902"
+      "hash": "d5d3181fa602"
     },
     "infomaniak-ai-tools-1m-free-credits-kimi-k26": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "bb95ac64ea43"
     },
     "liquid-ai-api-new-org-2-usd-credit": {
       "status": "ok",
-      "detail": "自动收录",
-      "hash": null
+      "detail": "",
+      "hash": "eb2cb5f4862f"
     },
     "kiro-10k-bonus-credits-paid": {
+      "status": "ok",
+      "detail": "",
+      "hash": "e20ee0fc3c0f"
+    },
+    "chatgpt-business-banked-reset-fast-mode-dec2026": {
+      "status": "ok",
+      "detail": "",
+      "hash": "bfef64586eae"
+    },
+    "builder-io-free-plan-60-agent-credits-monthly": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
     },
-    "chatgpt-business-banked-reset-fast-mode-dec2026": {
+    "dust-free-seat-500-credits-lifetime": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "figma-starter-500-ai-credits-monthly": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "firecrawl-api-free-1000-credits": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "zapier-mcp-free-tool-calls-jan2027": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "pinecone-double-embedding-tokens-dec2026": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "cloudflare-workers-free-email-sending-verified-addresses": {
+      "status": "ok",
+      "detail": "自动收录",
+      "hash": null
+    },
+    "chatgpt-codex-banked-reset-gpt62-billing-fix-nov2026": {
       "status": "ok",
       "detail": "自动收录",
       "hash": null
@@ -421,6 +461,7 @@
       "https://lanmao.ai/zh/o/bria-ai-free-100-generations/",
       "https://lanmao.ai/zh/o/browserbase-free-plan/",
       "https://lanmao.ai/zh/o/browserless-free-1k-units-monthly/",
+      "https://lanmao.ai/zh/o/builder-io-free-plan-60-agent-credits-monthly/",
       "https://lanmao.ai/zh/o/byteplus-modelark-free-trial/",
       "https://lanmao.ai/zh/o/canva-free-plan/",
       "https://lanmao.ai/zh/o/cartesia-free-plan/",
@@ -457,6 +498,7 @@
       "https://lanmao.ai/zh/o/dots-dots3-note-preview-free-api/",
       "https://lanmao.ai/zh/o/doubao-chat/",
       "https://lanmao.ai/zh/o/duckduckgo-ai-chat-duck-ai/",
+      "https://lanmao.ai/zh/o/dust-free-seat-500-credits-lifetime/",
       "https://lanmao.ai/zh/o/e2b-hobby-100-usd-credit/",
       "https://lanmao.ai/zh/o/edge-tts/",
       "https://lanmao.ai/zh/o/elevenlabs-free/",
@@ -466,6 +508,7 @@
       "https://lanmao.ai/zh/o/fathom-free-plan/",
       "https://lanmao.ai/zh/o/feishu-miaoji/",
       "https://lanmao.ai/zh/o/figma-education-free-professional/",
+      "https://lanmao.ai/zh/o/figma-starter-500-ai-credits-monthly/",
       "https://lanmao.ai/zh/o/firecrawl-free-tier/",
       "https://lanmao.ai/zh/o/firecrawl-student-program-10000-credits/",
       "https://lanmao.ai/zh/o/fish-audio-free-plan/",
@@ -725,11 +768,6 @@
       "https://lanmao.ai/zh/o/zilliz-cloud-free-5gb-2-5m-vcus/"
     ],
     "赛博鸡蛋": [
-      "https://jidan.si/free/294-codex-banked-reset-dot-updates",
-      "https://jidan.si/free/296-deapi-5-usd-signup-credit-free-api",
-      "https://jidan.si/free/298-vmodel-10-usd-signup-credit-free-api",
-      "https://jidan.si/free/302-huawei-codearts-skill-contest-credits",
-      "https://jidan.si/free/305-telnyx-pretrial-25-usd-ai-credits",
       "https://jidan.si/free/306-reducto-new-standard-account-150-usd-credits",
       "https://jidan.si/free/309-instabox-free-cloud-linux-machine-agent",
       "https://jidan.si/free/310-polyai-new-account-100-usd-dialog-rsn-1-credits",
@@ -748,7 +786,12 @@
       "https://jidan.si/free/380-liberclaw-free-ai-agent-24-7",
       "https://jidan.si/free/404-flyio-free-plan-5-usd-monthly",
       "https://jidan.si/free/405-kiro-10k-bonus-credits-paid",
-      "https://jidan.si/free/410-chatgpt-business-banked-reset-fast-mode-dec2026"
+      "https://jidan.si/free/410-chatgpt-business-banked-reset-fast-mode-dec2026",
+      "https://jidan.si/free/415-firecrawl-api-free-1000-credits",
+      "https://jidan.si/free/416-zapier-mcp-free-tool-calls-jan2027",
+      "https://jidan.si/free/417-pinecone-double-embedding-tokens-dec2026",
+      "https://jidan.si/free/420-cloudflare-workers-free-email-sending-verified-addresses",
+      "https://jidan.si/free/422-chatgpt-codex-banked-reset-gpt62-billing-fix-nov2026"
     ],
     "白嫖计": [
       "ai360",
