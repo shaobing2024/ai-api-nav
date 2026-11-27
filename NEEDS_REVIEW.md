@@ -1,15 +1,14 @@
-# 待人工复核（2026-11-26 自动复查）
+# 待人工复核（2026-11-27 自动复查）
 
 ## 已自动上架
 
-- **builder-io-free-plan-60-agent-credits-monthly**：Builder.io 免费档（AI 可视化开发 Agent，每日 15、每月 60 个 Agent credits）（来源：https://www.builder.io/pricing）
-- **dust-free-seat-500-credits-lifetime**：Dust 免费席位（企业 AI Agent 平台，一次性 500 credits，可用 Claude / GPT / G（来源：https://dust.tt/home/pricing）
-- **figma-starter-500-ai-credits-monthly**：Figma 免费 Starter 计划（含 Figma Make，每月 500 个 AI credits，每日上限 15（来源：https://www.figma.com/pricing/）
-- **firecrawl-api-free-1000-credits**：Firecrawl 网页抓取 API 免费版：每月 1,000 credits 免绑卡（来源：https://www.firecrawl.dev/pricing）
-- **zapier-mcp-free-tool-calls-jan2027**：Zapier MCP 工具调用限时免费：免费版每天 250 次不消耗 Tasks（来源：https://docs.zapier.com/mcp/overview/usage）
-- **pinecone-double-embedding-tokens-dec2026**：Pinecone 嵌入 API 年底翻倍：免费版每模型每月 1000 万 tokens（来源：https://docs.pinecone.io/release-notes/2026）
-- **cloudflare-workers-free-email-sending-verified-addresses**：Cloudflare Workers 免费版可发邮件：给验证地址发告警不计额度（来源：https://developers.cloudflare.com/changelog/post/2026-11-24-email-sending-workers-free/）
-- **chatgpt-codex-banked-reset-gpt62-billing-fix-nov2026**：ChatGPT/Codex 订阅免费重置卡：Go、Plus、Pro、Business 各一张（来源：https://help.openai.com/en/articles/20001498-how-resets-work-in-codex）
+- **ibm-watson-nlu-lite-30k-items**：IBM Watson 自然语言理解 NLU Lite 套餐（每月 30000 NLU 单位免费，含 1 个自定义模型）（来源：https://www.ibm.com/products/natural-language-understanding/pricing）
+- **ibm-watson-speech-to-text-lite-500-min**：IBM Watson 语音识别 Lite 套餐（每月 500 分钟免费）（来源：https://www.ibm.com/products/speech-to-text/pricing）
+- **ibm-watson-text-to-speech-lite-10k-chars**：IBM Watson 语音合成 Lite 套餐（每月 10000 字符免费）（来源：https://www.ibm.com/products/text-to-speech/pricing）
+- **stable-audio-free-50-credits-monthly**：Stable Audio 免费档（每月 50 credits，约 12 次完整混音生成，含商用授权）（来源：https://stableaudio.com/pricing）
+- **privjet-free-esim-1gb-74-countries**：PrivJet 免费 eSIM 应用：74 国旅行 1GB 流量，免绑卡（来源：https://www.privjet.net/en/free-esim）
+- **travelgoogoo-visa-free-esim-apac-nov2026**：Visa 卡免费 eSIM 应用：最高 4GB 全球流量加通讯软件无限免流（来源：https://www.travelgoogoo.com/en/visa）
+- **qoder-research-program-20000-credits**：Qoder 应用科研支持计划：研究生与科研人员免费领 20000 积分（来源：https://qoder.com）
 
 ## 模式未命中（数据未改动）
 
@@ -17,9 +16,9 @@
 
 ## 即将到期
 
-- **conatus**：4 天后到期（2026-11-30）
-- **aliyun-rds-contextdb-newuser-834-yuan**：4 天后到期（2026-11-30）
-- **polyai-100-usd-credits-registration-before-dec-1**：5 天后到期（2026-12-01）
+- **conatus**：3 天后到期（2026-11-30）
+- **aliyun-rds-contextdb-newuser-834-yuan**：3 天后到期（2026-11-30）
+- **polyai-100-usd-credits-registration-before-dec-1**：4 天后到期（2026-12-01）
 
 ## 来源站读取说明
 
